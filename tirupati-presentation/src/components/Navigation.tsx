@@ -35,10 +35,9 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext }
           <span className="mx-2">/</span> 
           {totalSlides.toString().padStart(2, '0')}
         </div>
-        
         <a 
-          href="/tirupati-project-report.pdf" 
-          download="Tirupati-Project-Strategy-Report.pdf"
+          href="/tirupati-presentation-deck.pdf" 
+          download="Tirupati-Presentation-Script.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 md:px-6 md:py-2 bg-brand-emerald/20 border border-brand-emerald/40 rounded-full text-brand-emerald text-xs md:text-sm hover:bg-brand-emerald/30 font-semibold shadow-sm transition-all group"
