@@ -39,11 +39,12 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext }
         <a 
           href="/tirupati-project-report.pdf" 
           download="Tirupati-Project-Strategy-Report.pdf"
-          className="flex items-center gap-2 px-4 py-2 md:px-6 md:py-2 bg-brand-emerald/10 border border-brand-emerald/20 rounded-full text-brand-emerald text-xs md:text-sm hover:bg-brand-emerald/20 transition-all group"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-2 md:px-6 md:py-2 bg-brand-emerald/20 border border-brand-emerald/40 rounded-full text-brand-emerald text-xs md:text-sm hover:bg-brand-emerald/30 font-semibold shadow-sm transition-all group"
         >
           <Download className="w-4 h-4 group-hover:translate-y-px transition-transform" />
-          <span className="hidden sm:inline">Download Project Report</span>
-          <span className="sm:hidden">Report</span>
+          <span>Download Report</span>
         </a>
       </div>
     </div>
