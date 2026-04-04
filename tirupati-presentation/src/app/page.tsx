@@ -54,16 +54,18 @@ export default function PresentationPage() {
   const SelectedSlide = SLIDES[currentSlide];
 
   return (
-    <main className="relative h-screen w-full overflow-hidden flex flex-col bg-brand-dark bg-mesh">
+    <main className="relative h-[100dvh] w-full flex flex-col bg-brand-dark bg-mesh overflow-hidden">
       {/* Background Decorative Blobs */}
       <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-brand-emerald/5 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-brand-gold/5 blur-[100px] rounded-full pointer-events-none" />
 
-      <AnimatePresence initial={false} custom={direction} mode="wait">
-        <SlideContainer key={currentSlide} direction={direction}>
-          <SelectedSlide />
-        </SlideContainer>
-      </AnimatePresence>
+      <div className="flex-1 relative overflow-hidden">
+        <AnimatePresence initial={false} custom={direction} mode="wait">
+          <SlideContainer key={currentSlide} direction={direction}>
+            <SelectedSlide />
+          </SlideContainer>
+        </AnimatePresence>
+      </div>
 
       <Navigation 
         currentSlide={currentSlide + 1} 
