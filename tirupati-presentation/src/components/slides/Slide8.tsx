@@ -5,7 +5,7 @@ import { DollarSign, PieChart, TrendingUp, Landmark, ShieldCheck } from "lucide-
 
 export default function Slide8() {
   return (
-    <div className="flex flex-col h-full justify-center space-y-12">
+    <div className="flex flex-col justify-center space-y-12">
       <div className="space-y-4">
         <motion.span 
           initial={{ opacity: 0, x: -20 }}
@@ -23,7 +23,7 @@ export default function Slide8() {
         </motion.h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 h-full max-h-[500px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Side: Streams */}
         <div className="space-y-6 flex flex-col justify-center">
           {[

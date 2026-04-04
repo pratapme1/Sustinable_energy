@@ -5,7 +5,7 @@ import { ShieldCheck, Trophy, Layers, Target, Landmark } from "lucide-react";
 
 export default function Slide10() {
   return (
-    <div className="flex flex-col h-full justify-center space-y-12">
+    <div className="flex flex-col justify-center space-y-12">
       <div className="space-y-4">
         <motion.span 
           initial={{ opacity: 0, x: -20 }}
@@ -23,9 +23,9 @@ export default function Slide10() {
         </motion.h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full max-h-[500px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Moat Layers */}
-        <div className="grid grid-cols-1 gap-4 overflow-y-auto">
+        <div className="grid grid-cols-1 gap-4">
           {[
             { 
               icon: Target, 
