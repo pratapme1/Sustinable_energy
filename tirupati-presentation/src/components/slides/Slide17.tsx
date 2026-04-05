@@ -17,8 +17,8 @@ export default function Slide17() {
     },
     {
       icon: Building2,
-      title: "TTD Exclusivity",
-      body: "Formal TTD city partnership for temple city waste = exclusive anchor that no competitor can replicate in Tirupati. Relationship-based, takes years.",
+      title: "Distributed Network vs Single Plant",
+      body: "IOC has one Tirumala plant via TTD. We have 200 TPD contracted across 50+ RWAs, 80 hotels, TMC, and dairy farmers. A distributed tipping-fee network cannot be replicated by a single-site plant deal.",
     },
     {
       icon: Database,
