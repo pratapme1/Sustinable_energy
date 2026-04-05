@@ -1,9 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Landmark, Users } from "lucide-react";
+import { FileSignature, AlertTriangle, BadgeCheck, Lock } from "lucide-react";
 
 export default function Slide9() {
+  const chain = [
+    { step: "1", label: "30 signed tipping fee MOUs", value: "₹3.5 crore/year contracted revenue" },
+    { step: "2", label: "+ SATAT LoI from HPCL/IOCL + DPR from EPC vendor", value: "→" },
+    { step: "3", label: "IREDA loan application", value: "₹8–13 crore (70% of gross CAPEX)" },
+    { step: "4", label: "MNRE CFA grant", value: "₹5–10 crore (non-repayable, counts as equity)" },
+    { step: "5", label: "AP ICEP subsidy", value: "₹3–5 crore (non-repayable)" },
+    { step: "6", label: "Total available vs CAPEX ₹12–18 crore", value: "₹16–28 crore → Founder equity ₹0" },
+  ];
+
+  const reasons = [
+    {
+      icon: AlertTriangle,
+      title: "SWM 2026 Penalty Avoidance",
+      body: "EBWGR fine ₹50K–2L/month per bulk generator. Tipping fee at ₹700/tonne is cheaper than 2 months of penalty. Sign now, comply from Day 1.",
+    },
+    {
+      icon: BadgeCheck,
+      title: "Cero ESG Credential",
+      body: "Hotels get Booking.com sustainability filter listing. RWAs get Swachh Survekshan data. BRSR-ready ESG report included. Marketing asset, not just compliance.",
+    },
+    {
+      icon: Lock,
+      title: "Rate Lock + Community Ownership",
+      body: "3-year tipping fee rate lock. Cheaper than current private waste contractor. Under Path B, communities become co-funders of India's first community-owned WtE plant.",
+    },
+  ];
+
   return (
     <div className="flex flex-col h-full justify-center space-y-8">
       <div className="space-y-3">
@@ -12,7 +39,7 @@ export default function Slide9() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          09. Funding Paths
+          09. Community Funding Model
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -20,104 +47,66 @@ export default function Slide9() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Two Paths. Same Destination.{" "}
-          <span className="text-gradient-emerald">Founder Equity = ₹0.</span>
+          30 MOUs Fund the{" "}
+          <span className="text-gradient-emerald">Entire Plant</span>
         </motion.h2>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Path A */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-4"
-        >
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
-              <Landmark className="w-5 h-5 text-brand-emerald" />
-            </div>
-            <div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">Path A</div>
-              <div className="text-sm text-white font-semibold">Govt Debt — Recommended</div>
-            </div>
-          </div>
-          <div className="space-y-2">
-            {[
-              { label: "IREDA Priority Loan (70% of CAPEX)", val: "₹8–13 crore" },
-              { label: "MNRE CFA Grant (equity substitute)", val: "₹5–10 crore" },
-              { label: "AP ICEP Capital Subsidy", val: "₹3–5 crore" },
-            ].map((row, i) => (
-              <div key={i} className="flex justify-between items-center py-2 border-b border-white/5">
-                <span className="text-sm text-slate-400 font-light">{row.label}</span>
-                <span className="text-sm text-white font-semibold">{row.val}</span>
-              </div>
-            ))}
-            <div className="flex justify-between items-center pt-2">
-              <span className="text-sm text-white font-semibold">Total Available</span>
-              <span className="text-5xl md:text-6xl font-extrabold text-gradient-emerald italic tracking-tight">₹16–28 cr</span>
-            </div>
-          </div>
-          <div className="p-3 bg-brand-emerald/5 border border-brand-emerald/15 rounded-2xl">
-            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Financial Close</div>
-            <div className="text-sm text-brand-emerald font-semibold">Month 7–10</div>
-          </div>
-        </motion.div>
-
-        {/* Path B */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="p-6 md:p-8 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex flex-col gap-4"
-        >
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
-              <Users className="w-5 h-5 text-brand-emerald" />
-            </div>
-            <div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">Path B</div>
-              <div className="text-sm text-white font-semibold">Community Self-Funded — No IREDA</div>
-            </div>
-          </div>
-          <div className="space-y-2">
-            {[
-              { label: "RWA + hotel upfront contributions", val: "₹3–5 crore" },
-              { label: "TMC 12-month tipping fee advance", val: "₹1–1.5 crore" },
-              { label: "MNRE CFA Grant", val: "₹5–10 crore" },
-              { label: "AP ICEP Subsidy", val: "₹3–5 crore" },
-            ].map((row, i) => (
-              <div key={i} className="flex justify-between items-center py-2 border-b border-white/5">
-                <span className="text-sm text-slate-400 font-light">{row.label}</span>
-                <span className="text-sm text-white font-semibold">{row.val}</span>
-              </div>
-            ))}
-            <div className="flex justify-between items-center pt-2">
-              <span className="text-sm text-white font-semibold">Total</span>
-              <span className="text-5xl md:text-6xl font-extrabold text-gradient-emerald italic tracking-tight">₹13–24 cr</span>
-            </div>
-          </div>
-          <div className="p-3 bg-brand-emerald/5 border border-brand-emerald/15 rounded-2xl">
-            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Financial Close</div>
-            <div className="text-sm text-brand-emerald font-semibold">Month 3–5</div>
-          </div>
-        </motion.div>
       </div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-        className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10"
+        transition={{ delay: 0.2 }}
+        className="p-6 glass rounded-3xl border-brand-emerald/10"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-400 font-light">
-          <div>
-            <span className="text-white font-semibold">Path A</span> — faster replication, 15yr govt debt, preferred for city nodes
-          </div>
-          <div>
-            <span className="text-white font-semibold">Path B</span> — no debt, faster close, preferred for campus/institutional nodes
-          </div>
+        <div className="flex items-center gap-2 mb-4">
+          <FileSignature className="w-5 h-5 text-brand-emerald" />
+          <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">The Funding Chain</div>
         </div>
+        <div className="flex flex-wrap items-center gap-2">
+          {chain.map((item, i) => (
+            <div key={i} className="flex items-center gap-2">
+              <div className="p-2 bg-brand-emerald/5 border border-brand-emerald/15 rounded-xl">
+                <div className="text-xs text-slate-500 font-light leading-none">Step {item.step}: {item.label}</div>
+                <div className="text-sm text-brand-emerald font-semibold leading-tight">{item.value}</div>
+              </div>
+              {i < chain.length - 1 && (
+                <span className="text-brand-emerald/30 text-sm font-bold">→</span>
+              )}
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {reasons.map((item, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 + i * 0.1 }}
+            className="p-6 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex flex-col gap-3"
+          >
+            <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
+              <item.icon className="w-5 h-5 text-brand-emerald" />
+            </div>
+            <div>
+              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">{item.title}</div>
+              <p className="text-sm text-slate-400 font-light leading-relaxed">{item.body}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6 }}
+        className="p-6 glass rounded-3xl border-brand-emerald/10"
+      >
+        <p className="text-sm text-slate-400 font-light leading-relaxed">
+          <span className="text-white font-semibold">The 200 TPD surplus strategy:</span>{" "}
+          we sign twice the plant capacity. 100 TPD processes in Phase 1. The other 100 TPD is a waitlist — a fundraising asset proving demand exceeds supply before Phase 2 capex is committed.
+        </p>
       </motion.div>
     </div>
   );

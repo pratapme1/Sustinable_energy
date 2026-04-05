@@ -1,29 +1,67 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Building2, BarChart2, Database } from "lucide-react";
 
 export default function Slide12() {
-  const stats = [
+  const years = [
     {
-      icon: Building2,
-      number: "7,000",
-      label: "Institutional Customers",
-      body: "Listed companies in India that need BRSR-compliant community sustainability data.",
+      year: "Year 1",
+      accent: "red",
+      status: "Plant under construction (commissioning Month 18)",
+      revenue: "₹1.6 cr",
+      opex: "₹3 cr",
+      ebitda: "–₹1.4 cr",
+      note: "Funded by IREDA working capital tranche. Expected. Planned.",
     },
     {
-      icon: BarChart2,
-      number: "₹3K–8K/mo",
-      label: "Per Institution",
-      body: "For Cero ID ESG dashboard = ₹50L–2 cr/yr per node.",
+      year: "Year 2",
+      accent: "emerald",
+      status: "50 TPD plant running",
+      revenue: "₹18 cr",
+      opex: "₹5 cr",
+      ebitda: "₹13 cr",
+      note: "DSCR ~12× (debt service ₹0.9 cr vs EBITDA ₹13 cr — comfortably covered)",
     },
     {
-      icon: Database,
-      number: "₹500 Cr",
-      label: "Market Size",
-      body: "Every hotel group, real estate company, and retailer in Tirupati files BRSR and needs this data.",
+      year: "Year 3",
+      accent: "emerald",
+      status: "100 TPD (Phase 2b) + platform revenue",
+      revenue: "₹40 cr",
+      opex: "₹8 cr",
+      ebitda: "₹32 cr",
+      note: "Payback: 3.5–4.5 years from plant commissioning",
+    },
+    {
+      year: "Year 4",
+      accent: "gold",
+      status: "2–3 nodes",
+      revenue: "₹80 cr",
+      opex: "₹18 cr",
+      ebitda: "₹62 cr",
+      note: "Platform revenue compound growth",
+    },
+    {
+      year: "Year 5",
+      accent: "gold",
+      status: "5 nodes",
+      revenue: "₹217 cr",
+      opex: "₹45 cr",
+      ebitda: "₹172 cr",
+      note: "Exit at 8× EBITDA = ₹720–1,040 crore EV",
     },
   ];
+
+  const accentClasses: Record<string, string> = {
+    red: "bg-red-500/5 border border-red-500/20",
+    emerald: "bg-brand-emerald/5 border border-brand-emerald/20",
+    gold: "bg-brand-gold/5 border border-brand-gold/20",
+  };
+
+  const ebitdaColor: Record<string, string> = {
+    red: "text-red-400",
+    emerald: "text-brand-emerald",
+    gold: "text-brand-gold",
+  };
 
   return (
     <div className="flex flex-col h-full justify-center space-y-8">
@@ -33,7 +71,7 @@ export default function Slide12() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          12. The BRSR Hook
+          12. Financials
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -41,49 +79,46 @@ export default function Slide12() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          ₹500 Crore Market.{" "}
-          <span className="text-gradient-emerald">No Current Solution.</span>
+          Honest Financials:{" "}
+          <span className="text-gradient-emerald">Year 1 to Year 5</span>
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.15 }}
+          className="text-sm text-slate-400 font-light leading-relaxed max-w-3xl"
+        >
+          Year 1 is cash-negative. This is by design — the plant is under construction. The IREDA loan and MNRE grant fund the gap. Year 2 is when the machine turns on.
+        </motion.p>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10"
-      >
-        <div className="flex items-start gap-4">
-          <div className="text-5xl md:text-6xl font-extrabold text-gradient-emerald italic tracking-tight shrink-0">
-            ₹500 Cr
-          </div>
-          <p className="text-sm text-slate-400 font-light leading-relaxed">
-            SEBI BRSR Core (FY2024-25) mandates assured reporting on supply chain + individual-level sustainability for top 1,000 listed companies.{" "}
-            <span className="text-white font-semibold">Scope 4 community data = no existing verified solution.</span>
-          </p>
-        </div>
-      </motion.div>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {stats.map((item, i) => (
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
+        {years.map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 + i * 0.1 }}
-            className="p-6 md:p-8 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex flex-col gap-3"
+            transition={{ delay: 0.2 + i * 0.1 }}
+            className={`p-5 rounded-3xl flex flex-col gap-3 ${accentClasses[item.accent]}`}
           >
-            <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
-              <item.icon className="w-5 h-5 text-brand-emerald" />
-            </div>
-            <div>
-              <div className="text-3xl font-extrabold text-white italic tracking-tight leading-none mb-1">
-                {item.number}
+            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">{item.year}</div>
+            <p className="text-sm text-slate-400 font-light leading-relaxed">{item.status}</p>
+            <div className="space-y-1.5">
+              {[
+                { label: "Revenue", val: item.revenue },
+                { label: "OPEX", val: item.opex },
+              ].map((row, j) => (
+                <div key={j} className="flex justify-between">
+                  <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">{row.label}</span>
+                  <span className="text-xs text-white font-semibold">{row.val}</span>
+                </div>
+              ))}
+              <div className="flex justify-between border-t border-white/10 pt-1.5">
+                <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">EBITDA</span>
+                <span className={`text-sm font-extrabold italic ${ebitdaColor[item.accent]}`}>{item.ebitda}</span>
               </div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">
-                {item.label}
-              </div>
-              <p className="text-sm text-slate-400 font-light leading-relaxed">{item.body}</p>
             </div>
+            <p className="text-xs text-slate-500 font-light leading-relaxed">{item.note}</p>
           </motion.div>
         ))}
       </div>
@@ -91,14 +126,12 @@ export default function Slide12() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6 }}
-        className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10"
+        transition={{ delay: 0.7 }}
+        className="p-6 glass rounded-3xl border-brand-emerald/10 text-center"
       >
-        <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          Cero is the{" "}
-          <span className="text-white font-semibold">BRSR data layer for community-level Scope 4 reporting.</span>{" "}
-          No competitor has this integration.{" "}
-          Switching cost = high once embedded in annual report process.
+        <p className="text-sm text-slate-400 font-light leading-relaxed">
+          <span className="text-white font-semibold">Exit at 8× EBITDA = ₹720–1,040 crore EV.</span>{" "}
+          5 nodes. Year 5.
         </p>
       </motion.div>
     </div>

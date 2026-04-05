@@ -7,33 +7,33 @@ export default function Slide6() {
   const steps = [
     {
       icon: QrCode,
-      step: "01",
+      number: "01",
       title: "Deposit",
-      body: "Pilgrim/resident deposits organic waste at Cero drop point. QR scan logs the deposit.",
+      body: "Resident/pilgrim drops organic waste at Cero drop point (sealed HDPE bin, QR code). Scans QR with app. Deposit logged.",
     },
     {
       icon: Truck,
-      step: "02",
+      number: "02",
       title: "Collect",
-      body: "Collection vehicle picks up, weighbridge ticket per stop. Cost: ₹300–500/tonne.",
+      body: "Contracted local vehicle (5T, SBM Urban operator) picks up. Weighbridge ticket per stop. Cost: ₹300–500/tonne.",
     },
     {
       icon: Flame,
-      step: "03",
+      number: "03",
       title: "Process",
-      body: "Cero Node converts waste to CBG, digestate, and verified carbon data.",
+      body: "Cero Node: shredder + trommel removes inerts → CSTR digester → PSA upgrading → CBG (97%+ methane) + solid digestate + liquid digestate.",
     },
     {
       icon: CheckCircle,
-      step: "04",
+      number: "04",
       title: "Verify",
-      body: "Plant intake weight confirms deposit. 1 Cero Credit = 1 kg CO₂e avoided. Issued within 24h.",
+      body: "Plant inlet weighbridge confirms tonnage. 1 Cero Credit = 1 kg CO₂e avoided. Issued to user within 24 hours of plant confirmation.",
     },
     {
       icon: Shield,
-      step: "05",
+      number: "05",
       title: "Identity",
-      body: "Credits accumulate in Cero ID. Portable across cities, careers, and carbon markets.",
+      body: "Credits accumulate in Cero ID: portable, tamper-evident, BRSR-exportable. Redeem at local merchants, dharamshalas, or trade on carbon marketplace.",
     },
   ];
 
@@ -45,7 +45,7 @@ export default function Slide6() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          06. The Cero Flow
+          06. How It Works
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -53,34 +53,38 @@ export default function Slide6() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Plate to Credential{" "}
+          From Plate to Carbon Credential{" "}
           <span className="text-gradient-emerald">in Five Steps</span>
         </motion.h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
-        {steps.map((item, i) => (
+        {steps.map((step, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + i * 0.1 }}
-            className="p-6 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-3 relative"
+            className="p-5 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-3 relative"
           >
             {i < steps.length - 1 && (
-              <div className="hidden md:block absolute -right-2 top-1/2 -translate-y-1/2 z-10 text-brand-emerald/30 text-base font-bold">
+              <div className="hidden md:block absolute -right-2 top-1/2 -translate-y-1/2 z-10 text-brand-emerald/30 text-sm font-bold">
                 →
               </div>
             )}
-            <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
-              <item.icon className="w-5 h-5 text-brand-emerald" />
+            <div className="flex items-center gap-2">
+              <div className="w-9 h-9 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center shrink-0">
+                <step.icon className="w-4 h-4 text-brand-emerald" />
+              </div>
+              <span className="text-2xl font-extrabold text-white italic tracking-tight opacity-20">
+                {step.number}
+              </span>
             </div>
             <div>
               <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">
-                Step {item.step}
+                {step.title}
               </div>
-              <div className="text-sm text-white font-semibold mb-1">{item.title}</div>
-              <p className="text-sm text-slate-400 font-light leading-relaxed">{item.body}</p>
+              <p className="text-sm text-slate-400 font-light leading-relaxed">{step.body}</p>
             </div>
           </motion.div>
         ))}
@@ -90,14 +94,14 @@ export default function Slide6() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7 }}
-        className="p-6 md:p-8 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl"
+        className="p-6 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
           Credits are issued on{" "}
-          <span className="text-white font-semibold underline decoration-brand-emerald decoration-2 underline-offset-4">
-            plant-confirmed intake
+          <span className="text-white font-semibold">
+            plant-confirmed intake weight
           </span>{" "}
-          — not user-reported deposits. This is what makes them real.
+          — not user-reported deposits. This is the one design decision that makes Cero credits trustworthy.
         </p>
       </motion.div>
     </div>

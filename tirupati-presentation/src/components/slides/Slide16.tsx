@@ -1,40 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Smartphone, Users, Globe, BadgeCheck, FileText, TrendingUp, Mail } from "lucide-react";
+import { Building2, BarChart2, Lock } from "lucide-react";
 
 export default function Slide16() {
-  const funds = [
+  const stats = [
     {
-      icon: Smartphone,
-      label: "Cero Hero App MVP → Full",
-      value: "₹80L–1.5 cr",
+      icon: Building2,
+      number: "7,000",
+      label: "Institutional Customers",
+      body: "Top 1,000 SEBI-listed companies need BRSR Core reporting. Each has supply chains touching hundreds of hotels, real estate properties, retailers in Tier 2 cities. All need community-level Scope 4 verified sustainability data. No current provider exists.",
     },
     {
-      icon: Users,
-      label: "Founding Team (4 hires × 18 months)",
-      value: "₹1–1.5 cr",
+      icon: BarChart2,
+      number: "₹3K–8K/mo",
+      label: "Per Institution",
+      body: "Cero ID ESG dashboard subscription per hotel/apartment/corporate. 100 institutions in Tirupati alone = ₹3.6–9.6 lakh/month = ₹50L–1.2 cr/year per node from subscriptions alone.",
     },
     {
-      icon: Globe,
-      label: "BD: 5-city Pre-Commitments",
-      value: "₹30–50 lakh",
-    },
-    {
-      icon: BadgeCheck,
-      label: "Carbon Credit VCS Methodology",
-      value: "₹20–40 lakh",
-    },
-    {
-      icon: FileText,
-      label: "Legal + Regulatory",
-      value: "₹20–30 lakh",
-    },
-    {
-      icon: TrendingUp,
-      label: "What Investors Receive",
-      value: "Equity in IP",
-      highlight: true,
+      icon: Lock,
+      number: "Mandatory",
+      label: "Not Optional",
+      body: "SEBI BRSR Core is an audit-grade requirement from FY2024-25. Companies face regulatory exposure if they cannot produce assured sustainability data. This is not a nice-to-have product.",
     },
   ];
 
@@ -46,7 +33,7 @@ export default function Slide16() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          16. The Ask
+          16. The BRSR Hook
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -54,48 +41,46 @@ export default function Slide16() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          <span className="text-gradient-emerald">₹3–5 Crore</span>{" "}
-          in Cero Hero Pvt Ltd
+          ₹500 Crore Market.{" "}
+          <span className="text-gradient-emerald">No Current Solution.</span>
         </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="text-sm text-slate-400 font-light leading-relaxed max-w-3xl"
-        >
-          The plant is government-funded. Investor money does{" "}
-          <span className="text-white font-semibold">not</span> go to CAPEX. This is equity in the platform company — the IP, brand, data, and replication model.
-        </motion.p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-        {funds.map((item, i) => (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        className="p-6 glass rounded-3xl border-brand-emerald/10 flex items-center gap-6"
+      >
+        <div className="text-5xl md:text-6xl font-extrabold text-gradient-emerald italic tracking-tight shrink-0">
+          ₹500 Cr
+        </div>
+        <p className="text-sm text-slate-400 font-light leading-relaxed">
+          SEBI BRSR Core (FY2024-25) mandates assured reporting on supply chain + individual-level sustainability for top 1,000 listed companies.{" "}
+          <span className="text-white font-semibold">Scope 4 community data = no existing verified solution.</span>
+        </p>
+      </motion.div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {stats.map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 + i * 0.1 }}
-            className={`p-6 rounded-3xl flex flex-col gap-3 ${
-              item.highlight
-                ? "bg-brand-gold/5 border border-brand-gold/20"
-                : "glass border-brand-emerald/10"
-            }`}
+            transition={{ delay: 0.3 + i * 0.1 }}
+            className="p-6 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex flex-col gap-3"
           >
-            <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${item.highlight ? "bg-brand-gold/10 border border-brand-gold/20" : "bg-brand-emerald/10 border border-brand-emerald/20"}`}>
-              <item.icon className={`w-4 h-4 ${item.highlight ? "text-brand-gold" : "text-brand-emerald"}`} />
+            <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
+              <item.icon className="w-5 h-5 text-brand-emerald" />
             </div>
             <div>
-              <div className={`text-xs uppercase tracking-widest font-bold mb-1 ${item.highlight ? "text-brand-gold" : "text-slate-500"}`}>
+              <div className="text-2xl font-extrabold text-white italic tracking-tight leading-none mb-1">
+                {item.number}
+              </div>
+              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">
                 {item.label}
               </div>
-              <div className={`text-sm font-semibold ${item.highlight ? "text-brand-gold" : "text-white"}`}>
-                {item.value}
-              </div>
-              {item.highlight && (
-                <p className="text-xs text-slate-400 font-light leading-relaxed mt-1">
-                  Brand, data, replication model. Exit: ₹720–1,040 cr EV (5-node, 8× EBITDA, Year 5)
-                </p>
-              )}
+              <p className="text-sm text-slate-400 font-light leading-relaxed">{item.body}</p>
             </div>
           </motion.div>
         ))}
@@ -104,17 +89,14 @@ export default function Slide16() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8 }}
-        className="flex flex-col sm:flex-row gap-3"
+        transition={{ delay: 0.6 }}
+        className="p-6 glass rounded-3xl border-brand-emerald/10"
       >
-        <button className="flex items-center justify-center gap-2 px-8 py-4 bg-brand-emerald text-brand-dark font-bold rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-brand-emerald/20 text-sm">
-          <Mail className="w-4 h-4" />
-          Contact for Deep-Dive
-        </button>
-        <button className="flex items-center justify-center gap-2 px-8 py-4 bg-brand-emerald/10 border border-brand-emerald/20 text-brand-emerald font-bold rounded-2xl hover:bg-brand-emerald/20 transition-all text-sm">
-          <TrendingUp className="w-4 h-4" />
-          Exit Scenario Analysis
-        </button>
+        <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
+          Cero is the{" "}
+          <span className="text-white font-semibold">BRSR data layer for community-level Scope 4 reporting.</span>{" "}
+          Once embedded in a company&apos;s annual report process, the switching cost is high. Every new node adds new institutional customers to the same platform.
+        </p>
       </motion.div>
     </div>
   );

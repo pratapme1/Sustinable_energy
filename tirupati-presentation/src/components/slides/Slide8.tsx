@@ -1,38 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FileSignature, AlertTriangle, BadgeCheck, Lock } from "lucide-react";
+import { MapPin, Truck, Filter, AlertTriangle } from "lucide-react";
 
 export default function Slide8() {
-  const chain = [
-    { label: "30 signed tipping fee MOUs", value: "₹3.5 cr/year contracted" },
-    { label: "+ SATAT LoI + DPR", value: "→" },
-    { label: "IREDA loan", value: "₹8–13 cr" },
-    { label: "+ MNRE CFA grant", value: "₹5–10 cr" },
-    { label: "+ AP ICEP subsidy", value: "₹3–5 cr" },
-    { label: "Total available", value: "₹16–28 cr" },
-    { label: "CAPEX required", value: "₹12–18 cr" },
-    { label: "Founder equity", value: "₹0" },
-  ];
-
-  const reasons = [
-    {
-      icon: AlertTriangle,
-      title: "SWM 2026 Penalty Avoidance",
-      body: "EBWGR fine ₹50K–2L/month. Tipping fee is cheaper. Sign now, comply from Day 1.",
-    },
-    {
-      icon: BadgeCheck,
-      title: "Cero ESG Badge",
-      body: "Hotels get Booking.com sustainability filter listing. RWAs get Swachh Survekshan data. BRSR-ready ESG report included.",
-    },
-    {
-      icon: Lock,
-      title: "Rate Lock",
-      body: "3-year tipping fee rate lock. Cheaper than current waste contractor. No operational burden.",
-    },
-  ];
-
   return (
     <div className="flex flex-col h-full justify-center space-y-8">
       <div className="space-y-3">
@@ -41,7 +12,7 @@ export default function Slide8() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          08. Community Funding Model
+          08. Logistics
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -49,65 +20,92 @@ export default function Slide8() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          30 MOUs Fund the{" "}
-          <span className="text-gradient-emerald">Entire Plant</span>
+          The Layer That Kills Every India Biogas Plant —{" "}
+          <span className="text-gradient-emerald">Solved</span>
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.15 }}
+          className="text-sm text-slate-400 font-light leading-relaxed max-w-3xl"
+        >
+          40% of India&apos;s AD plants are non-functional. The #1 reason: no reliable feedstock supply. Here is our solution.
+        </motion.p>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10"
-      >
-        <div className="flex items-center gap-2 mb-4">
-          <FileSignature className="w-5 h-5 text-brand-emerald" />
-          <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">The Funding Chain</div>
-        </div>
-        <div className="flex flex-wrap items-center gap-2">
-          {chain.map((item, i) => (
-            <div key={i} className="flex items-center gap-2">
-              <div className="p-2 bg-brand-emerald/5 border border-brand-emerald/15 rounded-xl">
-                <div className="text-xs text-slate-500 font-light leading-none">{item.label}</div>
-                <div className="text-sm text-brand-emerald font-semibold leading-tight">{item.value}</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="p-6 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-4"
+        >
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
+              <MapPin className="w-4 h-4 text-brand-emerald" />
+            </div>
+            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">The Drop Point Network</div>
+          </div>
+          <div className="space-y-3">
+            {[
+              { label: "100 sealed HDPE bins with QR codes", body: "Placed at apartment gates, hotel loading bays, pilgrim rest areas. Cost: ₹2,000–5,000/bin. 100 bins = ₹2–5 lakh total." },
+              { label: "Hub-and-spoke collection", body: "5-tonne vehicle, 2 trips/day, contracted local SBM Urban operator." },
+              { label: "Cost", body: "₹300–500/tonne logistics — already modelled in OPEX." },
+              { label: "Weight-verified credits", body: "Weighbridge per stop → plant inlet confirmation → credits issued on confirmed weight." },
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col gap-0.5">
+                <div className="flex items-center gap-2">
+                  <Truck className="w-3 h-3 text-brand-emerald shrink-0" />
+                  <div className="text-xs text-white font-semibold">{item.label}</div>
+                </div>
+                <p className="text-sm text-slate-400 font-light leading-relaxed pl-5">{item.body}</p>
               </div>
-              {i < chain.length - 1 && (
-                <span className="text-brand-emerald/30 text-sm font-bold">→</span>
-              )}
-            </div>
-          ))}
-        </div>
-      </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {reasons.map((item, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 + i * 0.1 }}
-            className="p-6 md:p-8 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex flex-col gap-3"
-          >
-            <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
-              <item.icon className="w-5 h-5 text-brand-emerald" />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="p-6 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-4"
+        >
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
+              <Filter className="w-4 h-4 text-brand-emerald" />
             </div>
-            <div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">{item.title}</div>
-              <p className="text-sm text-slate-400 font-light leading-relaxed">{item.body}</p>
-            </div>
-          </motion.div>
-        ))}
+            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">Pre-Treatment at Plant</div>
+          </div>
+          <div className="space-y-3">
+            {[
+              { label: "Trommel screen + shredder at plant inlet", body: "Removes plastic, glass, metal before digester. Industry standard." },
+              { label: "Multi-stage screening", body: "Karnal MBT plant model: 80mm + 32mm + 16mm + 4mm aperture screens." },
+              { label: "Contamination penalty in MOU", body: "Communities pay ₹200/tonne surcharge for loads >15% inert contamination. Financial incentive to segregate." },
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col gap-0.5">
+                <div className="flex items-center gap-2">
+                  <Filter className="w-3 h-3 text-brand-emerald shrink-0" />
+                  <div className="text-xs text-white font-semibold">{item.label}</div>
+                </div>
+                <p className="text-sm text-slate-400 font-light leading-relaxed pl-5">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6 }}
-        className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10"
+        transition={{ delay: 0.5 }}
+        className="p-6 bg-brand-gold/5 border border-brand-gold/20 rounded-3xl flex items-start gap-4"
       >
+        <AlertTriangle className="w-5 h-5 text-brand-gold shrink-0 mt-0.5" />
         <p className="text-sm text-slate-400 font-light leading-relaxed">
-          <span className="text-white font-semibold">The 200 TPD surplus strategy:</span>{" "}
-          sign twice the plant capacity. Phase 1 processes 100 TPD. Remaining 100 TPD is the waitlist for Phase 2 — a fundraising asset that proves demand exceeds supply.
+          We don&apos;t depend on perfect segregation. We mechanically remove inerts at the plant inlet.{" "}
+          <span className="text-white font-semibold">
+            Contaminated waste enters. Clean organic slurry enters the digester. Inerts go to construction aggregate. Zero digester contamination risk.
+          </span>
         </p>
       </motion.div>
     </div>

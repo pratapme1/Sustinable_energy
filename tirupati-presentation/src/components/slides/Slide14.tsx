@@ -1,45 +1,45 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Rocket, AlertTriangle } from "lucide-react";
+import { Sprout, Droplets, Package } from "lucide-react";
 
 export default function Slide14() {
-  const milestones = [
+  const outputs = [
     {
-      m: "M0",
-      title: "Incorporate + Register",
-      desc: "SATAT LoI (HPCL + IOCL) + GOBARdhan + NREDAP + Community sprint starts.",
-      critical: true,
+      icon: Sprout,
+      accent: "emerald",
+      title: "Solid Digestate → FCO-Certified Biofertiliser",
+      items: [
+        "100 TPD input → ~30–40 TPD solid digestate output",
+        "FCO-certified organic fertiliser (Ministry of Agriculture, India)",
+        "February 2025: new FCO category added specifically for 'organic carbon enhancers from CBG plants'",
+        "Price: ₹3,000–5,000/tonne → ₹4–7 crore/year for 100 TPD plant",
+        "Customer: Chittoor district dairy farmers — already buy urea at ₹12,000–18,000/tonne",
+        "Digestate replaces urea at fraction of the cost — farmers actively want it",
+      ],
     },
     {
-      m: "M2",
-      title: "File EC + Sprint",
-      desc: "EC application (long-lead: 5–8 months). APPCB CTE. DPR commissioned. Target: 30 MOUs signed.",
-      critical: true,
+      icon: Droplets,
+      accent: "emerald",
+      title: "Liquid Digestate → Fertigation",
+      items: [
+        "High in N, P, K and micronutrients",
+        "Primary use: drip/sprinkler irrigation on Chittoor farmland (free supply to farmers)",
+        "Option B: ETP on site → ammonia stripping → ammonium sulphate fertiliser + discharge-quality effluent",
+        "Zero disposal cost either route",
+      ],
     },
     {
-      m: "M3",
-      title: "Finance Stack",
-      desc: "MNRE CFA application. DST NIDHI-TIDE grant applied. App MVP build starts.",
-      critical: false,
-    },
-    {
-      m: "M7–9",
-      title: "Financial Close",
-      desc: "IREDA loan sanctioned. Financial close. EPC contract signed.",
-      critical: false,
-    },
-    {
-      m: "M10–18",
-      title: "Construction",
-      desc: "Civil construction (digesters M10–16). Equipment installation (PSA, compression M15–18).",
-      critical: false,
-    },
-    {
-      m: "M18–20",
-      title: "First Revenue",
-      desc: "Commissioning. First CBG to OMC. Revenue recognition begins.",
-      critical: false,
+      icon: Package,
+      accent: "slate",
+      title: "Reject Inerts from Pre-Treatment",
+      items: [
+        "Plastic, glass, metal screened out at trommel + shredder inlet",
+        "Volume: <5% of input by weight (well-segregated organic waste has minimal inerts)",
+        "Disposal: construction aggregate or municipal sanitary landfill",
+        "Cost: ₹500–1,000/tonne — minor OPEX line item",
+        "No fly ash, no dioxins, no toxic residue. Anaerobic digestion = zero combustion emissions.",
+      ],
     },
   ];
 
@@ -51,7 +51,7 @@ export default function Slide14() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          14. Implementation Timeline
+          14. Output Streams
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -59,73 +59,54 @@ export default function Slide14() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          M0 to M20:{" "}
-          <span className="text-gradient-emerald">First CBG Delivered</span>
+          Every Output Is a Revenue Stream.{" "}
+          <span className="text-gradient-emerald">Nothing Goes to Waste.</span>
         </motion.h2>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-6 gap-3 relative">
-        <div className="hidden md:block absolute top-6 left-0 right-0 h-px bg-brand-emerald/10" />
-        {milestones.map((item, i) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {outputs.map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + i * 0.1 }}
-            className="flex flex-col items-center text-center gap-3"
+            className={`p-6 rounded-3xl flex flex-col gap-4 ${
+              item.accent === "emerald"
+                ? "bg-brand-emerald/5 border border-brand-emerald/20"
+                : "glass border-brand-emerald/10"
+            }`}
           >
-            <div
-              className={`w-12 h-12 rounded-full border-2 flex items-center justify-center font-mono text-xs font-bold z-10 ${
-                item.critical
-                  ? "bg-brand-emerald/20 border-brand-emerald text-brand-emerald"
-                  : "bg-brand-emerald/5 border-brand-emerald/20 text-brand-emerald"
-              }`}
-            >
-              {item.m}
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
+                <item.icon className="w-5 h-5 text-brand-emerald" />
+              </div>
+              <div className="text-base font-bold text-white leading-tight">{item.title}</div>
             </div>
-            <div>
-              <div className="text-xs text-white font-semibold mb-1">{item.title}</div>
-              <p className="text-xs text-slate-500 font-light leading-relaxed">{item.desc}</p>
-            </div>
+            <ul className="space-y-1.5">
+              {item.items.map((point, j) => (
+                <li key={j} className="flex items-start gap-2">
+                  <div className="w-1 h-1 rounded-full bg-brand-emerald mt-2 shrink-0" />
+                  <p className="text-sm text-slate-400 font-light leading-relaxed">{point}</p>
+                </li>
+              ))}
+            </ul>
           </motion.div>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.8 }}
-          className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10 flex items-center gap-4"
-        >
-          <div className="w-12 h-12 bg-brand-emerald/10 border border-brand-emerald/20 rounded-2xl flex items-center justify-center shrink-0">
-            <Rocket className="w-6 h-6 text-brand-emerald" />
-          </div>
-          <div>
-            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Target</div>
-            <div className="text-sm text-white font-semibold">First CBG Month 18–20</div>
-            <p className="text-sm text-slate-400 font-light leading-relaxed">Full 100 TPD profitability by Month 24.</p>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.9 }}
-          className="p-6 md:p-8 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex items-center gap-4"
-        >
-          <div className="w-12 h-12 bg-brand-emerald/10 border border-brand-emerald/20 rounded-2xl flex items-center justify-center shrink-0">
-            <AlertTriangle className="w-6 h-6 text-brand-emerald" />
-          </div>
-          <div>
-            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Critical Path</div>
-            <div className="text-sm text-white font-semibold">
-              EC not CTE
-            </div>
-            <p className="text-sm text-slate-400 font-light leading-relaxed">File Month 2. Non-gas civil proceeds under CTE while EC awaited.</p>
-          </div>
-        </motion.div>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="p-6 glass rounded-3xl border-brand-emerald/10"
+      >
+        <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
+          Compared to incineration (fly ash, dioxins, air pollution) or landfill (methane leakage, leachate),{" "}
+          <span className="text-brand-emerald font-semibold">AD is the cleanest waste processing technology.</span>{" "}
+          The residuals are a fertiliser supply chain, not a waste problem.
+        </p>
+      </motion.div>
     </div>
   );
 }

@@ -7,24 +7,21 @@ export default function Slide4() {
   const mandates = [
     {
       icon: FileText,
-      tag: "SWM 2026",
-      date: "April 2026",
+      tag: "SWM 2026 — April 2026 (now)",
       title: "Every bulk generator >100 kg/day must arrange organic waste processing or pay EBWGR penalty.",
-      body: "Every hotel and apartment in India needs a processor NOW. We sign them before the plant exists.",
+      body: "Every hotel and apartment in Tirupati is legally required to solve this RIGHT NOW. We sign them before the plant exists. Tipping fees begin before construction.",
     },
     {
       icon: BarChart2,
-      tag: "BRSR Core",
-      date: "FY2024-25",
+      tag: "BRSR Core — FY2024-25",
       title: "SEBI mandates top 1,000 listed companies report verified supply chain + individual-level sustainability data.",
-      body: "No current solution exists for community-level Scope 4 data. Cero ID is the answer. ~7,000 institutional customers.",
+      body: "No current solution exists for community-level Scope 4 data. ~7,000 institutional customers need exactly what Cero ID generates. ₹500 crore market with zero competition.",
     },
     {
       icon: Fuel,
-      tag: "SATAT + CBO",
-      date: "FY2026 → FY2029",
+      tag: "SATAT CBO Mandate",
       title: "1% CBG blending in CNG/PNG mandatory FY2026, rising to 5% by FY2029. HPCL/IOCL must buy CBG.",
-      body: "₹62–72/kg floor price. 15-year offtake contracts available now.",
+      body: "₹62–72/kg floor price. 15-year offtake contracts. As of Nov 2024: only 80 plants commissioned vs 5,000 needed. Massive undersupply.",
     },
   ];
 
@@ -44,8 +41,8 @@ export default function Slide4() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Three Mandates.{" "}
-          <span className="text-gradient-emerald">All Live. All Converge on Us.</span>
+          Three Mandates. All Live.{" "}
+          <span className="text-gradient-emerald">All Converge on This Platform.</span>
         </motion.h2>
       </div>
 
@@ -56,13 +53,10 @@ export default function Slide4() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + i * 0.1 }}
-            className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-4"
+            className="p-6 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-4"
           >
-            <div className="flex items-center justify-between">
-              <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
-                <item.icon className="w-5 h-5 text-brand-emerald" />
-              </div>
-              <span className="text-xs text-brand-gold font-mono tracking-widest uppercase">{item.date}</span>
+            <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
+              <item.icon className="w-5 h-5 text-brand-emerald" />
             </div>
             <div>
               <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">
@@ -79,11 +73,11 @@ export default function Slide4() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="p-6 md:p-8 bg-brand-gold/5 border border-brand-gold/20 rounded-3xl"
+        className="p-6 bg-brand-gold/5 border border-brand-gold/20 rounded-3xl"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          All three mandates create locked demand — for the plant, for the platform, for the data.{" "}
-          <span className="text-brand-gold font-semibold">The timing is not coincidence. It is the window.</span>
+          The window is now. SWM 2026 creates the waste supply. BRSR creates the data demand. SATAT creates the fuel offtake.{" "}
+          <span className="text-brand-gold font-semibold">All three expire for competitors who don&apos;t move in 2026.</span>
         </p>
       </motion.div>
     </div>

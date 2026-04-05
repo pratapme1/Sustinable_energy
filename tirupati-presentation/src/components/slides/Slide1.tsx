@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 import { Leaf, Smartphone, Shield } from "lucide-react";
 
 export default function Slide1() {
-  const icons = [
+  const cards = [
     {
       icon: Leaf,
       label: "Cero Node",
-      desc: "Physical waste-to-energy plant — the trust anchor",
+      desc: "Physical waste-to-energy plant. Real waste → CBG + digestate + verified carbon data.",
     },
     {
       icon: Smartphone,
       label: "Cero Hero App",
-      desc: "Gamified waste actions, credits, community challenges",
+      desc: "Gamified waste actions. Community credits economy. Behavior tracking.",
     },
     {
       icon: Shield,
       label: "Cero ID",
-      desc: "Portable, verified carbon identity for every individual",
+      desc: "Portable, verified sustainability identity. Follows you across cities and careers.",
     },
   ];
 
@@ -38,28 +38,20 @@ export default function Slide1() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight"
         >
-          <span className="text-gradient-emerald">Organic Waste</span>
+          <span className="text-white">Organic Waste →</span>
           <br />
-          <span className="text-white">→ Verified Carbon Identity</span>
+          <span className="text-gradient-emerald">Verified Carbon Identity</span>
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="text-sm text-slate-400 font-light leading-relaxed max-w-2xl"
-        >
-          Cero Hero — India&apos;s first platform where waste becomes a trusted sustainability credential
-        </motion.p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {icons.map((item, i) => (
+        {cards.map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + i * 0.1 }}
-            className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-4"
+            className="p-6 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-4"
           >
             <div className="w-12 h-12 bg-brand-emerald/10 border border-brand-emerald/20 rounded-2xl flex items-center justify-center">
               <item.icon className="w-6 h-6 text-brand-emerald" />
@@ -78,10 +70,10 @@ export default function Slide1() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="p-6 md:p-8 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl"
+        className="p-6 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          <span className="text-white font-semibold">Tirupati.</span> Then every pilgrimage city, campus, and township in India.
+          <span className="text-white font-semibold">Tirupati first.</span> Then every pilgrimage city, campus, and township in India.
         </p>
       </motion.div>
     </div>

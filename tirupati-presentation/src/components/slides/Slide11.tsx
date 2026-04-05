@@ -1,42 +1,44 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TrendingUp, BarChart3, Globe2 } from "lucide-react";
+import { Fuel, Receipt, BadgeCheck, Leaf, LayoutDashboard } from "lucide-react";
 
 export default function Slide11() {
-  const phases = [
+  const streams = [
     {
-      icon: TrendingUp,
-      phase: "Phase 1",
-      detail: "50 TPD · Month 18",
-      metrics: [
-        { label: "CAPEX", value: "₹12–18 cr" },
-        { label: "Revenue/yr", value: "₹16–18 cr" },
-        { label: "EBITDA/yr", value: "₹11–13 cr" },
-        { label: "DSCR", value: "~12×" },
-      ],
+      icon: Fuel,
+      number: "01",
+      name: "CBG Sales (SATAT offtake)",
+      figure: "₹14–30 cr/yr",
+      desc: "7–14 TPD × ₹62/kg × 330 days. 15-year offtake with HPCL/IOCL. Floor ₹46/kg even in downside. 75% of revenue.",
     },
     {
-      icon: BarChart3,
-      phase: "Phase 2b",
-      detail: "100 TPD · Month 24",
-      metrics: [
-        { label: "Revenue/yr", value: "₹40 cr" },
-        { label: "EBITDA/yr", value: "₹32 cr" },
-        { label: "Payback", value: "3.5–4.5 yrs" },
-        { label: "Founder equity", value: "₹0" },
-      ],
+      icon: Receipt,
+      number: "02",
+      name: "Tipping Fees",
+      figure: "₹1.3–4 cr/yr",
+      desc: "Starts Month 3 (before plant exists). Communities already pay waste contractors — we're cheaper + compliant. 10% of revenue.",
     },
     {
-      icon: Globe2,
-      phase: "5-Node Platform",
-      detail: "Month 54",
-      metrics: [
-        { label: "Revenue/yr", value: "₹145–200 cr" },
-        { label: "EBITDA/yr", value: "₹90–130 cr" },
-        { label: "Exit Multiple", value: "8×" },
-        { label: "Exit EV", value: "₹720–1,040 cr" },
-      ],
+      icon: BadgeCheck,
+      number: "03",
+      name: "Carbon Credits (VCS/Gold Standard)",
+      figure: "₹1–3 cr/yr",
+      desc: "Methane capture + fossil displacement. Year 2+. Baseline documentation starts Day 1. 5% of revenue.",
+    },
+    {
+      icon: Leaf,
+      number: "04",
+      name: "Digestate Biofertiliser",
+      figure: "₹1–5 cr/yr",
+      desc: "FCO-certified. ₹3,000–5,000/tonne. New FCO category added Feb 2025 specifically for CBG digestate. 5% of revenue.",
+    },
+    {
+      icon: LayoutDashboard,
+      number: "05",
+      name: "Cero Hero Platform Revenue",
+      figure: "₹50L–2 cr/yr",
+      desc: "B2B ESG subscriptions + BRSR data + corporate Cero Credits sponsorship. Year 2+. Scales independently of plant throughput. 5% of revenue.",
     },
   ];
 
@@ -48,7 +50,7 @@ export default function Slide11() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          11. Unit Economics
+          11. Revenue Model
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -56,53 +58,53 @@ export default function Slide11() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          The Numbers Work{" "}
-          <span className="text-gradient-emerald">at Every Scale</span>
+          Five Revenue Streams{" "}
+          <span className="text-gradient-emerald">per Node</span>
         </motion.h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {phases.map((item, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 + i * 0.1 }}
-            className={`p-6 md:p-8 rounded-3xl flex flex-col gap-4 ${i === 2 ? "bg-brand-emerald/5 border border-brand-emerald/20" : "glass border-brand-emerald/10"}`}
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="flex flex-col gap-3">
+          {streams.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 + i * 0.1 }}
+              className="p-5 glass rounded-3xl border-brand-emerald/10 flex items-center gap-4"
+            >
+              <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center shrink-0">
                 <item.icon className="w-5 h-5 text-brand-emerald" />
               </div>
-              <div>
-                <div className="text-sm text-white font-semibold">{item.phase}</div>
-                <div className="text-xs text-slate-500 font-light">{item.detail}</div>
-              </div>
-            </div>
-            <div className="space-y-2">
-              {item.metrics.map((m, j) => (
-                <div key={j} className="flex justify-between items-center py-2 border-b border-white/5 last:border-0">
-                  <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">{m.label}</span>
-                  <span className="text-sm text-white font-semibold">{m.value}</span>
+              <div className="flex-1">
+                <div className="flex items-center justify-between mb-1">
+                  <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">{item.name}</div>
+                  <div className="text-sm text-white font-semibold">{item.figure}</div>
                 </div>
-              ))}
-            </div>
-          </motion.div>
-        ))}
-      </div>
+                <p className="text-sm text-slate-400 font-light leading-relaxed">{item.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-        className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10"
-      >
-        <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          IREDA debt service ₹0.9 cr/year on ₹7 cr max debt. EBITDA of ₹11–13 cr covers it{" "}
-          <span className="text-white font-semibold underline decoration-brand-emerald decoration-2 underline-offset-4">12×</span>.{" "}
-          This plant cannot fail to service its debt.
-        </p>
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+          className="p-6 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex flex-col justify-center items-center text-center gap-4"
+        >
+          <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">Year 3 Total Revenue</div>
+          <div className="text-5xl md:text-6xl font-extrabold text-gradient-emerald italic tracking-tight">
+            ₹40 Crore
+          </div>
+          <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">Physical Plant + Platform</div>
+          <div className="w-full p-4 glass rounded-2xl border-brand-emerald/10 mt-2">
+            <p className="text-sm text-slate-400 font-light leading-relaxed">
+              Tipping fees make feedstock a profit stream. Cero Hero adds a digital layer that scales independently of plant throughput.
+            </p>
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 }

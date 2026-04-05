@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { AlertTriangle, User, Trash2 } from "lucide-react";
+import { AlertTriangle, Trash2, Building2 } from "lucide-react";
 
 export default function Slide2() {
   const problems = [
@@ -9,19 +9,19 @@ export default function Slide2() {
       icon: AlertTriangle,
       number: "01",
       title: "Carbon credits are not trusted",
-      body: "Joro, Earthly: estimates only. Not verified. Not tradeable. Not portable. The industry is built on self-reported data that cannot survive a single audit.",
-    },
-    {
-      icon: User,
-      number: "02",
-      title: "Individual sustainability has no identity",
-      body: "No portable, verified record of what you actually did. Your impact disappears when you change apps. There is no carbon passport for people.",
+      body: "Joro, Earthly: estimates only. Not verified against physical data. Cannot be traded or certified. Individual sustainability has nowhere to live.",
     },
     {
       icon: Trash2,
-      number: "03",
+      number: "02",
       title: "India's organic waste has nowhere to go",
-      body: "Tirupati: 130 TPD generated. 80 TPD unprocessed. Ends in drains and landfills. Every pilgrim city, campus, and township in India has this problem.",
+      body: "Tirupati: 130 TPD generated daily. 80 TPD unprocessed. Ends in drains and landfills. Every pilgrim city, every university campus, every township has this problem.",
+    },
+    {
+      icon: Building2,
+      number: "03",
+      title: "Communities are forced to comply but have no solution",
+      body: "SWM 2026 mandates waste processing or pay EBWGR penalty. Top 1,000 listed companies must report verified supply chain sustainability (BRSR Core). No affordable, verified solution exists for either.",
     },
   ];
 
@@ -42,7 +42,7 @@ export default function Slide2() {
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
           Three Problems.{" "}
-          <span className="text-gradient-emerald">One Platform.</span>
+          <span className="text-gradient-emerald">No One Has Solved All Three.</span>
         </motion.h2>
       </div>
 
@@ -53,11 +53,11 @@ export default function Slide2() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + i * 0.1 }}
-            className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-4"
+            className="p-6 bg-red-500/5 border border-red-500/20 rounded-3xl flex flex-col gap-4"
           >
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center shrink-0">
-                <item.icon className="w-5 h-5 text-brand-emerald" />
+              <div className="w-10 h-10 bg-red-500/10 border border-red-500/20 rounded-xl flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5 text-red-400" />
               </div>
               <span className="text-3xl font-extrabold text-white italic tracking-tight opacity-20">
                 {item.number}

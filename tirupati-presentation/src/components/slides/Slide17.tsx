@@ -1,22 +1,45 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
+import { Star, Users, Building2, Database, FileText, Network, Globe } from "lucide-react";
 
 export default function Slide17() {
-  const metrics = [
-    { label: "Equity Ask", value: "₹3–5 cr", sub: "Platform Co." },
-    { label: "Year 3 Revenue", value: "₹40 cr", sub: "Plant + Platform" },
-    { label: "Year 3 EBITDA", value: "₹32 cr", sub: "100 TPD at Month 24+" },
-    { label: "Exit EV (Y5)", value: "₹720–1,040 cr", sub: "5-node at 8× EBITDA" },
-  ];
-
-  const bullets = [
-    "Andhra Pradesh ICEP 2024 ready — first mover",
-    "Guaranteed SATAT offtake (15-year)",
-    "NUS Singapore + Tirupati India — dual positioning",
-    "India's only verified individual carbon identity",
-    "BRSR Scope 4 data layer — ₹500 crore market",
+  const moats = [
+    {
+      icon: Star,
+      title: "First SATAT Registration",
+      body: "Only one LoI per geography. First registered = preferred OMC buyer relationship. Cannot be replicated for same geography. Lock-in is permanent.",
+    },
+    {
+      icon: Users,
+      title: "Community Lock-in",
+      body: "3-year tipping fee contracts. 200 TPD committed. Communities don't switch — too much friction, too much platform integration.",
+    },
+    {
+      icon: Building2,
+      title: "TTD Exclusivity",
+      body: "Formal TTD city partnership for temple city waste = exclusive anchor that no competitor can replicate in Tirupati. Relationship-based, takes years.",
+    },
+    {
+      icon: Database,
+      title: "Verified Carbon Dataset",
+      body: "Real plant intake + individual QR-scan data = India's only verified individual-level carbon dataset. Worth more every year. 3–5 years to build elsewhere.",
+    },
+    {
+      icon: FileText,
+      title: "BRSR Integration",
+      body: "First BRSR-formatted Scope 4 community data service. Once integrated into a company's annual report process, switching cost is high. 1–2 years to build the integration.",
+    },
+    {
+      icon: Network,
+      title: "Network Effects",
+      body: "More users → more merchants → more redemption value → more users. Self-reinforcing. Classic two-sided marketplace with physical backing.",
+    },
+    {
+      icon: Globe,
+      title: "Dual India-Singapore",
+      body: "NUS pilot (Cero ID global) + Tirupati (India physical). No competitor has both verified academic validation AND real physical infrastructure. Cannot be retroactively acquired.",
+    },
   ];
 
   return (
@@ -27,7 +50,7 @@ export default function Slide17() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          17. Final Summary
+          17. Competitive Moat
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -35,77 +58,50 @@ export default function Slide17() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          The{" "}
-          <span className="text-gradient-emerald">Cero Hero Thesis</span>
+          Seven Layers.{" "}
+          <span className="text-gradient-emerald">Years to Copy Each One.</span>
         </motion.h2>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        {metrics.map((item, i) => (
+        {moats.slice(0, 4).map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + i * 0.1 }}
-            className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10 text-center flex flex-col gap-1"
+            className="p-5 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-3"
           >
-            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">{item.label}</div>
-            <div className="text-3xl font-extrabold text-white italic tracking-tight leading-none my-1">
-              {item.value}
+            <div className="w-9 h-9 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
+              <item.icon className="w-4 h-4 text-brand-emerald" />
             </div>
-            <div className="text-xs text-slate-500 font-light">{item.sub}</div>
+            <div>
+              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">{item.title}</div>
+              <p className="text-sm text-slate-400 font-light leading-relaxed">{item.body}</p>
+            </div>
           </motion.div>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="p-6 md:p-8 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex items-start gap-4"
-        >
-          <div className="text-3xl text-brand-emerald font-light leading-none">&ldquo;</div>
-          <p className="text-sm text-slate-400 font-light leading-relaxed">
-            The physical plant is the{" "}
-            <span className="text-brand-emerald font-semibold underline decoration-brand-emerald decoration-2 underline-offset-4">
-              trust anchor
-            </span>
-            . Cero Hero is the citizen-facing layer. Together = India&apos;s first integrated waste-to-value + carbon identity network.
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7 }}
-          className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-3"
-        >
-          {bullets.map((bullet, i) => (
-            <div key={i} className="flex items-start gap-3">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-emerald mt-1.5 shrink-0" />
-              <p className="text-sm text-slate-400 font-light leading-relaxed">{bullet}</p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        {moats.slice(4).map((item, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 + i * 0.1 }}
+            className="p-5 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex flex-col gap-3"
+          >
+            <div className="w-9 h-9 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center">
+              <item.icon className="w-4 h-4 text-brand-emerald" />
             </div>
-          ))}
-        </motion.div>
+            <div>
+              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">{item.title}</div>
+              <p className="text-sm text-slate-400 font-light leading-relaxed">{item.body}</p>
+            </div>
+          </motion.div>
+        ))}
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8 }}
-        className="flex flex-col items-center gap-3"
-      >
-        <div className="text-sm text-brand-gold font-semibold uppercase tracking-widest">
-          Join the Circular Revolution.
-        </div>
-        <div className="flex items-center gap-2">
-          <Heart className="w-4 h-4 text-brand-emerald" />
-          <p className="text-xs text-slate-500 font-light">
-            Deck V2 April 2026 | Cero Hero Platform + Tirupati Waste-to-Energy Node
-          </p>
-        </div>
-      </motion.div>
     </div>
   );
 }
