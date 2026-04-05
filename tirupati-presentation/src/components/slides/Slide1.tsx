@@ -1,61 +1,88 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Leaf, Flame, Sparkles } from "lucide-react";
+import { Leaf, Smartphone, Shield } from "lucide-react";
 
 export default function Slide1() {
-  return (
-    <div className="flex flex-col items-center justify-center text-center space-y-12 h-full">
-      <motion.div
-        initial={{ scale: 0, rotate: -180 }}
-        animate={{ scale: 1, rotate: 0 }}
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
-        className="w-28 h-28 bg-brand-emerald/20 border border-brand-emerald/30 rounded-3xl flex items-center justify-center relative overflow-hidden"
-      >
-        <Leaf className="w-14 h-14 text-brand-emerald" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-brand-emerald/20 to-transparent" />
-      </motion.div>
+  const icons = [
+    {
+      icon: Leaf,
+      label: "Cero Node",
+      desc: "Physical waste-to-energy plant — the trust anchor",
+    },
+    {
+      icon: Smartphone,
+      label: "Cero Hero App",
+      desc: "Gamified waste actions, credits, community challenges",
+    },
+    {
+      icon: Shield,
+      label: "Cero ID",
+      desc: "Portable, verified carbon identity for every individual",
+    },
+  ];
 
-      <div className="space-y-6">
+  return (
+    <div className="flex flex-col h-full justify-center space-y-8">
+      <div className="space-y-3">
+        <motion.span
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
+        >
+          01. Platform Vision
+        </motion.span>
         <motion.h1
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="text-7xl md:text-8xl font-bold tracking-tight leading-tight"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight"
         >
-          <span className="text-white">Tirupati </span>
+          <span className="text-gradient-emerald">Organic Waste</span>
           <br />
-          <span className="text-gradient-emerald">Waste-to-Fuel</span>
+          <span className="text-white">→ Verified Carbon Identity</span>
         </motion.h1>
-        
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="max-w-4xl mx-auto p-8 glass rounded-[2.5rem] border-brand-emerald/20"
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-sm text-slate-400 font-light leading-relaxed max-w-2xl"
         >
-          <p className="text-2xl md:text-3xl text-slate-200 font-light leading-relaxed">
-            "Tirupati generates <span className="text-brand-emerald font-bold">130 tonnes</span> of organic waste every day. 
-            <span className="text-brand-gold font-bold"> 80 tonnes</span> has nowhere to go. 
-            We convert it to CBG for a <span className="text-white font-bold underline decoration-brand-emerald decoration-4 underline-offset-8 italic">15-year</span> contract."
-          </p>
-        </motion.div>
+          Cero Hero — India&apos;s first platform where waste becomes a trusted sustainability credential
+        </motion.p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {icons.map((item, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 + i * 0.1 }}
+            className="p-6 md:p-8 glass rounded-3xl border-brand-emerald/10 flex flex-col gap-4"
+          >
+            <div className="w-12 h-12 bg-brand-emerald/10 border border-brand-emerald/20 rounded-2xl flex items-center justify-center">
+              <item.icon className="w-6 h-6 text-brand-emerald" />
+            </div>
+            <div>
+              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">
+                {item.label}
+              </div>
+              <p className="text-sm text-slate-400 font-light leading-relaxed">{item.desc}</p>
+            </div>
+          </motion.div>
+        ))}
       </div>
 
       <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.4 }}
-        className="flex gap-6 mt-4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="p-6 md:p-8 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl"
       >
-        <div className="flex items-center gap-2 px-6 py-3 bg-brand-emerald/10 border border-brand-emerald/20 rounded-full text-brand-emerald text-sm font-bold uppercase tracking-widest">
-          <Flame className="w-4 h-4" />
-          <span>Biogas Innovation</span>
-        </div>
-        <div className="flex items-center gap-2 px-6 py-3 bg-brand-gold/10 border border-brand-gold/20 rounded-full text-brand-gold text-sm font-bold uppercase tracking-widest">
-          <Sparkles className="w-4 h-4" />
-          <span>Investor Deck V1 — Final</span>
-        </div>
+        <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
+          <span className="text-white font-semibold">Tirupati.</span> Then every pilgrimage city, campus, and township in India.
+        </p>
       </motion.div>
     </div>
   );

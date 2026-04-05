@@ -1,108 +1,107 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShieldCheck, Trophy, Layers, Target, Landmark } from "lucide-react";
+import { Fuel, Receipt, Leaf, BadgeCheck, LayoutDashboard } from "lucide-react";
 
 export default function Slide10() {
+  const streams = [
+    {
+      icon: Fuel,
+      number: "01",
+      name: "CBG Sales (SATAT)",
+      figure: "₹14–30 cr/yr",
+      desc: "7–14 TPD × ₹62/kg × 330 days. 15-year offtake. 75% of revenue.",
+    },
+    {
+      icon: Receipt,
+      number: "02",
+      name: "Tipping Fees",
+      figure: "₹1.3–4 cr/yr",
+      desc: "Communities pay ₹700–1,100/tonne to process their waste. Starts Month 3 (before plant exists).",
+    },
+    {
+      icon: BadgeCheck,
+      number: "03",
+      name: "Carbon Credits (VCS)",
+      figure: "₹1–3 cr/yr",
+      desc: "Methane capture + fossil displacement. Gold Standard. Year 2+.",
+    },
+    {
+      icon: Leaf,
+      number: "04",
+      name: "Digestate Biofertiliser",
+      figure: "₹1–5 cr/yr",
+      desc: "FCO-certified. Replaces urea for Chittoor farmers. Year 2+.",
+    },
+    {
+      icon: LayoutDashboard,
+      number: "05",
+      name: "Cero Hero Platform",
+      figure: "₹50L–2 cr/yr",
+      desc: "B2B ESG subscriptions + BRSR data + corporate Cero Credits sponsorship. Year 2+.",
+    },
+  ];
+
   return (
-    <div className="flex flex-col justify-center space-y-12">
-      <div className="space-y-4">
-        <motion.span 
+    <div className="flex flex-col h-full justify-center space-y-8">
+      <div className="space-y-3">
+        <motion.span
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-brand-gold font-mono text-sm tracking-widest uppercase"
+          className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          10. Competitive Position
+          10. Revenue Model
         </motion.span>
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl font-bold font-display"
+          transition={{ delay: 0.1 }}
+          className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Competitive <span className="text-gradient-gold italic">Moat</span> in Tirupati
+          Five Revenue Streams{" "}
+          <span className="text-gradient-emerald">per Node</span>
         </motion.h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Moat Layers */}
-        <div className="grid grid-cols-1 gap-4">
-          {[
-            { 
-              icon: Target, 
-              title: "Feedstock Exclusivity", 
-              desc: "First SATAT-registered plant in Tirupati. TMC exclusive processing agreement.", 
-              detail: "Locks in 80 TPD gap." 
-            },
-            { 
-              icon: Landmark, 
-              title: "Institutional Anchor", 
-              desc: "TTD city-level partnership for waste from guesthouses.", 
-              detail: "300,000 pilgrims/day floor." 
-            },
-            { 
-              icon: Layers, 
-              title: "Multi-Stream Revenue", 
-              desc: "Tipping Fee + CBG + Digestate + Carbon.", 
-              detail: "Shields against price drops." 
-            },
-            { 
-              icon: ShieldCheck, 
-              title: "Dairy Hub Control", 
-              desc: "First aggregator in Chittoor manure belt (preferred buyer).", 
-              detail: "30 km radius lock." 
-            }
-          ].map((moat, i) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="flex flex-col gap-3">
+          {streams.map((item, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 + i * 0.1 }}
-              className="p-6 glass rounded-2xl border-brand-gold/10 flex items-start gap-4 hover:border-brand-gold/30 transition-all hover:translate-x-2"
+              className="p-5 glass rounded-3xl border-brand-emerald/10 flex items-center gap-4"
             >
-              <div className="w-10 h-10 shrink-0 bg-brand-gold/10 rounded-xl flex items-center justify-center text-brand-gold">
-                <moat.icon className="w-5 h-5" />
+              <div className="w-10 h-10 bg-brand-emerald/10 border border-brand-emerald/20 rounded-xl flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5 text-brand-emerald" />
               </div>
-              <div className="space-y-1">
-                <h4 className="font-bold text-white text-base leading-none italic">{moat.title}</h4>
-                <p className="text-slate-400 text-[10px] font-light leading-relaxed italic">{moat.desc}</p>
-                <div className="text-[10px] text-brand-gold font-bold uppercase tracking-widest pt-2 underline decoration-brand-gold decoration-2 underline-offset-4">{moat.detail}</div>
+              <div className="flex-1">
+                <div className="flex items-center justify-between mb-1">
+                  <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">{item.name}</div>
+                  <div className="text-sm text-white font-semibold">{item.figure}</div>
+                </div>
+                <p className="text-sm text-slate-400 font-light leading-relaxed">{item.desc}</p>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Competitive Comparison Visual */}
         <motion.div
-           initial={{ opacity: 0, scale: 0.95 }}
-           animate={{ opacity: 1, scale: 1 }}
-           transition={{ delay: 0.4 }}
-           className="bg-brand-gold/5 border border-brand-gold/20 rounded-[3rem] p-8 flex flex-col space-y-6 relative overflow-hidden"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+          className="p-6 md:p-8 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl flex flex-col justify-center items-center text-center gap-4"
         >
-          <div className="absolute top-0 right-0 p-8 text-brand-gold/10 pointer-events-none">
-            <Trophy className="w-24 h-24" />
+          <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">Year 3 Total Revenue</div>
+          <div className="text-5xl md:text-6xl font-extrabold text-gradient-emerald italic tracking-tight">
+            ₹40 Crore
           </div>
-          <h3 className="text-2xl font-extrabold italic uppercase tracking-widest text-gradient-gold">Why We Win</h3>
-          <div className="space-y-4">
-             <div className="flex items-center gap-4 group">
-               <div className="w-3 h-3 rounded-full bg-brand-gold animate-pulse" />
-               <p className="text-white text-sm font-bold opacity-100 uppercase tracking-widest italic group-hover:translate-x-2 transition-transform italic underline decoration-brand-gold decoration-4 underline-offset-8">First Mover in Tirupati</p>
-             </div>
-             <p className="text-slate-500 font-light text-sm leading-relaxed italic">
-               90% of SATAT LoIs fail due to feedstock or operational gaps. Our venture is designed explicitly against these failure modes with a <span className="text-brand-gold font-bold italic">professional operating model</span>.
-             </p>
-          </div>
-          <div className="mt-auto p-4 bg-brand-gold/10 border border-brand-gold/20 rounded-2xl">
-             <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest pb-2">National vs Local Positioning</div>
-             <div className="flex justify-between items-center text-xs">
-                <div className="space-y-1">
-                   <div className="text-slate-400 italic">Reliance & GPS</div>
-                   <div className="text-white font-bold opacity-100 uppercase italic">Urban / Energy Crops</div>
-                </div>
-                <div className="space-y-1 text-right">
-                   <div className="text-brand-gold italic">This Venture</div>
-                   <div className="text-white font-bold opacity-100 uppercase italic">Pilgrim Economy</div>
-                </div>
-             </div>
+          <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">Physical Plant + Platform Combined</div>
+          <div className="w-full p-4 glass rounded-2xl border-brand-emerald/10 mt-2">
+            <p className="text-sm text-slate-400 font-light leading-relaxed">
+              Tipping fees convert feedstock from a cost centre to a profit centre — eliminating the primary failure mode of India CBG plants.
+            </p>
           </div>
         </motion.div>
       </div>

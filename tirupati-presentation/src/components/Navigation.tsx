@@ -43,7 +43,7 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext }
           className="flex items-center gap-2 px-4 py-2 md:px-6 md:py-2 bg-brand-emerald/20 border border-brand-emerald/40 rounded-full text-brand-emerald text-xs md:text-sm hover:bg-brand-emerald/30 font-semibold shadow-sm transition-all group"
         >
           <Download className="w-4 h-4 group-hover:translate-y-px transition-transform" />
-          <span>Download Report</span>
+          <span>Download Deck</span>
         </a>
       </div>
     </div>
