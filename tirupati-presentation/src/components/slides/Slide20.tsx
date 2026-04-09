@@ -1,23 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 export default function Slide20() {
   const metrics = [
-    { label: "Equity Ask", value: "₹3–5 Crore", sub: "Platform Co. only" },
-    { label: "Year 3 Revenue", value: "₹40 Crore", sub: "Plant + Platform" },
-    { label: "Year 3 EBITDA", value: "₹32 Crore", sub: "100 TPD at Month 24+" },
-    { label: "Exit EV", value: "₹720–1,040 Cr", sub: "5-node at 8× EBITDA" },
+    { label: "First Node", value: "50 TPD", sub: "Wet-organics CBG line" },
+    { label: "Capex", value: "₹18–24 Cr", sub: "Fresh 50 TPD planning envelope" },
+    { label: "Benchmark", value: "₹14.57 Cr", sub: "Historical Tirupati 50 TPD case" },
+    { label: "Phase 2 Option", value: "Tesla CCC", sub: "Separate residual pilot, not Phase 1" },
   ];
 
   const bullets = [
-    "AP ICEP 2024 ready — first mover in Andhra Pradesh",
-    "Guaranteed SATAT offtake (15-year) with HPCL/IOCL",
-    "NUS Singapore + Tirupati India — dual positioning",
-    "India's only verified individual-level carbon identity",
-    "BRSR Scope 4 data layer — ₹500 crore market with no competition",
-    "40% of India AD plants fail — we have engineered against every failure mode",
+    "Keep the original Cero platform thesis: plant as trust anchor, app as citizen layer, dashboard as reporting layer.",
+    "Use Andhra support to secure the land or brownfield path, approvals sequence, and core counterparties.",
+    "Underwrite Phase 1 around wet organics and controllable feedstock, not mixed-waste experimentation.",
+    "First-node economics depend on utilization, processing support, digestate outlet, and disciplined logistics.",
+    "The reporting layer makes the node more useful to TMC, TTD, hotels, campuses, and institutional partners.",
+    "Tesla Evercraft can be studied as a separate residual-waste expansion after the CBG node is stable.",
   ];
 
   return (
@@ -37,7 +37,7 @@ export default function Slide20() {
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
           The{" "}
-          <span className="text-gradient-emerald">Cero Hero Thesis</span>
+          <span className="text-gradient-emerald">Tirupati Government Thesis</span>
         </motion.h2>
       </div>
 
@@ -68,9 +68,9 @@ export default function Slide20() {
         >
           <div className="text-3xl text-brand-emerald font-light leading-none">&ldquo;</div>
           <p className="text-sm text-slate-400 font-light leading-relaxed">
-            The physical plant is the{" "}
+            The physical plant stays the{" "}
             <span className="text-brand-emerald font-semibold">trust anchor</span>
-            . Cero Hero is the citizen-facing layer. Together = India&apos;s first integrated waste-to-value + carbon identity network. The waste crisis is the business opportunity. The policy mandates are the tailwind. The community relationships are the moat.
+            . The app stays the citizen layer. The reporting layer makes the same project governable, auditable, and replicable across Andhra.
           </p>
         </motion.div>
 
@@ -96,12 +96,12 @@ export default function Slide20() {
         className="flex flex-col items-center gap-3"
       >
         <div className="text-sm text-brand-gold font-semibold uppercase tracking-widest">
-          Join the Circular Revolution.
+          Tirupati can become Andhra&apos;s model circular pilgrimage city.
         </div>
         <div className="flex items-center gap-2">
-          <Heart className="w-4 h-4 text-brand-emerald" />
+          <CheckCircle className="w-4 h-4 text-brand-emerald" />
           <p className="text-xs text-slate-500 font-light">
-            Investor Deck V3 — April 2026 | Cero Hero Platform + Tirupati Waste-to-Energy Node
+            Government Support Deck — April 2026 | Tirupati CBG Platform + Phase 2 Residual-Waste Option
           </p>
         </div>
       </motion.div>

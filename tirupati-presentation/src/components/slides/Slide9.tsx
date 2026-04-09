@@ -5,29 +5,29 @@ import { FileSignature, AlertTriangle, BadgeCheck, Lock } from "lucide-react";
 
 export default function Slide9() {
   const chain = [
-    { step: "1", label: "30 signed tipping fee MOUs", value: "₹3.5 crore/year contracted revenue" },
-    { step: "2", label: "+ SATAT LoI from HPCL/IOCL + DPR from EPC vendor", value: "→" },
-    { step: "3", label: "IREDA loan application", value: "₹8–13 crore (70% of gross CAPEX)" },
-    { step: "4", label: "MNRE CFA grant", value: "₹5–10 crore (non-repayable, counts as equity)" },
-    { step: "5", label: "AP ICEP subsidy", value: "₹3–5 crore (non-repayable)" },
-    { step: "6", label: "Total available vs CAPEX ₹12–18 crore", value: "₹16–28 crore → Founder equity ₹0" },
+    { step: "1", label: "Site or brownfield path fixed", value: "Land certainty before financing" },
+    { step: "2", label: "TMC + BWG + anchor waste framework", value: "50 TPD bankable wet-organics base" },
+    { step: "3", label: "DPR + EPC bids + buyer route", value: "Finance-grade project package" },
+    { step: "4", label: "APPCB + local approval sequencing", value: "CTE, utilities, fire, and land-use path" },
+    { step: "5", label: "PPP / VGF / debt evaluation", value: "Support improves close; subsidy not assumed" },
+    { step: "6", label: "Financial close + construction start", value: "Execution becomes schedulable" },
   ];
 
   const reasons = [
     {
       icon: AlertTriangle,
-      title: "SWM 2026 Penalty Avoidance",
-      body: "EBWGR fine ₹50K–2L/month per bulk generator. Tipping fee at ₹700/tonne is cheaper than 2 months of penalty. Sign now, comply from Day 1.",
+      title: "Land And Site Clarity",
+      body: "Most projects fail before engineering starts because site control is weak. Government support matters first at the land or brownfield-access layer.",
     },
     {
       icon: BadgeCheck,
-      title: "Cero ESG Credential",
-      body: "Hotels get Booking.com sustainability filter listing. RWAs get Swachh Survekshan data. BRSR-ready ESG report included. Marketing asset, not just compliance.",
+      title: "Nodal Coordination",
+      body: "A single state-backed workstream across TMC, TTD, NREDAP, and approvals agencies compresses the slowest part of the project without changing the core platform.",
     },
     {
       icon: Lock,
-      title: "Rate Lock + Community Ownership",
-      body: "3-year tipping fee rate lock. Cheaper than current private waste contractor. Under Path B, communities become co-funders of India's first community-owned WtE plant.",
+      title: "Counterparty Confidence",
+      body: "Hotels, BWGs, lenders, and EPC partners contract faster when the state has validated the project path and local counterparties are aligned.",
     },
   ];
 
@@ -39,7 +39,7 @@ export default function Slide9() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          09. Community Funding Model
+          09. Government Support Chain
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -47,8 +47,8 @@ export default function Slide9() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          30 MOUs Fund the{" "}
-          <span className="text-gradient-emerald">Entire Plant</span>
+          Approvals, Counterparties, and{" "}
+          <span className="text-gradient-emerald">Bankability</span>
         </motion.h2>
       </div>
 
@@ -60,7 +60,7 @@ export default function Slide9() {
       >
         <div className="flex items-center gap-2 mb-4">
           <FileSignature className="w-5 h-5 text-brand-emerald" />
-          <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">The Funding Chain</div>
+          <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">The Support Chain</div>
         </div>
         <div className="flex flex-wrap items-center gap-2">
           {chain.map((item, i) => (
@@ -104,8 +104,8 @@ export default function Slide9() {
         className="p-6 glass rounded-3xl border-brand-emerald/10"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed">
-          <span className="text-white font-semibold">The 200 TPD surplus strategy:</span>{" "}
-          we sign twice the plant capacity. 100 TPD processes in Phase 1. The other 100 TPD is a waitlist — a fundraising asset proving demand exceeds supply before Phase 2 capex is committed.
+          <span className="text-white font-semibold">Research recommendation:</span>{" "}
+          start brownfield-linked or partnership-led around Tirupati&apos;s existing organics system, not as an isolated speculative greenfield concession with no public counterparties.
         </p>
       </motion.div>
     </div>

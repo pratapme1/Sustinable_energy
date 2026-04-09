@@ -1,50 +1,50 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Smartphone, Users, Globe, BadgeCheck, FileText, TrendingUp, Mail } from "lucide-react";
+import { MapPin, Users, Building2, BadgeCheck, FileText, TrendingUp, Mail } from "lucide-react";
 
 export default function Slide19() {
-  const funds = [
+  const asks = [
     {
-      icon: Smartphone,
-      label: "Cero Hero App (MVP → Full)",
-      value: "₹80L–1.5 cr",
-      detail: "React Native + Firebase + UPI + Aadhaar. Waste deposit, credit wallet, merchant network, institutional dashboard.",
+      icon: MapPin,
+      label: "Site / Land Path",
+      value: "6-acre equivalent or brownfield route",
+      detail: "Help fix the first-node site path early so the project can move from concept to finance-grade packaging.",
       highlight: false,
     },
     {
       icon: Users,
-      label: "Founding Team (4 hires × 18 months)",
-      value: "₹1–1.5 cr",
-      detail: "Feedstock Manager (Month 0), CTO (Month 2), Plant Engineer (Month 8), Compliance (Month 2 part-time).",
+      label: "Nodal Working Group",
+      value: "State + TMC + TTD + local agencies",
+      detail: "A single coordination track for counterparties and approvals is more valuable than a generic letter of support.",
       highlight: false,
     },
     {
-      icon: Globe,
-      label: "Business Development (5 cities)",
-      value: "₹30–50 lakh",
-      detail: "Community sprint ops, MOU negotiations, institutional partnerships.",
+      icon: Building2,
+      label: "Feedstock Framework",
+      value: "Municipal + BWG + hospitality + city TTD",
+      detail: "Support the alignment of wet-waste sources so the first 50 TPD node is contractable and bankable.",
       highlight: false,
     },
     {
       icon: BadgeCheck,
-      label: "Carbon Credit Methodology (VCS)",
-      value: "₹20–40 lakh",
-      detail: "Baseline documentation from Day 1. ₹1–3 cr/year carbon revenue from Month 20.",
+      label: "Approvals Sequencing",
+      value: "Land-use, APPCB, fire, utilities, buyer path",
+      detail: "The goal is not to bypass process, but to sequence it coherently so the project does not stall in fragmentation.",
       highlight: false,
     },
     {
       icon: FileText,
-      label: "Legal + Regulatory",
-      value: "₹20–30 lakh",
-      detail: "Two-entity structure, IP registration, BRSR data licence, MOU templates.",
+      label: "Project Structure Support",
+      value: "PPP / VGF / debt-readiness evaluation",
+      detail: "Assess the right route for the first node without assuming subsidy availability that may not yet be open.",
       highlight: false,
     },
     {
       icon: TrendingUp,
-      label: "What Investors Receive",
-      value: "Equity in IP, brand, data, replication model",
-      detail: "Exit: ₹720–1,040 crore EV (5-node at 8× EBITDA, Year 5).",
+      label: "Phase 2 Study Window",
+      value: "Separate Tesla CCC residual-waste feasibility",
+      detail: "Study Tesla Evercraft only as a later residual-waste option, not as a dependency for Phase 1 wet-organics CBG execution.",
       highlight: true,
     },
   ];
@@ -57,7 +57,7 @@ export default function Slide19() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          19. The Ask
+          19. Government Ask
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -65,8 +65,8 @@ export default function Slide19() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          <span className="text-gradient-emerald">₹3–5 Crore</span>{" "}
-          in Cero Hero Pvt Ltd
+          Support the First Node.{" "}
+          <span className="text-gradient-emerald">Then Scale the Model.</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -74,13 +74,12 @@ export default function Slide19() {
           transition={{ delay: 0.15 }}
           className="text-sm text-slate-400 font-light leading-relaxed max-w-3xl"
         >
-          The plant is government-funded. This is equity in the platform company — the IP, brand, data, and replication model.{" "}
-          <span className="text-white font-semibold">Not CAPEX.</span>
+          This is not a request for speculative platform equity. It is a request to make the first Tirupati node executable through land, approvals, counterparties, and structured project support.
         </motion.p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-        {funds.map((item, i) => (
+        {asks.map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
@@ -120,11 +119,11 @@ export default function Slide19() {
       >
         <button className="flex items-center justify-center gap-2 px-8 py-4 bg-brand-emerald text-brand-dark font-bold rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-brand-emerald/20 text-sm">
           <Mail className="w-4 h-4" />
-          Contact for Deep-Dive
+          Set Up Working Session
         </button>
         <button className="flex items-center justify-center gap-2 px-8 py-4 bg-brand-emerald/10 border border-brand-emerald/20 text-brand-emerald font-bold rounded-2xl hover:bg-brand-emerald/20 transition-all text-sm">
-          <TrendingUp className="w-4 h-4" />
-          Exit Scenario Analysis
+          <FileText className="w-4 h-4" />
+          Review DPR + Approvals Pack
         </button>
       </motion.div>
     </div>

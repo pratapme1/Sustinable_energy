@@ -9,34 +9,34 @@ export default function Slide7() {
       icon: Users,
       number: "3–10 Cr",
       label: "Pilgrims per Year",
-      body: "Permanent, guaranteed organic waste supply. Never seasonal. Never stops.",
+      body: "Pilgrimage intensity keeps hospitality, canteen, and civic wet-waste generation structurally relevant throughout the year.",
     },
     {
       icon: Trash2,
       number: "130 TPD",
-      label: "Organic Waste Generated",
-      body: "80 TPD currently unprocessed. Zero CBG infrastructure exists. First mover advantage.",
+      label: "Organic Waste Base",
+      body: "Tirupati already has a 50 TPD biomethanation benchmark at Thukivakam. The opportunity is the next city-linked CBG-quality node, not a theoretical pilot.",
     },
     {
       icon: Building2,
-      number: "TTD + TMC",
-      label: "Anchor Partners",
-      body: "Tirumala Tirupati Devasthanams controls waste from all temple guesthouses and canteens. TMC needs SWM compliance data.",
+      number: "TMC + TTD + BWGs",
+      label: "Anchor Counterparties",
+      body: "Municipal wet waste, city-level temple establishments, hotels, apartments, and dairy partners create a diversified wet-organics base.",
     },
     {
       icon: MapPin,
-      number: "AP ICEP 2024",
-      label: "Shovel-Ready",
-      body: "State policy provides land lease, capital subsidy ₹3–5 cr, SGST waiver 5 years. Shovel-ready policy environment.",
+      number: "AP Support Signals",
+      label: "Execution Window",
+      body: "ICEP 2024, district CBG activity, and the March 22, 2026 urban CBG sanction signal show the state is already active in this category.",
     },
   ];
 
   const participants = [
-    { who: "Apartment RWAs", gives: "₹700/tonne tipping fee", receives: "SWM compliance cert + Cero Credits for residents" },
-    { who: "Hotels/dharamshalas", gives: "₹1,100/tonne", receives: "Booking.com ESG badge + BRSR data" },
-    { who: "TTD establishments", gives: "₹450/tonne (anchor)", receives: "Carbon-positive pilgrimage co-brand" },
-    { who: "Chittoor dairy farmers", gives: "Free pickup", receives: "Digestate biofertiliser (replaces ₹12K–18K/t urea)" },
-    { who: "Pilgrims", gives: "Zero cost", receives: "Cero Credits → redeemable at local shops + prasad counters" },
+    { who: "TMC", gives: "Municipal wet-waste stream + local support", receives: "Visible diversion, cleaner-city outcomes, compliance data" },
+    { who: "Hotels / dharamshalas", gives: "Segregated food waste + service fee", receives: "Compliance and BRSR-ready records" },
+    { who: "TTD city establishments", gives: "Anchor food-waste stream", receives: "Pilgrimage sustainability narrative" },
+    { who: "Dairy / peri-urban farmers", gives: "Manure balancing + local offtake", receives: "Digestate and soil-fertility value" },
+    { who: "Citizens / RWAs", gives: "Participation through app + drop points", receives: "Traceable incentives and feedback loop" },
   ];
 
   return (
@@ -56,7 +56,7 @@ export default function Slide7() {
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
           Why Tirupati is the{" "}
-          <span className="text-gradient-emerald">Perfect First Node</span>
+          <span className="text-gradient-emerald">Right First Node</span>
         </motion.h2>
       </div>
 
@@ -92,7 +92,7 @@ export default function Slide7() {
         className="p-6 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl"
       >
         <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-3">
-          Who Participates — And What They Get
+          Likely Counterparties — And Why They Matter
         </div>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-2">
           {participants.map((p, i) => (

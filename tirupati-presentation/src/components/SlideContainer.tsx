@@ -41,9 +41,9 @@ export default function SlideContainer({ children, direction }: SlideContainerPr
         opacity: { duration: 0.4 },
         scale: { duration: 0.4 }
       }}
-      className="absolute inset-0 flex flex-col overflow-y-auto overflow-x-hidden p-6 pb-28 md:p-10 md:pb-28 lg:p-12 lg:pb-24"
+      className="absolute inset-0 overflow-y-auto overflow-x-hidden p-6 pb-24 md:p-10 md:pb-24 lg:p-12 lg:pb-20 flex flex-col"
     >
-      <div className="m-auto flex w-full max-w-7xl flex-col justify-center min-h-max">
+      <div className="w-full max-w-6xl m-auto flex flex-col justify-center min-h-max">
         {children}
       </div>
     </motion.div>

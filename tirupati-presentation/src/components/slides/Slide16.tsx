@@ -7,21 +7,21 @@ export default function Slide16() {
   const stats = [
     {
       icon: Building2,
-      number: "7,000",
-      label: "Institutional Customers",
-      body: "Top 1,000 SEBI-listed companies need BRSR Core reporting. Each has supply chains touching hundreds of hotels, real estate properties, retailers in Tier 2 cities. All need community-level Scope 4 verified sustainability data. No current provider exists.",
+      number: "87",
+      label: "Bulk Generators In Tirupati Snapshot",
+      body: "PIB cited 27 BWGs above 100 kg/day and 60 more in the 50-100 kg/day band. The platform helps connect them to one operating system.",
     },
     {
       icon: BarChart2,
-      number: "₹3K–8K/mo",
-      label: "Per Institution",
-      body: "Cero ID ESG dashboard subscription per hotel/apartment/corporate. 100 institutions in Tirupati alone = ₹3.6–9.6 lakh/month = ₹50L–1.2 cr/year per node from subscriptions alone.",
+      number: "1",
+      label: "Unified Dashboard",
+      body: "Plant intake, source records, citizen participation, and service delivery can sit in one audit trail for TMC, TTD, and institutional partners.",
     },
     {
       icon: Lock,
-      number: "Mandatory",
-      label: "Not Optional",
-      body: "SEBI BRSR Core is an audit-grade requirement from FY2024-25. Companies face regulatory exposure if they cannot produce assured sustainability data. This is not a nice-to-have product.",
+      number: "BRSR-Ready",
+      label: "Institutional Layer",
+      body: "Hotels, campuses, and listed operators increasingly need assured sustainability records. The platform makes the physical node exportable into that workflow.",
     },
   ];
 
@@ -33,7 +33,7 @@ export default function Slide16() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          16. The BRSR Hook
+          16. The Reporting Layer
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -41,8 +41,8 @@ export default function Slide16() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          ₹500 Crore Market.{" "}
-          <span className="text-gradient-emerald">No Current Solution.</span>
+          Plant + Platform.{" "}
+          <span className="text-gradient-emerald">One Audit Trail.</span>
         </motion.h2>
       </div>
 
@@ -53,11 +53,11 @@ export default function Slide16() {
         className="p-6 glass rounded-3xl border-brand-emerald/10 flex items-center gap-6"
       >
         <div className="text-5xl md:text-6xl font-extrabold text-gradient-emerald italic tracking-tight shrink-0">
-          ₹500 Cr
+          1 Audit Trail
         </div>
         <p className="text-sm text-slate-400 font-light leading-relaxed">
-          SEBI BRSR Core (FY2024-25) mandates assured reporting on supply chain + individual-level sustainability for top 1,000 listed companies.{" "}
-          <span className="text-white font-semibold">Scope 4 community data = no existing verified solution.</span>
+          The physical node is more useful to government when every tonne, pickup, and partner interaction is visible in one operating record.{" "}
+          <span className="text-white font-semibold">That is why the platform layer should stay in the deck.</span>
         </p>
       </motion.div>
 
@@ -93,9 +93,8 @@ export default function Slide16() {
         className="p-6 glass rounded-3xl border-brand-emerald/10"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          Cero is the{" "}
-          <span className="text-white font-semibold">BRSR data layer for community-level Scope 4 reporting.</span>{" "}
-          Once embedded in a company&apos;s annual report process, the switching cost is high. Every new node adds new institutional customers to the same platform.
+          Without the reporting layer, the project is only a plant.{" "}
+          <span className="text-white font-semibold">With it, the same node becomes usable for compliance, citizen engagement, and institutional reporting.</span>
         </p>
       </motion.div>
     </div>

@@ -9,31 +9,31 @@ export default function Slide6() {
       icon: QrCode,
       number: "01",
       title: "Deposit",
-      body: "Resident/pilgrim drops organic waste at Cero drop point (sealed HDPE bin, QR code). Scans QR with app. Deposit logged.",
+      body: "Household, hotel, canteen, or BWG wet waste is deposited at a tagged point or logged by the operator. Source is identified before pickup.",
     },
     {
       icon: Truck,
       number: "02",
       title: "Collect",
-      body: "Contracted local vehicle (5T, SBM Urban operator) picks up. Weighbridge ticket per stop. Cost: ₹300–500/tonne.",
+      body: "Contracted local vehicles collect by route. Each pickup creates a service record tied to the source cluster and operating day.",
     },
     {
       icon: Flame,
       number: "03",
       title: "Process",
-      body: "Cero Node: shredder + trommel removes inerts → CSTR digester → PSA upgrading → CBG (97%+ methane) + solid digestate + liquid digestate.",
+      body: "Cero Node: pre-processing removes inerts -> digester -> upgrading -> CBG plus solid and liquid digestate.",
     },
     {
       icon: CheckCircle,
       number: "04",
       title: "Verify",
-      body: "Plant inlet weighbridge confirms tonnage. 1 Cero Credit = 1 kg CO₂e avoided. Issued to user within 24 hours of plant confirmation.",
+      body: "Plant inlet weighbridge confirms tonnage. Service records and avoided-emission logic are issued only after plant confirmation.",
     },
     {
       icon: Shield,
       number: "05",
       title: "Identity",
-      body: "Credits accumulate in Cero ID: portable, tamper-evident, BRSR-exportable. Redeem at local merchants, dharamshalas, or trade on carbon marketplace.",
+      body: "Cero ID and dashboards accumulate the record for citizens, BWGs, TMC, and institutional partners. This is the compliance and reporting layer.",
     },
   ];
 
@@ -97,11 +97,11 @@ export default function Slide6() {
         className="p-6 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          Credits are issued on{" "}
+          Nothing is credited on{" "}
           <span className="text-white font-semibold">
-            plant-confirmed intake weight
+            self-reporting
           </span>{" "}
-          — not user-reported deposits. This is the one design decision that makes Cero credits trustworthy.
+          . The physical node remains the trust anchor for every digital record.
         </p>
       </motion.div>
     </div>

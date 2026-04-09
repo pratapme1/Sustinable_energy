@@ -7,58 +7,58 @@ export default function Slide15() {
   const columns = [
     {
       icon: Wrench,
-      title: "Plant EPC & Technology",
+      title: "Phase 1 CBG EPC & Upgrading",
       accent: "emerald",
       partners: [
         {
-          name: "GPS Renewables (Bengaluru)",
-          desc: "India's largest CBG company. 30+ operational plants. JV with Indian Oil Corp, BPCL. 550 MT/day input → 17 TPD CBG operational. 200+ projects in pipeline. Target: 1,111 TPD CBG by 2027.",
+          name: "GPS Renewables / Praj / equivalent EPC",
+          desc: "Use proven Indian CBG delivery partners for the wet-organics line. The first node should not be first-of-kind plant engineering.",
         },
         {
-          name: "Praj Industries (Pune, listed)",
-          desc: "RenGas™ technology. 1,000+ global project references, 100+ countries. HPCL CBG contract. Demonstration plant at Praj Matrix R&D campus, Pune.",
+          name: "Atmos Power or equivalent upgrading route",
+          desc: "Gas upgrading quality and energy cost matter materially. This subsystem should be chosen on delivered performance, not brochure claims.",
         },
         {
-          name: "Atmos Power (Ahmedabad) — VPSA Upgrading",
-          desc: "0.7 bar vs 6–10 bar for standard PSA = significantly lower energy cost. 60+ Asia installations. 99% CH₄ capture. India-manufactured. Lower OPEX, faster delivery, no import risk.",
+          name: "Competitive bid package",
+          desc: "Freeze feedstock envelope, guarantees, and acceptance criteria before awarding EPC. This is the right place to control execution risk.",
         },
       ],
     },
     {
       icon: FolderOpen,
-      title: "Project Management & DPR",
+      title: "Project Structure & Approvals",
       accent: "slate",
       partners: [
         {
-          name: "KPO Group",
-          desc: "DPR preparation, MNRE subsidy approvals, SATAT registration, PESO licensing. Full PMC services for CBG projects.",
+          name: "DPR / PMC support",
+          desc: "Use experienced project-management support for DPR quality, vendor comparison, and permitting sequence management.",
         },
         {
-          name: "NREDAP (AP Government)",
-          desc: "State nodal agency. Land lease, subsidy disbursement, MNRE coordination.",
+          name: "NREDAP / state facilitation",
+          desc: "Government support is most useful in land access, counterparties, and alignment across approvals rather than in replacing plant execution.",
         },
         {
-          name: "EAI (Energy Alternatives India)",
-          desc: "CBG strategy, project economics, policy navigation.",
+          name: "Buyer and counterparty package",
+          desc: "CBG buyer route, TMC/BWG structure, and digestate outlet should be packaged before debt or PPP discussions harden.",
         },
       ],
     },
     {
       icon: Zap,
-      title: "Why This Partner Set",
+      title: "Residual-Waste Phase 2 Option",
       accent: "gold",
       partners: [
         {
-          name: "No experimental technology",
-          desc: "GPS Renewables and Praj have already solved the plant engineering. Our role is community mobilisation, platform, and carbon verification.",
+          name: "Tesla Evercraft CCC",
+          desc: "Vendor-stated mixed-waste / RDF / plastics route using Cold Catalytic Conversion at 260-360°C, with TRL 8-9 claimed and SynCrude-led outputs. This requires India diligence.",
         },
         {
-          name: "Competitive EPC tender",
-          desc: "We source EPC through competitive tender — GPS Renewables, Praj, or equivalent. Performance bond on CBG yield and quality.",
+          name: "Best fit for Tirupati",
+          desc: "Treat CCC as a separate residual-waste line or separate plant after wet organics are ring-fenced into the CBG system. Do not merge it into the Phase 1 digester line.",
         },
         {
-          name: "EPC risk mitigation",
-          desc: "Proven operators with India operational track record. Not first-of-kind installations. Risk is in community scale-up, not plant engineering.",
+          name: "If explored with government support",
+          desc: "Start with feasibility and a 1-2 unit pilot path requiring site allocation, waste-supply MoU, and clearance support. Do not make city operations depend on it in Phase 1.",
         },
       ],
     },
@@ -80,8 +80,8 @@ export default function Slide15() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          We Don&apos;t Build the Technology.{" "}
-          <span className="text-gradient-emerald">We Build the Relationships.</span>
+          Use Proven CBG Delivery.{" "}
+          <span className="text-gradient-emerald">Add New Technology Deliberately.</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -89,7 +89,7 @@ export default function Slide15() {
           transition={{ delay: 0.15 }}
           className="text-sm text-slate-400 font-light leading-relaxed max-w-3xl"
         >
-          GPS Renewables and Praj have already solved the plant engineering. Our role is community mobilisation, platform, and carbon verification.
+          The Phase 1 job is to execute a stable wet-organics CBG node. Extension technologies should be evaluated only after the core line and counterparties are working.
         </motion.p>
       </div>
 

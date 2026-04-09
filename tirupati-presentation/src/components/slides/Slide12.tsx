@@ -3,51 +3,46 @@
 import { motion } from "framer-motion";
 
 export default function Slide12() {
-  const years = [
+  const phases = [
     {
-      year: "Year 1",
+      phase: "Phase 0",
       accent: "red",
-      status: "Plant under construction (commissioning Month 18)",
-      revenue: "₹1.6 cr",
-      opex: "₹3 cr",
-      ebitda: "–₹1.4 cr",
-      note: "Funded by IREDA working capital tranche. Expected. Planned.",
+      timeline: "0–3 months",
+      focus: "Choose entry model and site path",
+      output: "Brownfield, partnership, or first-node land route fixed",
+      note: "This is where government support has the highest leverage.",
     },
     {
-      year: "Year 2",
+      phase: "Phase 1",
       accent: "emerald",
-      status: "50 TPD plant running",
-      revenue: "₹18 cr",
-      opex: "₹5 cr",
-      ebitda: "₹13 cr",
-      note: "DSCR ~12× (debt service ₹0.9 cr vs EBITDA ₹13 cr — comfortably covered)",
+      timeline: "3–6 months",
+      focus: "Feedstock, buyer route, and DPR",
+      output: "TMC/BWG framework, EPC quotes, offtake path, project pack",
+      note: "Without this package, financing remains conceptual.",
     },
     {
-      year: "Year 3",
+      phase: "Phase 2",
       accent: "emerald",
-      status: "100 TPD (Phase 2b) + platform revenue",
-      revenue: "₹40 cr",
-      opex: "₹8 cr",
-      ebitda: "₹32 cr",
-      note: "Payback: 3.5–4.5 years from plant commissioning",
+      timeline: "6–10 months",
+      focus: "Approvals sequencing and financing",
+      output: "APPCB/local path plus PPP, VGF, or debt readiness",
+      note: "Subsidy is upside; bankability still depends on fundamentals.",
     },
     {
-      year: "Year 4",
+      phase: "Phase 3",
       accent: "gold",
-      status: "2–3 nodes",
-      revenue: "₹80 cr",
-      opex: "₹18 cr",
-      ebitda: "₹62 cr",
-      note: "Platform revenue compound growth",
+      timeline: "10–24 months",
+      focus: "Build and commission 50 TPD node",
+      output: "CBG operations, digestate route, and app pilot go live",
+      note: "Execution shifts from approvals to EPC and operations discipline.",
     },
     {
-      year: "Year 5",
+      phase: "Phase 4",
       accent: "gold",
-      status: "5 nodes",
-      revenue: "₹217 cr",
-      opex: "₹45 cr",
-      ebitda: "₹172 cr",
-      note: "Exit at 8× EBITDA = ₹720–1,040 crore EV",
+      timeline: "24+ months",
+      focus: "Steady-state operations and expansion",
+      output: "Second AP node or separate residual-waste pilot decision",
+      note: "Tesla Evercraft belongs here, not in Phase 1 wet-organics delivery.",
     },
   ];
 
@@ -57,7 +52,7 @@ export default function Slide12() {
     gold: "bg-brand-gold/5 border border-brand-gold/20",
   };
 
-  const ebitdaColor: Record<string, string> = {
+  const textColor: Record<string, string> = {
     red: "text-red-400",
     emerald: "text-brand-emerald",
     gold: "text-brand-gold",
@@ -71,7 +66,7 @@ export default function Slide12() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          12. Financials
+          12. Execution Ramp
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -79,8 +74,8 @@ export default function Slide12() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Honest Financials:{" "}
-          <span className="text-gradient-emerald">Year 1 to Year 5</span>
+          From Approvals to{" "}
+          <span className="text-gradient-emerald">Operations</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -88,12 +83,12 @@ export default function Slide12() {
           transition={{ delay: 0.15 }}
           className="text-sm text-slate-400 font-light leading-relaxed max-w-3xl"
         >
-          Year 1 is cash-negative. This is by design — the plant is under construction. The IREDA loan and MNRE grant fund the gap. Year 2 is when the machine turns on.
+          The first node should be read as a sequenced delivery program, not just a financing spreadsheet. Government help matters most before construction starts.
         </motion.p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
-        {years.map((item, i) => (
+        {phases.map((item, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}
@@ -101,22 +96,14 @@ export default function Slide12() {
             transition={{ delay: 0.2 + i * 0.1 }}
             className={`p-5 rounded-3xl flex flex-col gap-3 ${accentClasses[item.accent]}`}
           >
-            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">{item.year}</div>
-            <p className="text-sm text-slate-400 font-light leading-relaxed">{item.status}</p>
+            <div className="text-xs text-slate-500 uppercase tracking-widest font-bold">{item.phase}</div>
+            <div className={`text-sm font-bold ${textColor[item.accent]}`}>{item.timeline}</div>
+            <p className="text-sm text-white font-semibold leading-relaxed">{item.focus}</p>
             <div className="space-y-1.5">
-              {[
-                { label: "Revenue", val: item.revenue },
-                { label: "OPEX", val: item.opex },
-              ].map((row, j) => (
-                <div key={j} className="flex justify-between">
-                  <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">{row.label}</span>
-                  <span className="text-xs text-white font-semibold">{row.val}</span>
-                </div>
-              ))}
-              <div className="flex justify-between border-t border-white/10 pt-1.5">
-                <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">EBITDA</span>
-                <span className={`text-sm font-extrabold italic ${ebitdaColor[item.accent]}`}>{item.ebitda}</span>
+              <div className="flex justify-between gap-3">
+                <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">Output</span>
               </div>
+              <p className="text-sm text-slate-400 font-light leading-relaxed">{item.output}</p>
             </div>
             <p className="text-xs text-slate-500 font-light leading-relaxed">{item.note}</p>
           </motion.div>
@@ -130,8 +117,8 @@ export default function Slide12() {
         className="p-6 glass rounded-3xl border-brand-emerald/10 text-center"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed">
-          <span className="text-white font-semibold">Exit at 8× EBITDA = ₹720–1,040 crore EV.</span>{" "}
-          5 nodes. Year 5.
+          <span className="text-white font-semibold">The high-leverage government window is Phases 0–2.</span>{" "}
+          After that, project success depends on EPC execution, collection discipline, and plant operations.
         </p>
       </motion.div>
     </div>

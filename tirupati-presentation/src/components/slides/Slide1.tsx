@@ -8,17 +8,17 @@ export default function Slide1() {
     {
       icon: Leaf,
       label: "Cero Node",
-      desc: "Physical waste-to-energy plant. Real waste → CBG + digestate + verified carbon data.",
+      desc: "Physical wet-organics-to-CBG node. Real waste -> clean fuel, digestate, and verified intake data.",
     },
     {
       icon: Smartphone,
       label: "Cero Hero App",
-      desc: "Gamified waste actions. Community credits economy. Behavior tracking.",
+      desc: "Citizen and bulk-generator participation layer. QR deposits, pickups, incentives, and service visibility.",
     },
     {
       icon: Shield,
       label: "Cero ID",
-      desc: "Portable, verified sustainability identity. Follows you across cities and careers.",
+      desc: "Verified reporting layer for government, institutions, and BRSR-linked partners.",
     },
   ];
 
@@ -38,7 +38,7 @@ export default function Slide1() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight"
         >
-          <span className="text-white">Organic Waste →</span>
+          <span className="text-white">Organic Waste -&gt;</span>
           <br />
           <span className="text-gradient-emerald">Verified Carbon Identity</span>
         </motion.h1>
@@ -73,7 +73,7 @@ export default function Slide1() {
         className="p-6 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          <span className="text-white font-semibold">Tirupati first.</span> Then every pilgrimage city, campus, and township in India.
+          <span className="text-white font-semibold">Tirupati first.</span> Andhra support on land, approvals, and anchor counterparties turns the same platform into a replicable state model.
         </p>
       </motion.div>
     </div>

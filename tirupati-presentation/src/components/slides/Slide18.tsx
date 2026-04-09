@@ -8,59 +8,59 @@ export default function Slide18() {
     {
       icon: Users,
       number: "01",
-      title: "Anchor Community Type",
-      body: "Pilgrim city / university campus / gated township / dairy cluster. Each has concentrated organic waste + institutional anchor.",
+      title: "Anchor City Type",
+      body: "Pilgrim city, campus, ULB cluster, or district organics node. The common denominator is concentrated wet waste with identifiable counterparties.",
     },
     {
       icon: FileSignature,
       number: "02",
-      title: "30 Tipping Fee MOUs",
-      body: "4–6 weeks. Same pitch: SWM 2026 compliance + Cero ESG badge + rate lock. Works in any city.",
+      title: "Counterparty Pack",
+      body: "TMC, BWGs, hospitality, temple-linked kitchens, and local organics partners. Replication works only when the waste is contractable.",
     },
     {
       icon: Landmark,
       number: "03",
-      title: "MNRE + IREDA + State",
-      body: "Same government formula, new project → new grants. Renewable per project. Each SPV is independent.",
+      title: "Approvals Bundle",
+      body: "Land path, APPCB/local approvals, buyer route, and digestate outlet are packaged together instead of chased one by one.",
     },
     {
       icon: Smartphone,
       number: "04",
-      title: "App Instance (2–4 weeks)",
-      body: "Same platform, new city configuration. Platform cost = near-zero per additional city.",
+      title: "Same Platform Layer",
+      body: "The app and reporting layer can be reused across cities. That is the part that scales faster than plant construction.",
     },
     {
       icon: Wrench,
       number: "05",
-      title: "Physical Node (18–20 months)",
-      body: "Same EPC partner, same plant design, ~20% cheaper from learning curve. Atmos Power VPSA, GPS Renewables or Praj EPC.",
+      title: "Choose The Next Physical Route",
+      body: "Second CBG node, institutional micro-node, or a separate residual-waste pilot once the first node is stable.",
     },
   ];
 
   const pipeline = [
     {
       icon: MapPin,
-      tag: "Month 18–30",
-      title: "IIT Tirupati Campus",
-      body: "5,000+ students. Oil India-IIT Kharagpur campus model proven. Small node: 10–25 TPD, ₹3–6 crore. DST + university funding.",
+      tag: "Months 0–24",
+      title: "Tirupati First Node",
+      body: "Government-backed approvals, counterparty alignment, and first 50 TPD wet-organics CBG delivery.",
     },
     {
       icon: MapPin,
-      tag: "Month 24–42",
-      title: "Srisailam",
-      body: "Second AP pilgrim city. Same TTD network. Same government formula. Temple + town organic waste.",
+      tag: "Months 18–30",
+      title: "IIT Tirupati / Institutional Node",
+      body: "Campus or institutional-scale deployment using the same reporting and participation model.",
     },
     {
       icon: MapPin,
-      tag: "Month 30–48",
-      title: "Hyderabad Townships",
-      body: "50+ gated communities. SWM enforcement active. Large node: 200–300 TPD.",
+      tag: "Months 24–42",
+      title: "Second Pilgrimage / AP Urban Node",
+      body: "Replicate the Tirupati playbook into another Andhra node once the first operating package is proven.",
     },
     {
       icon: MapPin,
-      tag: "Parallel, Month 6–18",
-      title: "NUS Singapore",
-      body: "Digital-first Cero ID. TLC grant funds this. Campus waste + commute behavior data. SE Asia expansion pathway.",
+      tag: "Parallel Study Track",
+      title: "Residual-Waste Feasibility",
+      body: "Evaluate whether a separate Tesla Evercraft CCC pilot fits the district after Phase 1 wet-organics execution is stable.",
     },
   ];
 
@@ -72,7 +72,7 @@ export default function Slide18() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          18. Replication
+          18. Andhra Rollout Logic
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -80,8 +80,8 @@ export default function Slide18() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Same Formula. Every City.{" "}
-          <span className="text-gradient-emerald">20% Cheaper Each Time.</span>
+          Same Playbook.{" "}
+          <span className="text-gradient-emerald">Different Andhra Nodes.</span>
         </motion.h2>
       </div>
 
@@ -131,9 +131,8 @@ export default function Slide18() {
         className="p-6 glass rounded-3xl border-brand-emerald/10"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          Each new node brings its own MNRE grant, IREDA loan, and state subsidy —{" "}
-          <span className="text-brand-emerald font-semibold">founder equity remains ₹0 every time.</span>{" "}
-          The platform licence fee from each SPV funds Cero Hero Pvt Ltd. This is the replication engine.
+          Every new node can reuse the same contracting, dashboard, and approvals playbook.{" "}
+          <span className="text-brand-emerald font-semibold">Public support accelerates the playbook, but each node still needs its own bankable feedstock, site, and buyer logic.</span>
         </p>
       </motion.div>
     </div>

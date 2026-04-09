@@ -7,24 +7,24 @@ export default function Slide5() {
   const layers = [
     {
       icon: Shield,
-      tag: "Layer 3 — CERO ID",
+      tag: "Layer 3 — CERO ID & DASHBOARD",
       accent: "gold",
-      desc: "Portable, verified, privacy-first carbon identity. UPI-linked. Aadhaar-verified. Follows individuals across cities, careers, carbon markets.",
-      revenue: "B2B ESG subscriptions | BRSR data service | Carbon marketplace commissions",
+      desc: "Verified, privacy-conscious reporting layer for institutions and citizens. Converts plant activity into traceable compliance, participation, and climate records.",
+      role: "Government and institutional reporting",
     },
     {
       icon: Smartphone,
       tag: "Layer 2 — CERO HERO APP",
       accent: "emerald",
-      desc: "Gamified waste actions, community challenges, QR-scan credits. Merchant redemption network. WhatsApp notifications. React Native, Firebase, UPI.",
-      revenue: "Platform fees | Corporate sponsorship | Grants (DST, AIM, TLC)",
+      desc: "QR drops, collection visibility, merchant rewards, and community participation for residents, BWGs, and hospitality or campus users.",
+      role: "Improves segregation, delivery discipline, and engagement",
     },
     {
       icon: Leaf,
       tag: "Layer 1 — CERO NODE",
       accent: "slate",
-      desc: "Physical anaerobic digestion plant. 50–100 TPD food waste + cattle manure → CBG (SATAT) + digestate (FCO biofertiliser) + verified carbon data.",
-      revenue: "CBG sales | Tipping fees | Digestate | VCS carbon credits",
+      desc: "Physical AD and upgrading stack. 50-100 TPD wet organics + manure -> CBG, digestate, and auditable intake data.",
+      role: "Core physical asset and trust anchor",
     },
   ];
 
@@ -45,7 +45,7 @@ export default function Slide5() {
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
           One Platform. Three Layers.{" "}
-          <span className="text-gradient-emerald">Each Funds the Next.</span>
+          <span className="text-gradient-emerald">Each De-Risks the Next.</span>
         </motion.h2>
       </div>
 
@@ -80,8 +80,8 @@ export default function Slide5() {
               <p className="text-sm text-slate-400 font-light leading-relaxed">{layer.desc}</p>
             </div>
             <div className="hidden md:block text-right min-w-[220px]">
-              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Revenue</div>
-              <p className={`text-xs font-light leading-relaxed ${layer.accent === "gold" ? "text-brand-gold" : "text-brand-emerald"}`}>{layer.revenue}</p>
+              <div className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-1">Role</div>
+              <p className={`text-xs font-light leading-relaxed ${layer.accent === "gold" ? "text-brand-gold" : "text-brand-emerald"}`}>{layer.role}</p>
             </div>
           </motion.div>
         ))}
@@ -94,8 +94,8 @@ export default function Slide5() {
         className="p-6 bg-brand-emerald/5 border border-brand-emerald/20 rounded-3xl"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          More waste → more credits → more users → more waste.{" "}
-          <span className="text-brand-emerald font-semibold">The flywheel is self-reinforcing. The physical plant makes every digital credit real.</span>
+          The plant makes the data real. The app improves collections.{" "}
+          <span className="text-brand-emerald font-semibold">The reporting layer makes the whole system useful to TMC, TTD, hotels, and future BRSR-linked partners.</span>
         </p>
       </motion.div>
     </div>

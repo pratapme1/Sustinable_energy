@@ -8,20 +8,20 @@ export default function Slide4() {
     {
       icon: FileText,
       tag: "SWM 2026 — April 2026 (now)",
-      title: "Every bulk generator >100 kg/day must arrange organic waste processing or pay EBWGR penalty.",
-      body: "Every hotel and apartment in Tirupati is legally required to solve this RIGHT NOW. We sign them before the plant exists. Tipping fees begin before construction.",
+      title: "Bulk generators need enforceable wet-waste processing routes.",
+      body: "Hotels, apartments, institutions, and pilgrim establishments become contractable feedstock partners once the city has a credible node and collection system.",
     },
     {
       icon: BarChart2,
       tag: "BRSR Core — FY2024-25",
-      title: "SEBI mandates top 1,000 listed companies report verified supply chain + individual-level sustainability data.",
-      body: "No current solution exists for community-level Scope 4 data. ~7,000 institutional customers need exactly what Cero ID generates. ₹500 crore market with zero competition.",
+      title: "Institutions increasingly need assured sustainability and compliance records.",
+      body: "The plant alone does not give this. The platform layer turns waste processing into exportable records for hotels, campuses, corporates, and future reporting use.",
     },
     {
       icon: Fuel,
-      tag: "SATAT CBO Mandate",
-      title: "1% CBG blending in CNG/PNG mandatory FY2026, rising to 5% by FY2029. HPCL/IOCL must buy CBG.",
-      body: "₹62–72/kg floor price. 15-year offtake contracts. As of Nov 2024: only 80 plants commissioned vs 5,000 needed. Massive undersupply.",
+      tag: "SATAT / CBG demand buildout",
+      title: "CBG buyer routes exist and demand is structurally growing.",
+      body: "Floor-price logic and long-tenure offtake arrangements make fuel sales credible, but financing still depends on land, feedstock, and approvals.",
     },
   ];
 
@@ -41,8 +41,8 @@ export default function Slide4() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Three Mandates. All Live.{" "}
-          <span className="text-gradient-emerald">All Converge on This Platform.</span>
+          Three Mandates. One{" "}
+          <span className="text-gradient-emerald">Execution Window.</span>
         </motion.h2>
       </div>
 
@@ -76,8 +76,8 @@ export default function Slide4() {
         className="p-6 bg-brand-gold/5 border border-brand-gold/20 rounded-3xl"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          The window is now. SWM 2026 creates the waste supply. BRSR creates the data demand. SATAT creates the fuel offtake.{" "}
-          <span className="text-brand-gold font-semibold">All three expire for competitors who don&apos;t move in 2026.</span>
+          The window is real. Waste supply, fuel offtake, and reporting demand are aligning.{" "}
+          <span className="text-brand-gold font-semibold">Government support matters because it compresses the land and approvals risk that still blocks execution.</span>
         </p>
       </motion.div>
     </div>

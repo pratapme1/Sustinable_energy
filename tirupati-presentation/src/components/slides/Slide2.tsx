@@ -8,20 +8,20 @@ export default function Slide2() {
     {
       icon: AlertTriangle,
       number: "01",
-      title: "Carbon credits are not trusted",
-      body: "Joro, Earthly: estimates only. Not verified against physical data. Cannot be traded or certified. Individual sustainability has nowhere to live.",
+      title: "Organic waste is still under-processed",
+      body: "Tirupati generates about 130 TPD of organics. Existing processing proves the city can supply a plant, but a city-linked CBG-quality expansion is still missing.",
     },
     {
       icon: Trash2,
       number: "02",
-      title: "India's organic waste has nowhere to go",
-      body: "Tirupati: 130 TPD generated daily. 80 TPD unprocessed. Ends in drains and landfills. Every pilgrim city, every university campus, every township has this problem.",
+      title: "Plant-only models usually fail at the feedstock layer",
+      body: "Collection discipline, BWG contracts, segregation behavior, and municipal coordination break long before digester technology does. Andhra needs a platform, not just equipment.",
     },
     {
       icon: Building2,
       number: "03",
-      title: "Communities are forced to comply but have no solution",
-      body: "SWM 2026 mandates waste processing or pay EBWGR penalty. Top 1,000 listed companies must report verified supply chain sustainability (BRSR Core). No affordable, verified solution exists for either.",
+      title: "Government and institutions need verified proof",
+      body: "TMC, TTD, hotels, campuses, and listed operators increasingly need traceable compliance, reporting, and visible outcomes from one operating system.",
     },
   ];
 
@@ -33,7 +33,7 @@ export default function Slide2() {
           animate={{ opacity: 1, x: 0 }}
           className="text-brand-emerald font-mono text-xs tracking-widest uppercase"
         >
-          02. The Problem
+          02. Government Problem Statement
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -41,8 +41,8 @@ export default function Slide2() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Three Problems.{" "}
-          <span className="text-gradient-emerald">No One Has Solved All Three.</span>
+          Three Gaps.{" "}
+          <span className="text-gradient-emerald">One State-Supported Solution.</span>
         </motion.h2>
       </div>
 

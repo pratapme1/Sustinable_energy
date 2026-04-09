@@ -9,43 +9,43 @@ export default function Slide13() {
       icon: AlertTriangle,
       level: "High Risk / High Impact",
       title: "Segregation Failure",
-      risk: "Contaminated feedstock → digester blockage → gas quality failure.",
-      mitigation: "Trommel screen + shredder at plant inlet removes plastic/glass/metal mechanically. Contamination penalty clause in all MOUs (₹200/tonne surcharge >15% inerts). We don't depend on perfect community behaviour.",
+      risk: "Contaminated feedstock -> digester instability and higher pre-processing losses.",
+      mitigation: "Trommel screen + shredder at plant inlet remove plastic, glass, and metal mechanically. Supply contracts use contamination clauses so the operating discipline is commercial, not optional.",
     },
     {
       icon: TrendingDown,
       level: "Medium Risk / High Impact",
       title: "Feedstock Volume Shortfall",
-      risk: "Communities sign but deliver less than committed.",
-      mitigation: "200 TPD contracted vs 100 TPD plant (2× buffer). If only 50% of signed communities deliver, plant still runs at 100%. Multi-source: food waste + cattle manure = two independent supply chains. Take-or-pay clauses with 6-month notice.",
+      risk: "Signed counterparties deliver less wet waste than expected.",
+      mitigation: "Underwrite a 50 TPD plant against a wider contracted base, not a single source. Municipal wet waste, hotels, TTD city establishments, and manure balancing create multiple supply paths.",
     },
     {
       icon: Wind,
       level: "Medium Risk / Medium Impact",
       title: "Odor Complaints / Community Opposition",
-      risk: "H₂S, biogas venting, digestate handling.",
-      mitigation: "Covered CSTR digesters (not open lagoons). Biofilter on all vents. CPCB standard: 2 OU/m³ — designed to comply. Site selection >500m from residential. Real-time H₂S monitoring with automatic alerts.",
+      risk: "H2S, digestate handling, or traffic can trigger local resistance.",
+      mitigation: "Covered digesters, biofilters, closed handling, and disciplined site selection matter more than pitch-deck claims. Odor control is a design line item, not an afterthought.",
     },
     {
       icon: Clock,
       level: "Medium Risk / High Impact",
-      title: "Environmental Clearance Delay",
-      risk: "EC takes 5–8 months; delays construction.",
-      mitigation: "File Month 2 (not Month 6). Engage EC consultant from Day 1. Site >500m from residential reduces objection risk. Non-gas civil works proceed under CTE while EC awaited. Tipping fees continue during wait.",
+      title: "Approval Or Clearance Delay",
+      risk: "Land, APPCB, utilities, or local permissions take longer than planned.",
+      mitigation: "Sequence approvals early, use a single nodal workstream, and keep the project package ready before financing. Government support helps most here, before EPC work starts.",
     },
     {
       icon: Gauge,
       level: "Low Risk / Medium Impact",
-      title: "CBG Quality Below OMC Spec",
-      risk: "PSA system underperforms; CBG rejected by HPCL/IOCL.",
-      mitigation: "Atmos Power VPSA: 99% CH₄ capture. Performance bond on EPC contract. Online gas chromatography for continuous monitoring. VPSA exceeds SATAT 97%+ methane requirement.",
+      title: "CBG Quality Below Buyer Spec",
+      risk: "Upgrading system underperforms and buyer acceptance becomes harder.",
+      mitigation: "Use proven upgrading technology with performance guarantees, online quality monitoring, and a buyer route defined before procurement is frozen.",
     },
     {
       icon: Activity,
       level: "High Risk / High Impact — Industry Baseline",
       title: "Running Below Designed Capacity",
-      risk: "90% of India CBG plants run below nameplate.",
-      mitigation: "Cero drop point network + contracted logistics removes the primary cause (unreliable feedstock). 200 TPD contracted vs 100 TPD plant = explicit buffer. Tipping fee model means communities are financially incentivised to deliver.",
+      risk: "The plant exists but operates below nameplate because collection and contracting are weak.",
+      mitigation: "This is the core reason to keep the platform thesis. The app, source records, and contracted logistics exist to protect utilization, not to decorate the project.",
     },
   ];
 
@@ -66,7 +66,7 @@ export default function Slide13() {
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
           What Could Go Wrong —{" "}
-          <span className="text-gradient-emerald">And What We Do About It</span>
+          <span className="text-gradient-emerald">And How We Underwrite It</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ export default function Slide13() {
           transition={{ delay: 0.15 }}
           className="text-sm text-slate-400 font-light leading-relaxed max-w-3xl"
         >
-          40% of India&apos;s AD plants are non-functional. 90% of operational CBG plants run below designed capacity. We have engineered against every major failure mode.
+          The first node should be treated as an execution project. State support can reduce site and approvals risk, but operations discipline still decides whether the plant performs.
         </motion.p>
       </div>
 

@@ -8,37 +8,33 @@ export default function Slide14() {
     {
       icon: Sprout,
       accent: "emerald",
-      title: "Solid Digestate → FCO-Certified Biofertiliser",
+      title: "Solid Digestate -> Biofertiliser Route",
       items: [
-        "100 TPD input → ~30–40 TPD solid digestate output",
-        "FCO-certified organic fertiliser (Ministry of Agriculture, India)",
-        "February 2025: new FCO category added specifically for 'organic carbon enhancers from CBG plants'",
-        "Price: ₹3,000–5,000/tonne → ₹4–7 crore/year for 100 TPD plant",
-        "Customer: Chittoor district dairy farmers — already buy urea at ₹12,000–18,000/tonne",
-        "Digestate replaces urea at fraction of the cost — farmers actively want it",
+        "50 TPD input can yield roughly 15-20 TPD solid digestate depending on feedstock mix and process design.",
+        "Can move through FOM / LFOM / nutrient-product routes rather than being treated as a disposal problem.",
+        "Planning screen: digestate monetization can add roughly ₹0.4-0.7 crore per year if local offtake is real.",
+        "Best local fit is the Tirupati / Chittoor agriculture and dairy belt, not distant speculative markets.",
       ],
     },
     {
       icon: Droplets,
       accent: "emerald",
-      title: "Liquid Digestate → Fertigation",
+      title: "Liquid Digestate -> Fertigation / Treatment",
       items: [
-        "High in N, P, K and micronutrients",
-        "Primary use: drip/sprinkler irrigation on Chittoor farmland (free supply to farmers)",
-        "Option B: ETP on site → ammonia stripping → ammonium sulphate fertiliser + discharge-quality effluent",
-        "Zero disposal cost either route",
+        "Useful in fertigation and soil-conditioning routes when quality and logistics are managed correctly.",
+        "Alternative route is on-site treatment and nutrient recovery, depending on project design and approvals.",
+        "The key point: wet-organics CBG has a manageable nutrient-output chain if planned early.",
       ],
     },
     {
       icon: Package,
       accent: "slate",
-      title: "Reject Inerts from Pre-Treatment",
+      title: "Reject Inerts From Pre-Treatment",
       items: [
-        "Plastic, glass, metal screened out at trommel + shredder inlet",
-        "Volume: <5% of input by weight (well-segregated organic waste has minimal inerts)",
-        "Disposal: construction aggregate or municipal sanitary landfill",
-        "Cost: ₹500–1,000/tonne — minor OPEX line item",
-        "No fly ash, no dioxins, no toxic residue. Anaerobic digestion = zero combustion emissions.",
+        "Plastic, glass, and metal are screened out before digestion.",
+        "Wet-organics sourcing keeps residuals lower than mixed-waste systems.",
+        "Residual handling is still required, but it remains a small operating line item rather than the core project risk.",
+        "This is one reason the Phase 1 line should stay focused on segregated or controllable wet organics.",
       ],
     },
   ];
@@ -59,8 +55,8 @@ export default function Slide14() {
           transition={{ delay: 0.1 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Every Output Is a Revenue Stream.{" "}
-          <span className="text-gradient-emerald">Nothing Goes to Waste.</span>
+          Every Output Needs a{" "}
+          <span className="text-gradient-emerald">Planned Outlet</span>
         </motion.h2>
       </div>
 
@@ -102,9 +98,9 @@ export default function Slide14() {
         className="p-6 glass rounded-3xl border-brand-emerald/10"
       >
         <p className="text-sm text-slate-400 font-light leading-relaxed text-center">
-          Compared to incineration (fly ash, dioxins, air pollution) or landfill (methane leakage, leachate),{" "}
-          <span className="text-brand-emerald font-semibold">AD is the cleanest waste processing technology.</span>{" "}
-          The residuals are a fertiliser supply chain, not a waste problem.
+          This is why wet-organics CBG should remain the{" "}
+          <span className="text-brand-emerald font-semibold">Phase 1 core.</span>{" "}
+          The outputs are locally usable and operationally manageable if the project is designed around them from day one.
         </p>
       </motion.div>
     </div>
