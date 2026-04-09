@@ -8,9 +8,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Tirupati Waste-to-Fuel | Government Support Deck",
+  title: "Tirupati Circular City | Minister Brief",
   description:
-    "Government-facing deck for the Tirupati wet-organics-to-CBG platform, retaining the Cero platform thesis while focusing on approvals, land, support, and project setup cost.",
+    "Minister brief for Tirupati's first wet-organics-to-CBG node, with an Andhra government decision ask and backup deck for supporting material.",
 };
 
 export default function RootLayout({

@@ -1,15 +1,44 @@
 "use client";
 
-import { ChevronLeft, ChevronRight, Download } from "lucide-react";
+import { ChevronLeft, ChevronRight, Download, Landmark, Layers3 } from "lucide-react";
 
 interface NavigationProps {
   currentSlide: number;
   totalSlides: number;
   onPrev: () => void;
   onNext: () => void;
+  variant: "minister" | "backup";
 }
 
-export default function Navigation({ currentSlide, totalSlides, onPrev, onNext }: NavigationProps) {
+export default function Navigation({ currentSlide, totalSlides, onPrev, onNext, variant }: NavigationProps) {
+  const links = variant === "minister"
+    ? [
+        {
+          href: "/backup",
+          label: "Backup Slides",
+          icon: Layers3,
+        },
+        {
+          href: "/tirupati-project-report.pdf",
+          label: "Project Report",
+          icon: Download,
+          download: "Tirupati-Project-Report.pdf",
+        },
+      ]
+    : [
+        {
+          href: "/",
+          label: "Minister Brief",
+          icon: Landmark,
+        },
+        {
+          href: "/tirupati-project-report.pdf",
+          label: "Project Report",
+          icon: Download,
+          download: "Tirupati-Project-Report.pdf",
+        },
+      ];
+
   return (
     <div className="fixed bottom-0 left-0 right-0 p-4 md:p-8 flex justify-between items-center z-50 bg-brand-dark/80 backdrop-blur-md md:bg-transparent md:backdrop-blur-none border-t border-white/5 md:border-none">
       <div className="flex gap-2 md:gap-4">
@@ -35,16 +64,21 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext }
           <span className="mx-2">/</span> 
           {totalSlides.toString().padStart(2, '0')}
         </div>
-        <a 
-          href="/tirupati-project-report.pdf" 
-          download="Tirupati-Project-Report.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 md:px-6 md:py-2 bg-brand-emerald/20 border border-brand-emerald/40 rounded-full text-brand-emerald text-xs md:text-sm hover:bg-brand-emerald/30 font-semibold shadow-sm transition-all group"
-        >
-          <Download className="w-4 h-4 group-hover:translate-y-px transition-transform" />
-          <span>Project Report</span>
-        </a>
+        <div className="flex items-center gap-2">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              download={link.download}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 md:px-5 md:py-2 bg-brand-emerald/16 border border-brand-emerald/30 rounded-full text-brand-emerald text-xs md:text-sm hover:bg-brand-emerald/24 font-semibold shadow-sm transition-all group"
+            >
+              <link.icon className="w-4 h-4 group-hover:translate-y-px transition-transform" />
+              <span>{link.label}</span>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );
