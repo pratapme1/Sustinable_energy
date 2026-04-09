@@ -8,8 +8,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Tirupati Waste-to-Fuel | Investor Presentation",
-  description: "A premium investor deck for the Tirupati wet-organics-to-CBG platform.",
+  title: "Tirupati Waste-to-CBG | Andhra Government Brief",
+  description:
+    "Government-facing presentation for the Tirupati wet-organics-to-CBG project, focused on approvals, land, cost, and implementation support.",
 };
 
 export default function RootLayout({
