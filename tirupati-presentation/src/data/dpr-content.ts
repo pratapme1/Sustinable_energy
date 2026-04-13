@@ -356,6 +356,103 @@ The selected EPC contractor must demonstrate:
     `,
   },
   {
+    id: "epc-vendors",
+    title: "EPC Vendors, Technology Partners & Procurement",
+    content: `
+### Why Vendor Identification Matters in a DPR
+
+A technology-neutral DPR does not mean vendor-anonymous. The government needs confidence that qualified contractors exist, have built comparable plants, and can be procured competitively. This section identifies three pre-qualified EPC vendors and specialist sub-vendors, and defines the procurement process Cero Hero will follow.
+
+---
+
+### Shortlisted EPC Vendors (Illustrative — Subject to RFP Response)
+
+#### Vendor 1 — GPS Renewables Pvt. Ltd. (Bengaluru)
+**Primary recommendation for full EPC scope**
+
+| Parameter | Detail |
+|---|---|
+| Headquarters | Bengaluru, Karnataka |
+| Specialisation | Municipal wet waste CBG plants; anaerobic digestion + gas upgradation |
+| Key Reference | **Indore GOBARdhan BioCNG Plant** — 550 TPD organic waste input; 17–18 TPD CBG output; Asia's largest municipal waste CBG plant; PPP with Indore Municipal Corporation and EverEnviro; commissioned 2022; operating at 100% capacity |
+| Technology | Wet CSTR-based anaerobic digestion; integrated gas upgradation |
+| SATAT References | Multiple SATAT-registered plants operational |
+| Why Relevant | Directly comparable: municipal wet waste feedstock, PPP/government interface, SATAT compliance — all proven at scale |
+
+#### Vendor 2 — Praj Industries Ltd. (Pune)
+**Alternative EPC vendor; technology-process lead option**
+
+| Parameter | Detail |
+|---|---|
+| Headquarters | Pune, Maharashtra |
+| Listed | BSE: 522205 / NSE: PRAJIND — publicly listed, financially auditable |
+| Specialisation | RenGas® technology for wet anaerobic digestion; 50+ biogas plant references globally; 1,000+ references across 100+ countries |
+| Key References | HPCL CBG project (UP, 5,250 MT CBG/year from agricultural residue); multiple industrial biogas plants across India |
+| Technology | Proprietary RenGas® CSTR + VPSA/PSA upgradation; proven on mixed organic feedstocks |
+| Why Relevant | Strongest process engineering depth in India; listed company — financial diligence is straightforward; strong institutional credibility with government agencies |
+
+#### Vendor 3 — Enviropol Engineers Pvt. Ltd.
+**CBG-specialist EPC; competitive pricing option**
+
+| Parameter | Detail |
+|---|---|
+| Specialisation | End-to-end CBG plant EPC; municipal and industrial organic waste |
+| Scope | Pre-treatment through compression and cascade filling |
+| Why Relevant | CBG-focused boutique EPC; likely most price-competitive for 50 TPD scale; responsive to government tender requirements |
+
+---
+
+### Specialist Sub-Vendors (Gas Upgradation & Compression)
+
+#### Gas Upgradation — AtmosPower (India)
+
+| Parameter | Detail |
+|---|---|
+| Technology | Proprietary VPSA biogas upgradation; CH₄ recovery ≥98% |
+| Installed Base | 60+ biogas-to-CNG plants across Asia |
+| Systems Installed | 50+ VPSA units |
+| Why Relevant | Largest India-based VPSA specialist; proven on food waste and municipal organic streams; domestic service network for O&M |
+
+> **Alternative:** Raj Process Equipments & Systems (Pune) — VPSA, PSA, and membrane systems; partnership with Carboneum-Consult Germany for high-pressure multi-bed PSA.
+
+#### High-Pressure CBG Compression & Cascades
+
+| Vendor | Technology | Why Relevant |
+|---|---|---|
+| Bauer Compressors India | Multi-stage oil-free booster compressors to 250 bar | Global standard for CNG/CBG compression; PESO-certified units |
+| Aspro Engineering | Skid-mounted compression systems | Indian manufacturer; cost-competitive; established in CBG sector |
+
+---
+
+### EPC Procurement Process
+
+Cero Hero will follow a **two-stage competitive EPC tender** process:
+
+**Stage 1 — Request for Qualification (RFQ):** Issued within 45 days of DPR acceptance. Vendors must demonstrate: (a) minimum 1 reference CBG plant >20 TPD on organic wet waste, commissioned and SATAT-registered; (b) net worth ≥ Rs. 15 crore; (c) ISO 9001 certification; (d) dedicated biogas engineering team.
+
+**Stage 2 — Request for Proposal (RFP):** Issued to qualified vendors. Vendors submit: (a) lump-sum fixed-price quote; (b) performance guarantee (minimum CBG output at design feedstock); (c) performance bond (10% of contract value); (d) construction schedule with milestones; (e) O&M support plan for 12 months post-commissioning.
+
+**Evaluation criteria:** Technical compliance (40%) + Price (35%) + Track record (15%) + O&M support plan (10%).
+
+**Contract type:** Lump-sum turnkey (LSTK) EPC contract with: performance liquidated damages (LD) for output shortfall, milestone-linked payment (not front-loaded), and 12-month defect liability period.
+
+**PMC Oversight:** An independent Project Management Consultant (PMC) will be appointed by Cero Hero — separately from EPC — to monitor construction quality, certify milestones, and manage variation orders. PMC cost: Rs. 50 lakh (included in CAPEX under Sub-total E).
+
+---
+
+### EPC Contract Structure Summary
+
+| Item | Detail |
+|---|---|
+| Contract Type | Lump-Sum Turnkey (LSTK) |
+| Performance Bond | 10% of contract value (~Rs. 2.3 crore) |
+| Output Guarantee | ≥1,600 kg/day CBG at design feedstock — enforced by LD at Rs. 5 lakh/day shortfall after PGTR |
+| Payment Structure | 10% advance; 70% milestone-linked; 20% post-PGTR |
+| Defect Liability | 12 months from commercial operation date |
+| O&M Handover | 6-month supervised handover; Cero Hero staff trained in parallel |
+    `,
+  },
+  {
     id: "plant-config",
     title: "Plant Configuration & Process Description",
     content: `
@@ -508,6 +605,134 @@ Power source: APSPDCL grid connection (11 KV line to dedicated transformer). Eme
 | Office and amenities | 150 m² RCC; staff rooms, security cabin |
 | Compost curing shed | 500 m² open shed with RCC flooring |
 | Solid-liquid separation area | Covered paved area, effluent collection channels |
+    `,
+  },
+  {
+    id: "construction",
+    title: "Construction Methodology & Quality Assurance",
+    content: `
+### Construction Philosophy
+
+The plant will be built by a single LSTK EPC contractor under PMC oversight. All civil works, mechanical erection, electrical installation, and commissioning are within the EPC scope. Cero Hero's role during construction is: (a) approve designs, (b) manage PMC, (c) process milestone payments, and (d) manage regulatory clearances running in parallel.
+
+Construction follows a **critical-path schedule** where digester civil works (longest lead time: 3 months for excavation, RCC raft, and curing) are initiated first, and equipment procurement (longest lead time: 4–5 months for digester tanks and VPSA skid) is initiated simultaneously on Day 1 of detailed engineering.
+
+---
+
+### Stage-by-Stage Construction Sequence
+
+**Stage 1 — Site Mobilisation (Month 0–1)**
+
+| Activity | Detail |
+|---|---|
+| Site fencing and security | Perimeter boundary hoarding; security post at entry |
+| Temporary construction facilities | Site office; material storage yard; worker accommodation; construction power (DG set) and water |
+| Subsoil investigation | Bore logs at digester locations; confirmation of bearing capacity for RCC raft/pile design |
+| Topographic survey | Final contour map; setting-out of all structures |
+| Statutory approvals underway | AP PCB CTE application; PESO application; Building Plan submission to TTDA |
+
+**Stage 2 — Civil Works (Month 1–6; critical path)**
+
+The civil works sequence is driven by the digester foundation — the most time-intensive and structurally critical item.
+
+| Sub-Stage | Month | Activity |
+|---|---|---|
+| Excavation and earthworks | 1–2 | Mass excavation for digester pits; soil disposal; levelling of process area |
+| Digester foundations | 2–5 | RCC raft slab (or piled foundation per soil test); designed for thermal cycling and wet environment; acid-resistant surface treatment |
+| Boundary wall and internal roads | 2–4 | 4-metre masonry perimeter wall; 7-metre paved internal roads; weighbridge pit |
+| Receiving pit and pre-treatment civil | 3–5 | RCC receiving pits with acid-resistant coating; sump and drainage channels; trommel screen platform |
+| Control room and lab building | 4–6 | 200 m² RCC structure; climate-controlled; raised floor for cable routing |
+| Office, security cabin, amenities | 4–5 | 150 m² RCC; staff facilities; canteen; first aid room |
+| Compost curing shed | 5–6 | 500 m² open shed; RCC flooring; peripheral drainage |
+| Utility civil works | 4–6 | Borewell; underground fire water tank (50 KL RCC); electrical cable trenches; drainage |
+
+**Stage 3 — Digester Fabrication and Erection (Month 3–8)**
+
+| Activity | Detail |
+|---|---|
+| Digester tank fabrication | MS-2062 grade steel; fabricated off-site in sections by EPC vendor; FRP internal coating applied at fabricator |
+| Site delivery and erection | Panels transported to site; welded and erected in sequence; glass wool + aluminium cladding insulation applied |
+| Gas holders and membrane tops | Balloon membrane gas-tight tops fitted; pressure relief valves; gas manifold connections |
+| Agitators and heating coils | Submersible agitators; low-pressure steam or hot water heating coils; 1W+1S configuration |
+| Leak testing | Hydraulic test at 1.5× operating pressure; pneumatic soap-test for all gas joints |
+
+All digester fabrication and welding inspected by a TPIA (Third Party Inspection Agency) — mandatory for PESO compliance.
+
+**Stage 4 — Pre-Treatment and Process Equipment Installation (Month 5–9)**
+
+| Equipment | Activity |
+|---|---|
+| Wet shredder / grinder | Installed in receiving area; electrical connections; test run on water |
+| Trommel screen | Installed on elevated platform; chute connections; drive alignment |
+| Feed preparation tanks | MS tanks installed; agitators; heating system piped |
+| Slurry pumps | 1W+1S configuration; piped to digesters; VFD control |
+| Solid-liquid separator | Screw press or decanter centrifuge; platform installed; drainage channels |
+
+**Stage 5 — Gas Purification Train Installation (Month 7–10)**
+
+| Equipment | Activity |
+|---|---|
+| H₂S removal unit | Installed in gas flow sequence; iron sponge or biological scrubber; bypass valve |
+| VPSA skid | Delivered as pre-assembled skid from AtmosPower (or equivalent); craned into position; piped to gas train; electrical connections |
+| Online gas analyser | Installed post-VPSA; CH₄, CO₂, H₂S, O₂ probes; calibration gases connected |
+| Surge/buffer vessel | PESO-certified; hydro tested; connected to compressor inlet |
+| Booster compressors | Multi-stage oil-free units; installed on anti-vibration mounts; cooling water and oil system connected |
+| CBG cascades | PESO-certified cylinders (6,600 L water capacity); installed in cascade bay; pressure relief and safety systems |
+
+**Stage 6 — Electrical, Instrumentation and SCADA (Month 8–11)**
+
+| Activity | Detail |
+|---|---|
+| APSPDCL 11 KV connection | HT line brought to site boundary; HT panel installed; transformer energised |
+| MCC panel and distribution | Motor Control Centre; VFDs for all variable-speed drives; cable laying in trenches |
+| PLC-SCADA system | Main control room installed; field instruments connected; logic testing |
+| Gas detection system | Fixed H₂S and CH₄ detectors at all hazardous locations; linked to PLC alarm system |
+| Emergency DG set | 150 kVA diesel generator; auto-start on mains failure; critical loads on UPS |
+| Fire detection and suppression | Smoke detectors; sprinkler system in control room; CO₂ suppression in electrical panels |
+
+**Stage 7 — Pre-Commissioning (Month 11–13)**
+
+| Activity | Detail |
+|---|---|
+| Cold commissioning (water trial) | All systems run on water — no biogas; all pumps, agitators, conveyors tested; flow rates verified |
+| Leak testing (pneumatic) | All gas lines pressurised to test pressure; soap-bubble and electronic leak detection |
+| SCADA functional test | All instruments calibrated; all alarms and trips verified; control logic tested |
+| PESO final inspection | PESO inspector visits; inspects all pressure vessels, cascades, and gas systems; issues license |
+| AP PCB CTO application | Submitted based on as-built drawings and environmental compliance documentation |
+| Operator training | Cero Hero's 22-person team trained by EPC vendor over 6 weeks on plant systems, emergency procedures, SCADA operation |
+
+**Stage 8 — Commissioning and PGTR (Month 13–20)**
+
+| Activity | Detail |
+|---|---|
+| Biogas startup | First organic waste charged; digester inoculated; biogas production begins (typically 14–21 days to stable production) |
+| Ramp-up | Gradual increase from 20% to 50% to 80% to 100% feed rate over 6–8 weeks |
+| Gas quality testing | Third-party lab analysis of CBG; IS 16087:2016 compliance confirmed |
+| Performance Guarantee Test Run (PGTR) | 30-day continuous run at design capacity; CBG output ≥1,600 kg/day verified; digestate quality checked |
+| SATAT registration | Submitted to OMC during PGTR; offtake agreement activated |
+| Commercial Operation Declaration | COD declared on completion of PGTR; first CBG delivered to OMC cascade |
+
+---
+
+### Quality Assurance Framework
+
+| Stage | QA Measure | Who |
+|---|---|---|
+| Digester fabrication | TPIA weld inspection; material certificates | Third-party inspection agency (TÜV/Bureau Veritas/RINA) |
+| Civil works | Concrete cube tests at every pour; RCC cover meter checks | PMC site engineer |
+| Pressure vessels | Hydrostatic test at 1.5× design pressure; PESO-witnessed | PESO + EPC QC team |
+| Electrical | Cable insulation tests; megger tests; loop checks | EPC electrical supervisor + PMC |
+| Gas quality | Third-party lab analysis (NABL-accredited lab) | Independent lab |
+| PGTR | 30-day independent metering of all inputs and outputs | PMC + EPC + Cero Hero jointly |
+
+### Health, Safety and Environment (HSE) During Construction
+
+- AP Factories Act compliance from Day 1 of construction employment
+- All workers ESIC and EPFO registered
+- Site HSE officer appointed full-time by EPC contractor
+- Gas hazard awareness training before any gas system work begins
+- Emergency response plan filed with local fire station before PESO application
+- No work at height without harness; no excavation >1.5 m without shoring
     `,
   },
   {
