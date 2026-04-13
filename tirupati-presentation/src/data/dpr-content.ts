@@ -1027,8 +1027,102 @@ The following items are identified as outstanding data gaps that will change spe
 | Actual site soil conditions (Annexure II) | Civil cost estimate may vary ±15–20%; foundation type may change | Soil test within 30 days of site allocation |
 | TTMC organic waste lab analysis (Annexure VIII) | Biogas yield and mass balance may vary ±10% | Lab analysis on TTMC waste samples; 30-day turnaround |
 | Final MNRE CFA scheme notification for FY 2026-27 | CFA quantum may change by Rs. 0.5–1 crore | Ministry notification expected Q1 FY 2026-27 |
-| TTD consent for BWG enrollment | Phase 1 Tier 1/2 feedstock may reduce to 11 TPD (from 15 TPD) | Direct approach to TTD Board; facilitated by MAUD |
+| Confirmation of TTMC DBFOT Thukivakam scope and waste allocation | If DBFOT covers all 115 TPD TTMC waste, Cero Hero's 35 TPD diversion may need re-routing to specific collection circuits outside DBFOT scope | MAUD/TTMC to clarify in site allocation letter |
 | APSPDCL power tariff for green energy | OPEX power cost may vary ±Rs. 5 lakh/year | Confirmed after APSPDCL connection order |
+    `,
+  },
+  {
+    id: "glossary",
+    title: "Glossary of Terms & Abbreviations",
+    content: `
+This glossary defines every abbreviation and technical term used in this DPR. It is intended for government officials, financial institutions, and non-specialist reviewers.
+
+---
+
+## Organisations & Bodies
+
+| Abbreviation | Full Form | What It Means in This Project |
+|---|---|---|
+| **TTMC** | Tirupati Municipal Corporation | The urban local body governing Tirupati city — responsible for waste collection, civic infrastructure, and SBM-Urban compliance. TTMC is the proposed partner for the 35 TPD municipal waste diversion agreement. |
+| **TTD** | Tirumala Tirupati Devasthanams | The autonomous religious trust that manages the Tirumala Venkateswara Temple and its associated infrastructure. TTD is building its own CBG plant with IOCL and is not a Cero Hero feedstock source. |
+| **IOCL** | Indian Oil Corporation Limited | India's largest state-owned oil marketing company (OMC). IOCL is a SATAT scheme administrator and a likely CBG offtake partner for Cero Hero. IOCL is also co-building the TTD plant at Tirumala. |
+| **MAUD** | Department of Municipal Administration and Urban Development | The AP state government department to which this DPR is submitted. MAUD oversees urban local bodies including TTMC. |
+| **MNRE** | Ministry of New and Renewable Energy | Central government ministry that administers the Biogas Programme and provides Central Financial Assistance (CFA) for CBG plants. |
+| **MoPNG** | Ministry of Petroleum and Natural Gas | Central government ministry that administers the SATAT scheme, Compressed Biogas Blending Obligation (CBO), and the MoPNG Financial Assistance to CBG Producers scheme. |
+| **AP PCB / SPCB** | Andhra Pradesh Pollution Control Board / State Pollution Control Board | The state regulatory authority that issues Consent to Establish (CTE) and Consent to Operate (CTO) for industrial facilities including biogas plants. |
+| **PESO** | Petroleum and Explosives Safety Organisation | Central government body under MoPNG that licenses facilities storing or handling compressed gases above atmospheric pressure. CBG cascades (at 250 bar) require PESO approval. |
+| **CPCB** | Central Pollution Control Board | National environmental regulator. Sets standards for biogas plant sludge, stack emissions, and liquid effluent. |
+| **IREDA** | Indian Renewable Energy Development Agency | Specialised public sector lending institution for renewable energy projects. Cero Hero's preferred debt financier — offers green infrastructure loans at 8.5% p.a. |
+| **NABARD** | National Bank for Agriculture and Rural Development | Another potential lender — specifically relevant for digestate/compost revenue stream and rural adjacency aspects. |
+| **NaBFID** | National Bank for Financing Infrastructure and Development | New-generation DFI for infrastructure; potential bond/debt financing source. |
+| **APIIC** | Andhra Pradesh Industrial Infrastructure Corporation | State body that manages industrial land parcels and zones. Site A (Renigunta) was in an APIIC buffer zone. |
+| **NREDCAP** | Non-conventional Energy Development Corporation of Andhra Pradesh | State nodal agency for renewable energy — the AP-level implementing partner for MNRE schemes. |
+| **APSPDCL** | Andhra Pradesh Southern Power Distribution Company Limited | The electricity distribution company serving the Tirupati region. Responsible for providing the 11 KV grid connection to the plant site. |
+| **BEE** | Bureau of Energy Efficiency | Under Ministry of Power; administers India's carbon credit markets and the Carbon Credit Trading Scheme (CCTS). |
+| **TTDA** | Tirupati Urban Development Authority | Local planning authority for land use approvals and building plan sanctions within Tirupati's jurisdiction. |
+
+---
+
+## Schemes & Programmes
+
+| Abbreviation | Full Form | What It Means in This Project |
+|---|---|---|
+| **SATAT** | Sustainable Alternative Towards Affordable Transportation | MoPNG's 2018 scheme under which OMCs provide a guaranteed offtake agreement for CBG at Rs. 54/kg (current confirmed rate). Cero Hero must register as a SATAT producer post-PESO approval to access this price. |
+| **CBO** | Compressed Biogas Blending Obligation | Legal mandate (active FY 2025–26 onwards) requiring OMCs to blend CBG into CNG/PNG supply — 1% this year, rising to 5% by FY 2028–29. Makes CBG offtake a compliance necessity, not a voluntary purchase. |
+| **GOBARdhan** | Galvanising Organic Bio-Agro Resources Dhan | Government of India's unified registration and monitoring portal for all biogas and CBG plants across India. Cero Hero must register on GOBARdhan to access central scheme benefits. |
+| **SBM-Urban 2.0** | Swachh Bharat Mission – Urban 2.0 | India's national urban cleanliness mission. TTMC earns Garbage Free City (GFC+) certification points for organic waste processing. Supports TTMC's motivation to sign the waste diversion MOU. |
+| **GFC+** | Garbage Free City (Plus) Certification | SBM-Urban ranking for cities that achieve advanced waste processing milestones. Tirupati's 8th national cleanest city ranking is partly dependent on this certification. |
+| **CCTS** | Carbon Credit Trading Scheme | India's emerging compliance carbon market under the Energy Conservation (Amendment) Act 2022. Currently covers 9 industrial sectors (not waste). Cero Hero will pursue VCS/Gold Standard voluntary carbon credits instead. |
+| **VCS / Gold Standard** | Verified Carbon Standard / Gold Standard | International voluntary carbon credit certification frameworks. Cero Hero will use methodology VM0044 (organic waste composting/AD). Carbon credits at Rs. 400–800/tCO₂e are the additional revenue source from Year 3. |
+
+---
+
+## Technical Terms
+
+| Term / Abbreviation | Full Form | What It Means |
+|---|---|---|
+| **CBG** | Compressed Bio-Gas | Purified biogas (≥98% methane) compressed to 250 bar for use as vehicle fuel — functionally identical to CNG. Governed by BIS standard IS 16087:2016. |
+| **CNG** | Compressed Natural Gas | Fossil-origin natural gas at 250 bar. CBG is the renewable equivalent. |
+| **AD** | Anaerobic Digestion | The biological process at the heart of this plant — microorganisms break down organic waste in the absence of oxygen, producing biogas (methane + CO₂) and digestate. |
+| **CSTR** | Continuous Stirred Tank Reactor | The most common industrial AD reactor design — a sealed, heated, agitated vessel where waste slurry is continuously fed and digestate continuously withdrawn. This plant uses CSTR as its primary digester type. |
+| **HRT** | Hydraulic Retention Time | How many days the organic slurry spends inside the digester. This plant: 27–39 days total across pre-digester, main digesters, and secondary digester. Longer HRT = higher gas yield but larger tank volume required. |
+| **TS** | Total Solids | Percentage of dry matter in the feedstock (wet weight basis). Tirupati municipal organic waste: ~22% TS. High TS = more biogas potential per tonne. |
+| **VS** | Volatile Solids | The fraction of Total Solids that is organic (and therefore digests to produce biogas). Expressed as % of TS. Design basis for this plant: 80% VS of TS. |
+| **VPSA** | Vacuum Pressure Swing Adsorption | A gas upgradation technology that selectively removes CO₂ from raw biogas using pressure-cycling across an adsorbent material. Result: biogas enriched to ≥98% CH₄ (CBG grade). Preferred option for this plant due to ≥97% methane recovery. |
+| **H₂S** | Hydrogen Sulphide | A toxic, corrosive gas present in raw biogas (typically 200–2,000 ppm from food waste). Must be removed before upgradation. Removed by iron-sponge or biological scrubbing to <10 ppm. |
+| **FOM** | Fermented Organic Manure | The solid output from anaerobic digestion after liquid separation. High in plant-available nitrogen and phosphorus. Sold to farmers as an FCO-compliant organic fertilizer at Rs. 2,500/tonne. |
+| **FCO** | Fertiliser Control Order | Government of India quality regulation for organic fertilizers. FOM must meet FCO specifications (nutrient content, moisture, pathogen levels) to be legally sold as agricultural input. |
+| **SLS** | Solid-Liquid Separator | Equipment that separates the digestate slurry into solid FOM fraction (~5 TPD) and liquid fraction (~43 TPD). Typically a screw press or decanter centrifuge. |
+| **NZLD** | Near-Zero Liquid Discharge | Operating standard where 90% of process liquid is recycled internally; remaining ~4.3 KLD is treated and applied to land irrigation under AP PCB consent conditions. Not to be confused with full ZLD (zero to any medium). |
+| **SCADA** | Supervisory Control and Data Acquisition | Centralised digital control system monitoring all plant parameters in real time — temperature, pressure, gas flow, pH, H₂S concentration, tank levels. Integrated with Cero Hero platform. |
+| **PLC** | Programmable Logic Controller | Industrial computer that executes automated control logic — starting pumps, triggering alarms, managing digester heating. Operated through the SCADA interface. |
+| **IS 16087:2016** | Indian Standard for Automotive Compressed Bio-Gas | BIS specification for CBG sold as vehicle fuel. Requires ≥98% CH₄, H₂S <4 ppm, moisture <0.1%. Cero Hero's plant design targets compliance with this standard at all times. |
+
+---
+
+## Financial & Project Terms
+
+| Abbreviation | Full Form | What It Means |
+|---|---|---|
+| **CAPEX** | Capital Expenditure | One-time investment to build the plant. Phase 1: Rs. 30.24 crore (before grants). |
+| **OPEX** | Operating Expenditure | Annual cost to run the plant (staff, power, maintenance, consumables). Phase 1: Rs. 2.31 crore/year. |
+| **EBITDA** | Earnings Before Interest, Taxes, Depreciation and Amortisation | Operating profit measure. Phase 1 base case: Rs. 2.05 crore/year. |
+| **DSCR** | Debt Service Coverage Ratio | EBITDA ÷ Annual Debt Service. Lenders require ≥1.25. This project achieves 1.11 at Year 3, 1.25 by Year 4. |
+| **IRR** | Internal Rate of Return | The annualised return on the total project investment over its life. This project: 14–17% project IRR; 18–22% equity IRR. |
+| **CFA** | Central Financial Assistance | Grant from the central government (MNRE) toward eligible project capital costs. Non-repayable. For this plant: Rs. 1.33 crore. |
+| **VGF** | Viability Gap Funding | State government grant to bridge the gap between project cost and commercial viability. Not confirmed for this project — land concession is modelled instead. |
+| **DBFOT** | Design, Build, Finance, Operate, Transfer | A PPP contract model under which a private operator finances and builds infrastructure, operates it for a fixed period (typically 20–25 years), then transfers it to the government. The TTMC 100 TPD expansion at Thukivakam is on DBFOT basis. |
+| **EPC** | Engineering, Procurement and Construction | The turnkey contractor who designs, supplies, and constructs the plant to a fixed price and performance specification. Cero Hero will float a competitive EPC tender to minimum 3 qualified vendors. |
+| **PMC** | Project Management Consultant | Third-party oversight firm that monitors EPC contractor performance, cost, and schedule on behalf of the project owner (Cero Hero). |
+| **LOI** | Letter of Intent | A non-binding expression of intent — e.g., from an OMC to offtake CBG, or from a BWG to subscribe to Cero Hero collection. Converted to binding contract pre-commissioning. |
+| **MOU** | Memorandum of Understanding | A binding agreement between parties on specific obligations — e.g., TTMC waste diversion MOU specifying minimum daily tonnage, pricing, and liquidated damages. |
+| **CTE** | Consent to Establish | AP PCB approval required before construction begins. Confirms the project meets environmental norms for the proposed location. |
+| **CTO** | Consent to Operate | AP PCB approval required before plant commences commercial operations. Confirms construction matches the approved design and all environmental safeguards are in place. |
+| **DPR** | Detailed Project Report | This document. A comprehensive technical, financial, and regulatory proposal submitted to government for project approval and support. |
+| **TPD** | Tonnes Per Day | Unit for waste input capacity and product output. Phase 1: 50 TPD organic waste in; 1.6 TPD (1,600 kg/day) CBG out. |
+| **tCO₂e** | Tonnes of Carbon Dioxide Equivalent | Standard unit for greenhouse gas emissions and carbon credits. 1 tCO₂e = the warming impact of 1 tonne of CO₂ (or equivalent methane, N₂O etc.). This project avoids ~12,000 tCO₂e/year in Phase 1. |
+| **BWG** | Bulk Waste Generator | Under SWM Rules 2016, any establishment generating ≥100 kg of waste per day. Hotels, hospitals, restaurants, markets. Legally required to arrange their own organic waste processing — Cero Hero provides the compliant route. |
+| **CIN** | Company Identification Number | The registration number issued by the Ministry of Corporate Affairs (MCA) upon incorporation of a company. Cero Hero's CIN will be obtained within 30 days of DPR acceptance. |
     `,
   },
 ];
