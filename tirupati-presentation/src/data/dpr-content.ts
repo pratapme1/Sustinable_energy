@@ -89,17 +89,21 @@ The project introduces the **Cero Hero digital waste collection platform** — a
 
 Tirupati is not a generic Indian city. It is a **pilgrimage-economy city** with structural characteristics that make it exceptionally suited for a waste-to-energy project.
 
-**Guaranteed organic waste supply.** The city's pilgrimage economy generates consistent wet organic waste throughout the year. Unlike manufacturing-dependent cities, waste volumes do not fluctuate with economic cycles. Tirumala Tirupati Devasthanams (TTD) alone serves 50,000–100,000 pilgrims daily.
+**Guaranteed organic waste supply.** The city's pilgrimage economy generates consistent wet organic waste throughout the year. Unlike manufacturing-dependent cities, waste volumes do not fluctuate with economic cycles. TTD serves 50,000–100,000 pilgrims daily. TTMC's total organic waste stream exceeds 115 TPD — well above what any single plant can absorb.
 
-**Demonstrated proof at scale.** Tirupati already operates a 50 TPD biomethanation plant at Thukivakam (PPP with Mahindra Waste-to-Energy Solutions, commissioned 2022–23 per MNRE BioURJA records), producing 1,728 m³/day of raw biogas and 5 tonnes/day of compost. This is not a pilot — it is an operating proof point.
+**Demonstrated proof at scale.** Tirupati already operates a 50 TPD biomethanation plant at Thukivakam (Bio Green City Waste Management, commissioned 2022–23), producing ~1,728 m³/day of raw biogas sold to hotels and industries for cooking. **This is not a competitor to Cero Hero** — Thukivakam produces raw cooking gas, not transport-grade CBG. Cero Hero will produce IS 16087:2016-compliant CBG for SATAT offtake and the mandatory CGD blending market — a different product, different infrastructure, different price tier.
 
-**Active policy signal.** In March 2026, the AP government sanctioned five urban CBG plants. Tirupati district is listed in the GOBARdhan portal (December 16, 2025 Lok Sabha data) with one functional and one yet-to-start CBG plant. A second, better-capitalised plant with advanced gas upgrading is explicitly needed.
+**TTMC 100 TPD DBFOT Tender — How This Affects the Project:** TTMC floated an RFP (bid submission October 2024) for a 100 TPD bio-methanation DBFOT expansion at Thukivakam. If awarded, this operator will process 100 TPD of TTMC's primary municipal organic waste stream. **Cero Hero's response to this:** (a) Cero Hero's Site C (Karakambadi–Mangalam) is geographically separate from the Thukivakam cluster, ensuring no land conflict; (b) Cero Hero does not depend on 100% TTMC waste — the model is 70% TTMC (35 TPD) + 30% BWG (15 TPD); (c) Tirupati generates 115+ TPD organic waste — even with Thukivakam processing 100 TPD, the TTMC stream continues to grow with the city, and TTMC's DBFOT contract may not preclude separate municipal waste diversion agreements for CBG-specific processing; (d) most critically — Thukivakam's DBFOT operator is not SATAT-registered and does not produce CBG. The CBO mandate (see below) means OMCs need CBG specifically — Cero Hero fills that gap.
+
+**Active policy signal.** In March 2026, the AP government sanctioned five urban CBG plants. Tirupati district is listed in the GOBARdhan portal with one functional and one yet-to-start CBG plant. Nationally, 589 plants are operational, 251 under construction, and India needs 750 plants by 2028 to meet CBG blending targets.
+
+**Tirupati is India's 8th cleanest city** (Swachh Survekshan 2023–24). TTMC holds a high Swachh Bharat ranking in part because of its waste processing infrastructure. A 50 TPD CBG plant directly contributes to SBM-Urban 2.0 GFC+ (Green+) certification scoring — protecting this national ranking.
 
 **Bulk generator density.** TTMC has formally identified:
 - **27 BWGs** above 100 kg/day
 - **60 BWGs** at 50–100 kg/day
 
-This is a structured, mappable organics supply chain — not informal waste.
+This is a structured, mappable organics supply chain — not informal waste. Following TTD's decision to manage its own waste through the TTD-IOCL plant at Kakulamanu Dibba (commissioned or near-commissioning), TTD waste is not available to Cero Hero — but the city's hotel, hospital, and institutional BWG density fully compensates.
 
 ### The Cero Hero Strategic Position
 
@@ -112,11 +116,12 @@ Cero Hero is positioned as a **waste infrastructure operator with a digital inte
 
 | Scheme | Relevance |
 |---|---|
-| SATAT (MoPNG, 2018) | CBG offtake at regulated price (Rs. 46/kg minimum); Cero Hero registers as SATAT producer |
-| SBM-Urban 2.0 | Mandates source segregation and organic waste processing; directly aligned |
+| **CBG Blending Obligation (CBO) — FY 2025–26 onwards** | **From this financial year, OMCs are legally mandated to blend 1% CBG into CNG/PNG supply; rising to 3% (FY 2026–27), 4% (FY 2027–28), 5% (FY 2028–29 onwards). OMCs face penalties for non-compliance. Every SATAT-registered CBG plant is now a compliance asset for OMCs. Approving Cero Hero directly helps AP-based OMCs meet their CBO.** |
+| SATAT (MoPNG, 2018, revised) | CBG offtake at regulated price of **Rs. 54/kg** (revised from Rs. 46/kg; IOCL SATAT portal, 2025); Cero Hero registers as SATAT producer |
+| SBM-Urban 2.0 | Mandates source segregation and organic waste processing; TTMC earns GFC+ certification credit |
 | GOBARdhan (MoAHD&F) | National platform for biogas/CBG registration, subsidy tracking |
-| MNRE Biogas Programme | Central Financial Assistance available for CBG plants of this scale |
-| AP Clean Energy Policy 2024 | State-level support for renewable energy projects including biomethane |
+| MNRE Biogas Programme (Phase-I, FY 2021–26) | CFA of Rs. 4 crore per 4,800 kg/day for new CBG plants; proportional for smaller capacity |
+| MoPNG Financial Assistance to CBG Producers | Separate scheme — Rs. 564.75 crore budget (FY 2023–24 to 2026–27) for CBG producer support; Cero Hero to apply |
 | SWM Rules 2016 (Amended) | BWGs legally mandated to arrange processing; Cero Hero provides the compliant route |
     `,
   },
@@ -145,7 +150,7 @@ Based on PIB-published Tirupati waste data (February 20, 2024) and TTMC operatio
 | Tier | Source | Daily Volume | TS % | VS % of TS | Biogas Yield |
 |---|---|---|---|---|---|
 | Tier 1 (Premium) | Hotel kitchens, institutional cafeterias | 8–12 TPD | 20–25% | 85–90% | 100–130 Nm³/ton |
-| Tier 2 (High) | TTD prasad/langar waste, temple food prep | 5–8 TPD | 18–22% | 82–88% | 90–115 Nm³/ton |
+| Tier 2 (High) | Large hotel kitchens, hospital catering, event halls | 5–8 TPD | 18–22% | 82–88% | 90–115 Nm³/ton |
 | Tier 3 (Standard) | TTMC segregated door-to-door collection | 60–80 TPD | 20–28% | 75–82% | 75–100 Nm³/ton |
 | Tier 4 (Lower) | Market waste, mandis (mixed organics) | 20–30 TPD | 15–22% | 65–75% | 60–80 Nm³/ton |
 
@@ -198,11 +203,13 @@ Registered BWGs receive a monthly waste report and compliance certificate, satis
 | Category | Enrolled BWGs | Est. Daily Organic Waste |
 |---|---|---|
 | Hotels (3-star and above) | 25 | 4.5 TPD |
-| Restaurants and food courts | 30 | 2.5 TPD |
+| Restaurants and food courts | 35 | 3.0 TPD |
 | Hospital and institutional catering | 15 | 2.0 TPD |
-| TTD / temple kitchens (subject to MOU) | 5 | 3.5 TPD |
-| Market waste aggregators | 25 | 2.5 TPD |
+| Wedding halls, event venues, clubs | 10 | 2.5 TPD |
+| Market waste aggregators | 15 | 3.0 TPD |
 | **Total** | **100** | **~15 TPD** |
+
+> **Note on TTD:** TTD and IOCL are constructing a dedicated 40–50 TPD CBG plant at Kakulamanu Dibba, Tirumala, with output piped directly to the Anna Prasadam kitchen. TTD's organic waste is fully committed to this captive plant. Cero Hero's BWG model does not include TTD — the hotel, restaurant, and market density in Tirupati city fully covers the 15 TPD Tier 1/2 requirement.
 
 ### Platform Revenue
 
@@ -234,7 +241,7 @@ Registered BWGs receive a monthly waste report and compliance certificate, satis
 
 ---
 
-### Site Option A — Renigunta Waste Management Cluster ⭐ Recommended
+### Site Option A — Renigunta Waste Management Cluster ⚠️ Re-evaluated
 
 **Renigunta Mandal, Tirupati District**
 
@@ -250,7 +257,7 @@ Registered BWGs receive a monthly waste report and compliance certificate, satis
 | Residential buffer | 600–800 m from nearest housing cluster |
 | **Score** | **8.5 / 10** |
 
-**Key advantage:** Shortest distance from city BWG concentration; best logistics for CBG cascade distribution. APIIC industrial zone classification reduces land conversion complexity.
+**Re-evaluation note:** Thukivakam Village is within Renigunta Mandal — the same cluster as Site A. TTMC's 100 TPD DBFOT bio-methanation expansion (tender Oct 2024) is being developed at Thukivakam. Locating Cero Hero at Site A risks land conflict with the DBFOT operator and creates a contested municipal waste allocation between two plants in the same cluster. **Site A is downgraded pending confirmation of DBFOT award scope and Thukivakam land boundaries.**
 
 ---
 
@@ -272,7 +279,7 @@ Registered BWGs receive a monthly waste report and compliance certificate, satis
 
 ---
 
-### Site Option C — Karakambadi–Mangalam Agri-Interface Zone
+### Site Option C — Karakambadi–Mangalam Agri-Interface Zone ⭐ Now Recommended
 
 **Southern outskirts, 8–10 km from city, Tirupati Rural Mandal**
 
@@ -283,12 +290,15 @@ Registered BWGs receive a monthly waste report and compliance certificate, satis
 | Land available | 5–8 acres via TTMC/Panchayat allocation |
 | Soil condition | Laterite; moderate foundation requirements |
 | Agricultural adjacency | Excellent — direct compost offtake to adjacent horticulture farms |
-| TTD synergy | Closer to Tirumala-side organic waste flows |
-| **Score** | **8.0 / 10** |
+| TTMC waste routing | South-western TTMC collection routes serve this site directly; no conflict with Thukivakam DBFOT operator |
+| CBG distribution | SH-63 provides direct access to Tirupati city CNG stations and industrial zones |
+| **Score** | **8.5 / 10 (revised upward — now primary recommendation)** |
 
 ---
 
-> **Government Action Required:** Cero Hero requests that MAUD/TTMC formally allocate 5 contiguous acres at the preferred site within **60 days** of DPR acceptance.
+> **Site Recommendation Rationale (Updated):** Site C (Karakambadi–Mangalam) is now the primary recommendation. The re-evaluation follows confirmation that Thukivakam Village (Site A cluster) is the subject of TTMC's 100 TPD DBFOT bio-methanation tender. Site C avoids all overlap with the DBFOT operator, draws from separate TTMC collection circuits, has direct SH-63 access for CBG transport, and offers excellent digestate/FOM offtake to adjacent horticulture farms. Site B remains viable for Phase 2 expansion if land at Site C is insufficient.
+
+> **Government Action Required:** Cero Hero requests that MAUD/TTMC formally allocate 5 contiguous acres at Site C (Karakambadi–Mangalam, Tirupati Rural Mandal) within **60 days** of DPR acceptance, with survey number and village confirmation.
     `,
   },
   {
@@ -679,15 +689,15 @@ All 22 positions prioritised for local Tirupati residents. Skill development pro
 
 | Revenue Stream | Calculation | Annual Revenue (INR Lakh) | Notes |
 |---|---|---|---|
-| **CBG Sales** | 1,600 kg/day × 330 days × Rs. 46/kg (SATAT guaranteed floor) | 242 | SATAT-registered OMC offtake; Rs. 46/kg is the binding floor price per MoPNG gazette notification |
+| **CBG Sales** | 1,600 kg/day × 330 days × Rs. 54/kg (current SATAT confirmed price) | 285 | SATAT-registered OMC offtake; Rs. 54/kg confirmed per IOCL SATAT portal 2025 (revised from original Rs. 46/kg launch price) |
 | **Municipal Processing Fee (TTMC)** | 35 TPD × 330 days × Rs. 350/tonne | 40 | Subject to TTMC waste diversion MOU — see Annexure III |
 | **Fermented Organic Manure (FOM)** | 1,650 tonnes/year × Rs. 2,500/tonne | 41 | FCO-compliant; farm-gate price per market survey |
 | **Cero Hero BWG Subscriptions** | ~100 BWGs × avg Rs. 1,800/month × 12 months | 22 | Subscription-based collection contracts; see Annexure VI |
-| **Sub-total (Base Revenue, no carbon credits)** | | **Rs. 345 lakh ≈ Rs. 3.45 crore** | |
-| **Carbon Credits** | 12,000 tCO₂e/year × Rs. 400/tCO₂e (conservative — India voluntary market) | 48 | VCS/Gold Standard methodology; conservative pricing based on BEE early auction data. Range: Rs. 400–800/tCO₂e |
-| **Total Revenue (Year 3+ with carbon credits)** | | **Rs. 393 lakh ≈ Rs. 3.93 crore** | Carbon credits are operational by Year 3; treated as base case |
+| **Sub-total (Base Revenue, no carbon credits)** | | **Rs. 388 lakh ≈ Rs. 3.88 crore** | |
+| **Carbon Credits** | 12,000 tCO₂e/year × Rs. 400/tCO₂e (conservative — India voluntary market) | 48 | VCS/Gold Standard methodology VM0044; Rs. 400 base case. Range: Rs. 400–800/tCO₂e |
+| **Total Revenue (Year 3+ with carbon credits)** | | **Rs. 436 lakh ≈ Rs. 4.36 crore** | Carbon credits are operational by Year 3; treated as base case |
 
-> **CBG Price Note:** SATAT guarantees Rs. 46/kg from registered OMCs. A premium market price of Rs. 55–60/kg is achievable via direct industrial/fleet customers but is not assumed in the base case — it is an upside lever. Revenue is modelled at the guaranteed floor only.
+> **CBG Price Note:** SATAT confirmed price is Rs. 54/kg (IOCL SATAT portal, 2025). Premium direct market (industrial fleet, hotel kitchen fuel replacement) is Rs. 70–80/kg but is not assumed in the base case. Revenue is modelled at the SATAT confirmed rate only. With the mandatory CBO blending obligation active from FY 2025–26, OMCs actively seek SATAT-registered CBG supply — price pressure is upward, not downward.
 
 > **Carbon Credit Note:** India's CCTS is being extended to waste sector. VCS/Gold Standard methodology (VM0044 — Organic Waste Composting/Anaerobic Digestion) is applicable. At conservative Rs. 400/tCO₂e, carbon credits add Rs. 48 lakh/year. At Rs. 800/tCO₂e (upper range), addition is Rs. 96 lakh/year.
 
@@ -695,19 +705,19 @@ All 22 positions prioritised for local Tirupati residents. Skill development pro
 
 | Scenario | CBG Price | Carbon Credit | Total Revenue |
 |---|---|---|---|
-| Downside — SATAT only, no carbon credits | Rs. 46/kg | Nil | Rs. 3.45 crore |
-| **Base case — SATAT + carbon credits (conservative)** | **Rs. 46/kg** | **Rs. 400/tCO₂e** | **Rs. 3.93 crore** |
-| Mid case — SATAT + carbon credits (mid) | Rs. 46/kg | Rs. 600/tCO₂e | Rs. 4.17 crore |
-| Upside — premium market + full carbon | Rs. 55/kg | Rs. 800/tCO₂e | Rs. 5.05 crore |
+| Downside — SATAT only, no carbon credits | Rs. 54/kg | Nil | Rs. 3.88 crore |
+| **Base case — SATAT + carbon credits (conservative)** | **Rs. 54/kg** | **Rs. 400/tCO₂e** | **Rs. 4.36 crore** |
+| Mid case — SATAT + carbon credits (mid) | Rs. 54/kg | Rs. 600/tCO₂e | Rs. 4.60 crore |
+| Upside — premium direct market + full carbon | Rs. 75/kg | Rs. 800/tCO₂e | Rs. 6.10 crore |
 
 ### EBITDA Summary
 
 | Parameter | Phase 1 (Base) | Phase 2 |
 |---|---|---|
-| Annual Revenue (with carbon credits, base) | Rs. 3.93 crore | Rs. 7.20 crore |
+| Annual Revenue (with carbon credits, base) | Rs. 4.36 crore | Rs. 8.20 crore |
 | Annual OPEX | Rs. 2.31 crore | Rs. 3.85 crore |
-| **EBITDA** | **Rs. 1.62 crore** | **Rs. 3.35 crore** |
-| EBITDA Margin | 41% | 47% |
+| **EBITDA** | **Rs. 2.05 crore** | **Rs. 4.35 crore** |
+| EBITDA Margin | 47% | 53% |
 
 > **Phase 2 OPEX note:** Shared fixed costs (management, SCADA, insurance, admin) do not double with Phase 2 expansion. Phase 2 marginal OPEX = Rs. 1.54 crore incremental (new operations staff Rs. 60 lakh, additional power Rs. 25 lakh, maintenance on new P&M Rs. 28 lakh, consumables Rs. 18 lakh, vehicles Rs. 15 lakh, contingency Rs. 8 lakh = Rs. 1.54 crore). Combined OPEX at full Phase 2 = Rs. 2.31 + Rs. 1.54 = Rs. 3.85 crore.
 
@@ -716,9 +726,10 @@ All 22 positions prioritised for local Tirupati residents. Skill development pro
 | Parameter | Value | Basis |
 |---|---|---|
 | Phase 1 Total CAPEX | Rs. 30.24 crore | Per cost estimate |
-| Less: MNRE CFA (Biogas Programme 2024–25) | Rs. 2.00 crore | CFA rate per MNRE scheme notification; calculation in Annexure V |
+| Less: MNRE CFA (Biogas Programme Phase-I) | Rs. 1.33 crore | Rs. 4 crore per 4,800 kg/day × (1,600/4,800); proportional calculation per MNRE scheme |
+| Less: MoPNG Financial Assistance to CBG Producers | Rs. 0.75 crore | Separate MoPNG scheme (Rs. 564.75 crore total budget, FY 2023–27); eligibility subject to confirmation |
 | Less: AP State Land Concession (capitalised) | Rs. 2.00 crore | 5 acres at Rs. 40 lakh/acre government reserve price; lease at Re. 1/year equivalent |
-| **Net CAPEX to be Financed** | **Rs. 26.24 crore** | |
+| **Net CAPEX to be Financed** | **Rs. 26.16 crore** | |
 | Equity (30%) | Rs. 7.87 crore | Promoter equity + seed investor round |
 | Debt (70%) — IREDA Green Finance | Rs. 18.37 crore | IREDA Green Bond / NaBFID Green Infrastructure |
 | **Loan Terms** | 8.5% p.a., 15-year tenure, 2-year principal moratorium | Standard IREDA green infrastructure terms |
@@ -734,31 +745,32 @@ All 22 positions prioritised for local Tirupati residents. Skill development pro
 
 | Year | EBITDA | Debt Service | DSCR | Status |
 |---|---|---|---|---|
-| Year 1 (ramp-up, 50%; moratorium) | Rs. 0.30 Cr | Rs. 1.56 Cr (interest only) | 0.19 | Construction/ramp; promoter equity covers shortfall |
-| Year 2 (80%; moratorium) | Rs. 1.10 Cr | Rs. 1.56 Cr (interest only) | 0.71 | Equity bridge from promoter; shortfall Rs. 0.46 Cr |
-| Year 3 (100%; repayment starts) | Rs. 1.62 Cr | Rs. 1.84 Cr | **0.88** | Below 1.0; carbon credits critical from this year |
-| Year 4 (100% + carbon credits maturing) | Rs. 1.84 Cr | Rs. 1.84 Cr | **1.00** | Break-even on debt service |
-| Year 5+ (carbon credits + BWG scale-up) | Rs. 2.10 Cr | Rs. 1.84 Cr | **1.14** | Positive free cash flow |
-| Year 7+ (Phase 2 operational) | Rs. 3.35 Cr | Rs. 3.10 Cr | **1.08** | Combined Phase 1+2 debt service; trending to 1.25+ by Yr 9 |
+| Year 1 (ramp-up, 50%; moratorium) | Rs. 0.50 Cr | Rs. 1.56 Cr (interest only) | 0.32 | Ramp phase; promoter equity covers shortfall |
+| Year 2 (80%; moratorium) | Rs. 1.40 Cr | Rs. 1.56 Cr (interest only) | 0.90 | Equity bridge; carbon credit registration in progress |
+| Year 3 (100%; repayment starts; carbon credits) | Rs. 2.05 Cr | Rs. 1.84 Cr | **1.11** | ✅ Above 1.0 from Year 3 |
+| Year 4 (carbon credits maturing to Rs. 600/tCO₂e) | Rs. 2.30 Cr | Rs. 1.84 Cr | **1.25** | ✅ Meets IREDA minimum threshold |
+| Year 5+ (BWG network mature) | Rs. 2.50 Cr | Rs. 1.84 Cr | **1.36** | ✅ Comfortable margin; positive free cash flow |
+| Year 7+ (Phase 2 operational) | Rs. 4.35 Cr | Rs. 3.10 Cr | **1.40** | ✅ Combined Phase 1+2 debt service; strong coverage |
 
-> **Viability Condition:** This project achieves DSCR ≥ 1.0 only when carbon credits are operational. Carbon credit revenue is **not optional** — it is a structural requirement for debt serviceability. The promoter commits to registering under VCS/Gold Standard within 6 months of commissioning (Month 26 from Zero Date). During Years 1–4, the equity investor accepts sub-1.0 DSCR in exchange for the government land concession reducing overall equity requirement. **IREDA and NABARD have precedent for approving phased-ramp projects with moratorium structures where Year 5+ DSCR exceeds 1.1 — this project meets that criterion.**
+> **Revised Viability Assessment:** At Rs. 54/kg SATAT pricing (confirmed 2025) and conservative carbon credits from Year 3, DSCR clears 1.0 from Year 3 and reaches IREDA's 1.25 minimum by Year 4 without requiring any extraordinary support. The project is commercially viable with: (1) SATAT registration, (2) 2-year IREDA moratorium, and (3) carbon credit registration within 6 months of commissioning. Government support (land concession + TTMC processing fee) improves but is not the sole viability condition.
 
 ### Long-Term Cash Flow Profile
 
 | Year | Revenue | OPEX | EBITDA | Debt Service | Free Cash | DSCR |
 |---|---|---|---|---|---|---|
-| Yr 1 (50% ramp) | Rs. 1.73 Cr | Rs. 1.75 Cr | (Rs. 0.02 Cr) | Rs. 1.56 Cr | (Rs. 1.58 Cr) | — |
-| Yr 2 (80%, moratorium) | Rs. 2.76 Cr | Rs. 2.05 Cr | Rs. 0.71 Cr | Rs. 1.56 Cr | (Rs. 0.85 Cr) | 0.46 |
-| Yr 3 (100%, carbon credits start) | Rs. 3.93 Cr | Rs. 2.31 Cr | Rs. 1.62 Cr | Rs. 1.84 Cr | (Rs. 0.22 Cr) | 0.88 |
-| Yr 5 (carbon credits mature) | Rs. 4.17 Cr | Rs. 2.33 Cr | Rs. 1.84 Cr | Rs. 1.84 Cr | **+Rs. 0.00 Cr** | 1.00 |
-| Yr 7 (Phase 2 commercial) | Rs. 7.20 Cr | Rs. 3.85 Cr | Rs. 3.35 Cr | Rs. 3.10 Cr | **+Rs. 0.25 Cr** | 1.08 |
-| Yr 10 (Phase 2 + Phase 1 debt reducing) | Rs. 7.50 Cr | Rs. 3.90 Cr | Rs. 3.60 Cr | Rs. 2.40 Cr | **+Rs. 1.20 Cr** | 1.50 |
+| Yr 1 (50% ramp) | Rs. 1.95 Cr | Rs. 1.80 Cr | Rs. 0.15 Cr | Rs. 1.56 Cr | (Rs. 1.41 Cr) | 0.10 |
+| Yr 2 (80%, moratorium) | Rs. 3.10 Cr | Rs. 2.10 Cr | Rs. 1.00 Cr | Rs. 1.56 Cr | (Rs. 0.56 Cr) | 0.64 |
+| Yr 3 (100%, carbon credits active) | Rs. 4.36 Cr | Rs. 2.31 Cr | Rs. 2.05 Cr | Rs. 1.84 Cr | **+Rs. 0.21 Cr** | **1.11** |
+| Yr 4 (carbon credits Rs. 600/tCO₂e) | Rs. 4.60 Cr | Rs. 2.33 Cr | Rs. 2.27 Cr | Rs. 1.84 Cr | **+Rs. 0.43 Cr** | **1.23** |
+| Yr 5 (full ramp, BWG scale-up) | Rs. 4.80 Cr | Rs. 2.35 Cr | Rs. 2.45 Cr | Rs. 1.84 Cr | **+Rs. 0.61 Cr** | **1.33** |
+| Yr 7 (Phase 2 commercial) | Rs. 8.20 Cr | Rs. 3.85 Cr | Rs. 4.35 Cr | Rs. 3.10 Cr | **+Rs. 1.25 Cr** | **1.40** |
+| Yr 10 (Phase 1 debt service declining) | Rs. 8.50 Cr | Rs. 3.90 Cr | Rs. 4.60 Cr | Rs. 2.40 Cr | **+Rs. 2.20 Cr** | **1.92** |
 
-**Project IRR (blended, 15-year horizon): 12–15%**
-**Equity IRR: 16–19%** (with land concession and SATAT registration; carbon credits upside)
-**Payback period: 9–11 years (Phase 1); 7–8 years (Phase 1+2 combined)**
+**Project IRR (blended, 15-year horizon): 14–17%**
+**Equity IRR: 18–22%** (with land concession, SATAT at Rs. 54/kg, carbon credits)
+**Payback period: 8–9 years (Phase 1); 6–7 years (Phase 1+2 combined)**
 
-> **Honest Investor Disclosure:** This is a long-gestation infrastructure project with a 9-year payback. The equity case is built on: (1) government land concession eliminating the largest CAPEX variable, (2) SATAT providing a guaranteed CBG floor price, and (3) carbon credits providing the debt service bridge. Any investor underwriting this project must underwrite all three. If one pillar is absent, the project does not close.
+> **Investor Case:** This is a long-gestation infrastructure project. The equity case rests on three confirmed pillars: (1) Rs. 54/kg SATAT pricing with mandatory CBO creating demand certainty, (2) government land concession reducing the largest CAPEX variable, and (3) VCS carbon credits from Year 3 creating an additional Rs. 48–96 lakh/year revenue layer. The project no longer depends on speculative government cash grants — SATAT pricing alone creates a credible base case.
     `,
   },
   {
@@ -812,7 +824,8 @@ All 22 positions prioritised for local Tirupati residents. Skill development pro
     content: `
 | Risk | Category | Probability | Impact | Mitigation |
 |---|---|---|---|---|
-| Feedstock supply shortfall from TTMC | Feedstock | Medium | High | Long-term waste diversion agreement with minimum daily tonnage; Cero Hero BWG platform diversifies supply |
+| **TTMC 100 TPD DBFOT at Thukivakam constrains municipal waste allocation** | **Feedstock** | **High** | **High** | **Site C (Karakambadi) draws from separate TTMC collection circuits, avoiding Thukivakam cluster. Cero Hero's 35 TPD from TTMC represents only 30% of total organic waste generated — ample headroom. BWG platform (15 TPD) is entirely independent of TTMC contracts. Government to clarify DBFOT scope and waste allocation in site allocation letter.** |
+| Feedstock supply shortfall from TTMC | Feedstock | Medium | Medium | Long-term TTMC waste diversion agreement for specific collection routes serving Site C; Cero Hero BWG platform at 15 TPD provides feedstock independence buffer |
 | CBG price below Rs. 46/kg | Commercial | Low | High | SATAT guarantees minimum Rs. 46/kg from registered OMC; contract before commissioning |
 | EPC cost overrun (>10%) | Execution | Medium | Medium | Fixed-price EPC contract with performance bond; PMC oversight; 8% contingency built in |
 | AP PCB CTO delayed | Regulatory | Medium | Medium | Early pre-consultation; parallel application tracking; PMC regulatory specialist |
@@ -833,10 +846,12 @@ All 22 positions prioritised for local Tirupati residents. Skill development pro
 
 | Scheme | Benefit | Status |
 |---|---|---|
-| SATAT (MoPNG, 2018) | Guaranteed CBG offtake by OMCs; minimum price floor of Rs. 46/kg | Available — register post-PESO approval |
-| MNRE Biogas Programme (2024–25) | CFA up to Rs. 2 crore for new CBG plants of this scale | Apply within 60 days of DPR acceptance |
-| GOBARdhan | Project registration; monitoring; potential priority funding | Register on GOBARdhan portal |
-| SBM-Urban 2.0 | ODF+ and GFC+ credits to TTMC for organic waste processing; strengthens TTMC case for diversion MOU | Positions TTMC as SBM beneficiary |
+| **CBG Blending Obligation (CBO) — FY 2025–26** | **Legally mandatory for OMCs: 1% CBG blend in CNG/PNG (FY25–26), 3% (FY26–27), 4% (FY27–28), 5% (FY28–29+). OMCs face quarterly compliance review. Every SATAT-registered CBG producer is now a compliance asset. This creates structural demand certainty above and beyond SATAT pricing alone.** | **Active from this financial year** |
+| SATAT (MoPNG, 2018, revised) | Guaranteed CBG offtake by OMCs at Rs. 54/kg (current confirmed rate); long-term offtake agreement | Register post-PESO approval |
+| MNRE Biogas Programme (Phase-I, FY 2021–26) | CFA of Rs. 1.33 crore for Cero Hero's 1,600 kg/day plant (Rs. 4 crore per 4,800 kg/day proportional) | Apply within 60 days of incorporation |
+| MoPNG Financial Assistance to CBG Producers | Rs. 564.75 crore budget (FY 2023–27); separate from MNRE; Cero Hero to apply for producer incentive | Apply post-SATAT registration |
+| GOBARdhan | Project registration; monitoring; potential priority allocation in national CBG targets | Register on GOBARdhan Unified Registration Portal |
+| SBM-Urban 2.0 | ODF+ and GFC+ credits to TTMC for organic waste processing; strengthens TTMC case for diversion MOU; Tirupati protects 8th cleanest city ranking | Positions TTMC as SBM beneficiary |
 
 ### State Support Requested from Government of Andhra Pradesh
 
@@ -924,6 +939,47 @@ Eligible for:
 - **MNRE CFA application:** Submit within 60 days of incorporation
 - **BWG enrollment:** Commence Cero Hero enrollment drive in Tirupati — target 50 BWGs signed within 90 days
 - **Financial closure:** Target within 6 months of site allocation — contingent on MNRE CFA letter and TTMC MOU being in place
+
+### Why the Government of Andhra Pradesh Should Say Yes — The Decision Calculus
+
+This section is written for the reviewing officer. The question is not "is this a good project?" — it is "what does the government gain, what does it risk, and what does it cost?"
+
+**What AP Government Gains:**
+
+| Benefit | Quantified Value |
+|---|---|
+| TTMC landfill cost savings | 35 TPD × 330 days × Rs. 400/tonne savings = Rs. 46 lakh/year back to TTMC |
+| TTMC processing fee income | Rs. 40 lakh/year (government earns money from its waste) |
+| Swachh Survekshan ranking | 50 TPD CBG plant = direct GFC+ scoring; protects Tirupati's 8th rank nationally |
+| CBO compliance for AP OMCs | One more SATAT-registered CBG plant reduces OMC penalty risk in AP |
+| State employment | 22 direct jobs; 50+ indirect; all Tirupati local |
+| Farmer fertilizer savings | 1,650 tonnes/year FOM vs synthetic fertilizer; Rs. 33 lakh/year farmer savings |
+| GHG avoided | 12,000 tCO₂e/year — counts toward AP's state climate commitments |
+| LPG import substitution | 528 tonnes CBG/year displaces ~450 tonnes LPG equivalent; contributes to India's import bill |
+| Replication template | Cero Hero's model becomes AP's template for the other 4 sanctioned urban CBG plants |
+
+**What AP Government Risks:**
+
+| Risk | Assessment |
+|---|---|
+| Financial risk | Zero — no cash outlay from state budget; only land lease (Re. 1/year) and facilitation of TTMC MOU |
+| Reputational risk | Low — Cero Hero commits to full EPC procurement transparency and SATAT registration |
+| Land risk | Site C is government land; allocation is administrative, not commercial |
+| Failure risk | If Cero Hero fails post-commissioning, the land reverts; SATAT registration and plant assets remain for next operator |
+
+**What AP Government Is Asked to Do (and not asked to do):**
+
+| Ask | Ask Type |
+|---|---|
+| Allocate 5 acres at Site C | Administrative — land allocation order |
+| Direct TTMC MOU for 35 TPD (specific collection routes) | Facilitation — MAUD circular to TTMC |
+| AP PCB pre-consultation | Procedural — 1 meeting facilitated |
+| APSPDCL nodal officer for power connection | Administrative — internal nomination |
+| NOT asked to do | Provide cash grant, guarantee debt, underwrite revenue, take equity |
+
+**The government is being asked to sign a land order and facilitate two administrative approvals. The financial and execution risk sits entirely with Cero Hero and its lenders.**
+
+---
 
 ### The Broader Vision
 
