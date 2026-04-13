@@ -49,7 +49,7 @@ task.md
 implementation_plan.md
 
 # Large data / External Repositories (External and massive)
-data/
+/data/
 research-tools/
 research_codex/
  research/

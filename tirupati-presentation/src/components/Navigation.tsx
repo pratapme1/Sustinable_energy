@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft, ChevronRight, Download, Landmark, Layers3 } from "lucide-react";
+import { ChevronLeft, ChevronRight, FileText, Landmark, Layers3 } from "lucide-react";
 
 interface NavigationProps {
   currentSlide: number;
@@ -19,10 +19,9 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext, 
           icon: Layers3,
         },
         {
-          href: "/tirupati-project-report.pdf",
+          href: "/dpr",
           label: "Project Report",
-          icon: Download,
-          download: "Tirupati-Project-Report.pdf",
+          icon: FileText,
         },
       ]
     : [
@@ -32,10 +31,9 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext, 
           icon: Landmark,
         },
         {
-          href: "/tirupati-project-report.pdf",
+          href: "/dpr",
           label: "Project Report",
-          icon: Download,
-          download: "Tirupati-Project-Report.pdf",
+          icon: FileText,
         },
       ];
 
@@ -69,9 +67,6 @@ export default function Navigation({ currentSlide, totalSlides, onPrev, onNext, 
             <a
               key={link.label}
               href={link.href}
-              download={link.download}
-              target="_blank"
-              rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 md:px-5 md:py-2 bg-brand-emerald/16 border border-brand-emerald/30 rounded-full text-brand-emerald text-xs md:text-sm hover:bg-brand-emerald/24 font-semibold shadow-sm transition-all group"
             >
               <link.icon className="w-4 h-4 group-hover:translate-y-px transition-transform" />
