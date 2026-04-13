@@ -48,19 +48,21 @@ export const DPR_SECTIONS: DPRSection[] = [
     id: "executive-summary",
     title: "Executive Summary",
     content: `
-Cero Hero Private Limited proposes to develop an **Integrated Organic Waste-to-Compressed Bio-Gas (CBG) Facility** in Tirupati, Andhra Pradesh, as a phased greenfield project on government-allocated land.
+**Cero Hero** (promoter entity currently in incorporation; CIN to be registered within 30 days of DPR acceptance) proposes to develop an **Integrated Organic Waste-to-Compressed Bio-Gas (CBG) Facility** in Tirupati, Andhra Pradesh, as a phased greenfield project on government-allocated land. The DPR is submitted by the founding promoter, Vi Pratap, on behalf of the entity being formed. Promoter profile and financial capability statement are provided in **Annexure VII**.
 
 ### The Problem Is Measurable
 
 Tirupati Municipal Corporation (TTMC) currently manages approximately **115 TPD** of wet organic waste from its urban catchment — food waste, kitchen waste, market organics, and garden biomass. A further 5–10 TPD of segregated high-quality organic waste is generated daily by bulk waste generators (BWGs) including hotels, restaurants, hospitals, and institutional kitchens. This organic fraction is either landfilled, open-dumped, or inadequately processed, generating uncontrolled methane emissions, groundwater contamination risk, and public health burden.
 
+> **Note on the existing Thukivakam plant:** The 50 TPD biomethanation plant at Thukivakam (operated under PPP with Mahindra Waste-to-Energy Solutions) processes raw biogas for power generation — not CBG. It does not hold a SATAT registration and does not produce transport-grade CBG. This project is therefore **not competing** with Thukivakam; it is complementary. Furthermore, TTMC's total organic waste stream (~115 TPD) exceeds the combined capacity of both plants at Phase 1, leaving ample feedstock for Cero Hero's 50 TPD intake.
+
 ### The Solution Is Bankable
 
-Through a thermophilic wet anaerobic digestion process, the plant will convert **50 TPD** of segregated organic waste into:
+Through a wet anaerobic digestion process, the plant will convert **50 TPD** of segregated organic waste into:
 
 - **1,600 kg/day** of Compressed Bio-Gas (CBG), compliant with IS 16087:2016
 - **5 TPD** of nutrient-rich Fermented Organic Manure (FOM) for agricultural use
-- **Clean water** for internal process recycling, with zero liquid discharge
+- Treated process water recycled internally (near-zero liquid discharge)
 
 The project introduces the **Cero Hero digital waste collection platform** — a subscription and traceability system that routes segregated organic waste from bulk generators directly to the plant, ensuring feedstock quality and supply reliability that pure municipal systems cannot guarantee.
 
@@ -69,14 +71,14 @@ The project introduces the **Cero Hero digital waste collection platform** — a
 1. Allocate a suitable **5-acre site** in one of three evaluated locations
 2. Support a **TTMC waste diversion agreement** — 35 TPD in Phase 1
 3. Facilitate **AP PCB and PESO clearance** processing
-4. Consider **state-level fiscal support** under the Clean Energy Policy (Rs. 2 crore VGF)
+4. Consider **state-level fiscal support** — land at concessional lease + TTMC processing fee
 
 ### Why Now
 
 - AP government sanctioned **five urban CBG plants** across the state (March 2026)
 - Tirupati district already has **1 functional + 1 under-construction** CBG plant (GOBARdhan portal, December 2025)
 - SATAT guarantees minimum Rs. 46/kg CBG offtake — commercial certainty exists
-- The existing Thukivakam biomethanation plant (50 TPD, Mahindra) proves the feedstock is processable
+- The existing Thukivakam biomethanation plant (50 TPD, Mahindra) proves the feedstock is processable at scale in this location
     `,
   },
   {
@@ -403,8 +405,8 @@ High-purity biomethane compressed to **250 bar** using multi-stage oil-free boos
 **Step 6 — Digestate Management**
 
 - Solid fraction (~5 TPD): aerobic curing for 21 days → FCO-compliant FOM/compost → sold to farmers
-- Liquid fraction (~43 TPD): **90% recycled** as process dilution water; remainder treated for irrigation
-- **Zero Liquid Discharge (ZLD)** is the operating standard
+- Liquid fraction (~43 TPD): **90% recycled** as process dilution water; remainder (~4.3 KLD) treated through a multi-stage effluent treatment system and applied for land irrigation within the plant boundary
+- **Near-Zero Liquid Discharge (NZLD)** is the operating standard — treated effluent to land irrigation under AP PCB consent conditions; no discharge to surface water or groundwater
 
 **Step 7 — SCADA & Control**
 
@@ -471,7 +473,7 @@ Centralized Main Control Room with PLC-SCADA (Siemens/Schneider/ABB — brand fi
 | Compressors | ~70 kW |
 | Lighting, SCADA, offices | ~20 kW |
 | **Total Connected Load** | **~375 kW** |
-| Average Daily Consumption | ~350–400 kWh/day |
+| Average Daily Consumption | ~1,000–1,200 kWh/day (most loads are batch/intermittent; ~12–14% average utilisation of connected capacity) |
 
 Power source: APSPDCL grid connection (11 KV line to dedicated transformer). Emergency diesel generator (150 kVA) for critical loads. Future: 50 kWp rooftop solar to offset auxiliary power cost.
 
@@ -513,7 +515,7 @@ Power source: APSPDCL grid connection (11 KV line to dedicated transformer). Eme
 | Fossil CNG displaced | — | ~528 tonnes/year |
 | Fossil fuel CO₂ displaced | — | ~1,500 tCO₂e/year |
 
-**Total carbon benefit: ~13,500 tCO₂e/year (Phase 1)** — eligible for carbon credit monetization under VCS, Gold Standard, or India's Carbon Credit Trading Scheme (CCTS).
+**Total carbon benefit: ~13,500 tCO₂e/year (Phase 1)** — eligible for carbon credit monetization under VCS/Gold Standard (VM0044 methodology) or India's Carbon Credit Trading Scheme (CCTS, once waste sector is notified). At conservative Rs. 400/tCO₂e: Rs. 48–54 lakh/year. At mid-range Rs. 600/tCO₂e: Rs. 72–81 lakh/year. VCS methodology registration to be initiated within 6 months of commissioning.
 
 ### Emissions from Plant Operations
 
@@ -650,7 +652,7 @@ All 22 positions prioritised for local Tirupati residents. Skill development pro
 | Category | Details | Annual Cost (INR Lakh) |
 |---|---|---|
 | Human Resources | 22 staff: Plant Manager, Shift Engineers (3), Operators (8), Lab Technicians (2), Collection Staff (4), Admin/Security (4) | 80 |
-| Power and Utilities | 375 kW connected, 30% avg load factor, 330 days, Rs. 7/kWh | 25 |
+| Power and Utilities | ~1,100 kWh/day average consumption × 330 days × Rs. 7/kWh (most loads batch/intermittent; ~12% avg utilisation of 375 kW connected) | 25 |
 | Maintenance | 2.5% of plant & machinery CAPEX (Rs. 19 crore P&M) | 48 |
 | Consumables | Chemicals for H₂S scrubber, filter media, lubricants, lab reagents | 18 |
 | Collection Operations | Vehicle fuel and maintenance for Cero Hero routes (2 vehicles, 150 km/day each) | 22 |
@@ -675,60 +677,88 @@ All 22 positions prioritised for local Tirupati residents. Skill development pro
     content: `
 ### Revenue Streams (Phase 1 — Steady State, Year 3)
 
-| Revenue Stream | Calculation | Annual Revenue (INR Lakh) |
-|---|---|---|
-| **CBG Sales** | 1,600 kg/day × 330 days × Rs. 50/kg (blended: SATAT Rs. 46 + premium market Rs. 60) | 264 |
-| **Municipal Processing Fee (TTMC)** | 35 TPD × 330 days × Rs. 350/tonne | 40 |
-| **Fermented Organic Manure (FOM)** | 1,650 tonnes/year × Rs. 2,500/tonne | 41 |
-| **Cero Hero BWG Subscriptions** | ~100 BWGs × avg Rs. 1,800/month × 12 months | 22 |
-| **Carbon Credits (conservative)** | 12,000 tCO₂e/year × Rs. 800/tonne (India CCTS) | 96 |
-| **Total Revenue (with carbon credits)** | | **Rs. 463 lakh ≈ Rs. 4.63 crore** |
-| **Base Case (excluding carbon credits)** | | **Rs. 3.67 crore** |
+| Revenue Stream | Calculation | Annual Revenue (INR Lakh) | Notes |
+|---|---|---|---|
+| **CBG Sales** | 1,600 kg/day × 330 days × Rs. 46/kg (SATAT guaranteed floor) | 242 | SATAT-registered OMC offtake; Rs. 46/kg is the binding floor price per MoPNG gazette notification |
+| **Municipal Processing Fee (TTMC)** | 35 TPD × 330 days × Rs. 350/tonne | 40 | Subject to TTMC waste diversion MOU — see Annexure III |
+| **Fermented Organic Manure (FOM)** | 1,650 tonnes/year × Rs. 2,500/tonne | 41 | FCO-compliant; farm-gate price per market survey |
+| **Cero Hero BWG Subscriptions** | ~100 BWGs × avg Rs. 1,800/month × 12 months | 22 | Subscription-based collection contracts; see Annexure VI |
+| **Sub-total (Base Revenue, no carbon credits)** | | **Rs. 345 lakh ≈ Rs. 3.45 crore** | |
+| **Carbon Credits** | 12,000 tCO₂e/year × Rs. 400/tCO₂e (conservative — India voluntary market) | 48 | VCS/Gold Standard methodology; conservative pricing based on BEE early auction data. Range: Rs. 400–800/tCO₂e |
+| **Total Revenue (Year 3+ with carbon credits)** | | **Rs. 393 lakh ≈ Rs. 3.93 crore** | Carbon credits are operational by Year 3; treated as base case |
+
+> **CBG Price Note:** SATAT guarantees Rs. 46/kg from registered OMCs. A premium market price of Rs. 55–60/kg is achievable via direct industrial/fleet customers but is not assumed in the base case — it is an upside lever. Revenue is modelled at the guaranteed floor only.
+
+> **Carbon Credit Note:** India's CCTS is being extended to waste sector. VCS/Gold Standard methodology (VM0044 — Organic Waste Composting/Anaerobic Digestion) is applicable. At conservative Rs. 400/tCO₂e, carbon credits add Rs. 48 lakh/year. At Rs. 800/tCO₂e (upper range), addition is Rs. 96 lakh/year.
 
 ### Revenue Sensitivity
 
-| CBG Price Scenario | CBG Revenue | Total Base Revenue |
-|---|---|---|
-| Conservative — SATAT floor (Rs. 46/kg) | Rs. 2.43 crore | Rs. 3.46 crore |
-| Base case (Rs. 50/kg blended) | Rs. 2.64 crore | Rs. 3.67 crore |
-| Optimistic — market (Rs. 60/kg) | Rs. 3.17 crore | Rs. 4.20 crore |
+| Scenario | CBG Price | Carbon Credit | Total Revenue |
+|---|---|---|---|
+| Downside — SATAT only, no carbon credits | Rs. 46/kg | Nil | Rs. 3.45 crore |
+| **Base case — SATAT + carbon credits (conservative)** | **Rs. 46/kg** | **Rs. 400/tCO₂e** | **Rs. 3.93 crore** |
+| Mid case — SATAT + carbon credits (mid) | Rs. 46/kg | Rs. 600/tCO₂e | Rs. 4.17 crore |
+| Upside — premium market + full carbon | Rs. 55/kg | Rs. 800/tCO₂e | Rs. 5.05 crore |
 
 ### EBITDA Summary
 
-| Parameter | Phase 1 (Base) | Phase 2 (Base) |
+| Parameter | Phase 1 (Base) | Phase 2 |
 |---|---|---|
-| Annual Revenue | Rs. 3.67 crore | Rs. 7.30 crore |
-| Annual OPEX | Rs. 2.31 crore | Rs. 3.80 crore |
-| **EBITDA** | **Rs. 1.36 crore** | **Rs. 3.50 crore** |
-| EBITDA Margin | 37% | 48% |
+| Annual Revenue (with carbon credits, base) | Rs. 3.93 crore | Rs. 7.20 crore |
+| Annual OPEX | Rs. 2.31 crore | Rs. 3.85 crore |
+| **EBITDA** | **Rs. 1.62 crore** | **Rs. 3.35 crore** |
+| EBITDA Margin | 41% | 47% |
+
+> **Phase 2 OPEX note:** Shared fixed costs (management, SCADA, insurance, admin) do not double with Phase 2 expansion. Phase 2 marginal OPEX = Rs. 1.54 crore incremental (new operations staff Rs. 60 lakh, additional power Rs. 25 lakh, maintenance on new P&M Rs. 28 lakh, consumables Rs. 18 lakh, vehicles Rs. 15 lakh, contingency Rs. 8 lakh = Rs. 1.54 crore). Combined OPEX at full Phase 2 = Rs. 2.31 + Rs. 1.54 = Rs. 3.85 crore.
 
 ### Financing Structure
 
-| Parameter | Value |
-|---|---|
-| Phase 1 Total CAPEX | Rs. 30.24 crore |
-| Less: MNRE Central Financial Assistance | Rs. 2.00 crore |
-| Less: AP State Government Grant/VGF | Rs. 2.00 crore |
-| **Net CAPEX to be Financed** | **Rs. 26.24 crore** |
-| Equity (30%) | Rs. 7.87 crore |
-| Debt (70%) at 9.5%, 12 years | Rs. 18.37 crore |
-| Annual Debt Service | ~Rs. 2.60 crore/year |
+| Parameter | Value | Basis |
+|---|---|---|
+| Phase 1 Total CAPEX | Rs. 30.24 crore | Per cost estimate |
+| Less: MNRE CFA (Biogas Programme 2024–25) | Rs. 2.00 crore | CFA rate per MNRE scheme notification; calculation in Annexure V |
+| Less: AP State Land Concession (capitalised) | Rs. 2.00 crore | 5 acres at Rs. 40 lakh/acre government reserve price; lease at Re. 1/year equivalent |
+| **Net CAPEX to be Financed** | **Rs. 26.24 crore** | |
+| Equity (30%) | Rs. 7.87 crore | Promoter equity + seed investor round |
+| Debt (70%) — IREDA Green Finance | Rs. 18.37 crore | IREDA Green Bond / NaBFID Green Infrastructure |
+| **Loan Terms** | 8.5% p.a., 15-year tenure, 2-year principal moratorium | Standard IREDA green infrastructure terms |
+| Annual interest during moratorium (Yr 1–2) | Rs. 1.56 crore/year | Rs. 18.37 Cr × 8.5% |
+| **Annual Debt Service from Year 3** | **Rs. 1.84 crore/year** | Annuity on Rs. 18.37 crore over 13 years at 8.5% |
+| Working Capital Line | Rs. 60 lakh | 3-month OPEX buffer; CC facility from lead bank |
 
-### 15-Year Cash Flow Profile (Phase 1)
+> **MNRE CFA Note:** The applicable MNRE scheme is the "National Biogas and Organic Manure Programme (NBOMP)" and the "CBG Plant Support Scheme" under the Biogas Programme 2024–25 guidelines. Eligible CFA for a 1,600 kg/day CBG plant is calculated as Rs. 1.25 crore/TPD CBG × 1.6 TPD, subject to ceiling. Exact quantum confirmed against Annexure V.
 
-| Year | Revenue | OPEX | EBITDA | Debt Service | Net Cash |
-|---|---|---|---|---|---|
-| Year 1 (ramp-up, 50%) | Rs. 1.84 Cr | Rs. 1.80 Cr | Rs. 0.04 Cr | Rs. 2.60 Cr | (Rs. 2.56 Cr) |
-| Year 2 (80% utilization) | Rs. 2.94 Cr | Rs. 2.10 Cr | Rs. 0.84 Cr | Rs. 2.60 Cr | (Rs. 1.76 Cr) |
-| Year 3 (steady state) | Rs. 3.67 Cr | Rs. 2.31 Cr | Rs. 1.36 Cr | Rs. 2.60 Cr | (Rs. 1.24 Cr) |
-| Year 4+ (with carbon credits) | Rs. 4.63 Cr | Rs. 2.35 Cr | Rs. 2.28 Cr | Rs. 2.60 Cr | (Rs. 0.32 Cr) |
-| Year 7+ (Phase 2, optimized) | Rs. 8.50 Cr | Rs. 3.90 Cr | Rs. 4.60 Cr | Rs. 3.90 Cr | **+Rs. 0.70 Cr** |
+> **AP State Support Note:** No specific Government Order (G.O.) for cash VGF to private CBG players has been identified under the AP Clean Energy Policy 2024 at the time of DPR submission. The government support modelled here is the land concession value (capitalised at market rate) + TTMC processing fee (Rs. 350/tonne — per SBM-Urban norms). The promoter will separately apply for any discretionary VGF if a relevant G.O. is notified.
 
-**Project IRR (blended, 15-year horizon): 13–16%**
-**Equity IRR: 17–21%** (with government support and carbon credits)
-**Payback period: 8–10 years**
+### Debt Service Coverage Ratio (DSCR) — By Year
 
-> This project requires government support to be commercially viable for private investment: land at concessional terms, TTMC processing fee guarantee, and MNRE CFA. With this support structure, it is fundable through IREDA, NABARD Green Fund, or Climate Bond channels.
+| Year | EBITDA | Debt Service | DSCR | Status |
+|---|---|---|---|---|
+| Year 1 (ramp-up, 50%; moratorium) | Rs. 0.30 Cr | Rs. 1.56 Cr (interest only) | 0.19 | Construction/ramp; promoter equity covers shortfall |
+| Year 2 (80%; moratorium) | Rs. 1.10 Cr | Rs. 1.56 Cr (interest only) | 0.71 | Equity bridge from promoter; shortfall Rs. 0.46 Cr |
+| Year 3 (100%; repayment starts) | Rs. 1.62 Cr | Rs. 1.84 Cr | **0.88** | Below 1.0; carbon credits critical from this year |
+| Year 4 (100% + carbon credits maturing) | Rs. 1.84 Cr | Rs. 1.84 Cr | **1.00** | Break-even on debt service |
+| Year 5+ (carbon credits + BWG scale-up) | Rs. 2.10 Cr | Rs. 1.84 Cr | **1.14** | Positive free cash flow |
+| Year 7+ (Phase 2 operational) | Rs. 3.35 Cr | Rs. 3.10 Cr | **1.08** | Combined Phase 1+2 debt service; trending to 1.25+ by Yr 9 |
+
+> **Viability Condition:** This project achieves DSCR ≥ 1.0 only when carbon credits are operational. Carbon credit revenue is **not optional** — it is a structural requirement for debt serviceability. The promoter commits to registering under VCS/Gold Standard within 6 months of commissioning (Month 26 from Zero Date). During Years 1–4, the equity investor accepts sub-1.0 DSCR in exchange for the government land concession reducing overall equity requirement. **IREDA and NABARD have precedent for approving phased-ramp projects with moratorium structures where Year 5+ DSCR exceeds 1.1 — this project meets that criterion.**
+
+### Long-Term Cash Flow Profile
+
+| Year | Revenue | OPEX | EBITDA | Debt Service | Free Cash | DSCR |
+|---|---|---|---|---|---|---|
+| Yr 1 (50% ramp) | Rs. 1.73 Cr | Rs. 1.75 Cr | (Rs. 0.02 Cr) | Rs. 1.56 Cr | (Rs. 1.58 Cr) | — |
+| Yr 2 (80%, moratorium) | Rs. 2.76 Cr | Rs. 2.05 Cr | Rs. 0.71 Cr | Rs. 1.56 Cr | (Rs. 0.85 Cr) | 0.46 |
+| Yr 3 (100%, carbon credits start) | Rs. 3.93 Cr | Rs. 2.31 Cr | Rs. 1.62 Cr | Rs. 1.84 Cr | (Rs. 0.22 Cr) | 0.88 |
+| Yr 5 (carbon credits mature) | Rs. 4.17 Cr | Rs. 2.33 Cr | Rs. 1.84 Cr | Rs. 1.84 Cr | **+Rs. 0.00 Cr** | 1.00 |
+| Yr 7 (Phase 2 commercial) | Rs. 7.20 Cr | Rs. 3.85 Cr | Rs. 3.35 Cr | Rs. 3.10 Cr | **+Rs. 0.25 Cr** | 1.08 |
+| Yr 10 (Phase 2 + Phase 1 debt reducing) | Rs. 7.50 Cr | Rs. 3.90 Cr | Rs. 3.60 Cr | Rs. 2.40 Cr | **+Rs. 1.20 Cr** | 1.50 |
+
+**Project IRR (blended, 15-year horizon): 12–15%**
+**Equity IRR: 16–19%** (with land concession and SATAT registration; carbon credits upside)
+**Payback period: 9–11 years (Phase 1); 7–8 years (Phase 1+2 combined)**
+
+> **Honest Investor Disclosure:** This is a long-gestation infrastructure project with a 9-year payback. The equity case is built on: (1) government land concession eliminating the largest CAPEX variable, (2) SATAT providing a guaranteed CBG floor price, and (3) carbon credits providing the debt service bridge. Any investor underwriting this project must underwrite all three. If one pillar is absent, the project does not close.
     `,
   },
   {
@@ -829,7 +859,7 @@ The project avoids approximately **13,500 tCO₂e/year** (Phase 1) through:
 Eligible for:
 - India's **Carbon Credit Trading Scheme (CCTS)** under the Energy Conservation (Amendment) Act 2022
 - **VCS/Gold Standard** voluntary carbon markets for international credit sales
-- At Rs. 800–1,500/tCO₂e: **Rs. 1.08–2.03 crore/year** additional revenue (Phase 1)
+- At Rs. 400–800/tCO₂e (current Indian voluntary market range): **Rs. 54–108 lakh/year** additional revenue (Phase 1). Rs. 800/tCO₂e represents the upper bound of VCS Gold Standard market pricing in USD-denominated transactions; Rs. 400/tCO₂e is used as base case.
     `,
   },
   {
@@ -877,19 +907,23 @@ Eligible for:
 | Priority | Action | Department | Timeline |
 |---|---|---|---|
 | 1 | Accept DPR and convey in-principle approval | MAUD | 30 days |
-| 2 | Issue site allocation letter for 5 acres at Site A or C | MAUD/TTMC/Revenue Dept | 45 days |
-| 3 | Direct TTMC to execute waste diversion MOU | MAUD → TTMC | 60 days |
-| 4 | Facilitate AP PCB pre-consultation | MAUD → AP PCB | 30 days |
-| 5 | Sanction state VGF/grant of Rs. 2 crore | Finance Dept / Clean Energy Mission | 90 days |
-| 6 | Nominate APSPDCL nodal officer for power connection | APSPDCL | 45 days |
+| 2 | Issue site allocation letter for 5 acres at Site A or C with Survey No. and village details | MAUD/TTMC/Revenue Dept | 45 days |
+| 3 | Direct TTMC to execute waste diversion MOU (35 TPD, minimum tonnage, LD clause) | MAUD → TTMC | 60 days |
+| 4 | Facilitate AP PCB pre-consultation meeting | MAUD → AP PCB | 30 days |
+| 5 | Nominate APSPDCL nodal officer for 11 KV connection | APSPDCL | 45 days |
+| 6 | Facilitate TTD consent for organic waste MOU (3–5 TPD) | MAUD → TTD Board | 60 days |
 
-### Cero Hero Commitments (Upon DPR Acceptance and Site Allocation)
+> **Note on AP VGF:** No specific Government Order (G.O.) for cash VGF to private CBG players under the AP Clean Energy Policy 2024 has been identified at the time of this submission. The promoter will apply for any discretionary support if and when a relevant G.O. is issued. The financial model is not dependent on cash VGF — land concession (at nominal lease) and TTMC processing fee are the primary government contributions modelled.
 
-- Incorporate **Cero Hero Private Limited** as the project company within 30 days
-- Submit EPC tender within 45 days
-- Commence Cero Hero **BWG enrollment drive in Tirupati** within 60 days
-- Submit MNRE CFA application within 60 days
-- Achieve **financial closure within 6 months** of site allocation
+### Promoter Commitments (Upon DPR Acceptance and Site Allocation)
+
+- **Company incorporation:** Register Cero Hero Private Limited (CIN) within 30 days of DPR acceptance letter — this is a pre-condition for all subsequent steps
+- **Site verification:** Commission independent soil testing and topographic survey within 45 days of site allocation letter
+- **EPC tender:** Float competitive EPC tender to minimum 3 qualified vendors within 45 days (vendor list in Annexure IV)
+- **TTMC MOU:** Execute waste diversion agreement within 60 days
+- **MNRE CFA application:** Submit within 60 days of incorporation
+- **BWG enrollment:** Commence Cero Hero enrollment drive in Tirupati — target 50 BWGs signed within 90 days
+- **Financial closure:** Target within 6 months of site allocation — contingent on MNRE CFA letter and TTMC MOU being in place
 
 ### The Broader Vision
 
@@ -906,7 +940,39 @@ The Government of Andhra Pradesh has the opportunity to make Tirupati the refere
 
 *This Detailed Project Report has been prepared based on publicly available data on Tirupati's waste profile, national benchmarks for CBG plant costs and yields, and MNRE/SATAT policy frameworks. All technical parameters are indicative pending detailed engineering. Final costs, yields, and timelines will be confirmed during EPC detailed engineering following government approval.*
 
-*Cero Hero Private Limited is committed to full transparency, competitive procurement, and measurable environmental performance in the execution of this project.*
+*Cero Hero Private Limited (in incorporation) is committed to full transparency, competitive procurement, and measurable environmental performance in the execution of this project.*
+    `,
+  },
+  {
+    id: "annexures",
+    title: "Annexures — Index & Status",
+    content: `
+This section lists all annexures required for a complete government DPR submission. Annexures marked **[PENDING]** are to be submitted within 45 days of DPR acceptance and site allocation, as they require government site confirmation to complete.
+
+| Annexure | Title | Status |
+|---|---|---|
+| **Annexure I** | Site Survey & Land Parcel Details — Survey Numbers, Village, Mandal, GPS coordinates, khasra/patta details for Sites A, B, and C | **[PENDING — requires Revenue Dept confirmation of site]** |
+| **Annexure II** | Soil Investigation Report — Bore log data, bearing capacity, foundation recommendation for digester RCC raft/pile design | **[PENDING — to be commissioned upon site allocation]** |
+| **Annexure III** | Draft TTMC Waste Diversion MOU — Terms, minimum daily tonnage, liquidated damages, duration (25 years), pricing formula | **[DRAFT READY — to be finalised with TTMC]** |
+| **Annexure IV** | EPC Vendor Shortlist — Indicative technical proposals and reference plant list from 3 qualified vendors (Infra BioEnergy / BPCL Energies / SRM Energy) | **[DRAFT READY]** |
+| **Annexure V** | MNRE CFA Eligibility Calculation — Scheme notification reference, eligible cost basis, CFA quantum calculation for 1,600 kg/day CBG plant | **[DRAFT READY — subject to current scheme notification]** |
+| **Annexure VI** | Cero Hero Platform — BWG enrollment framework, Cero ID system description, draft subscription agreement template | **[READY]** |
+| **Annexure VII** | Promoter Profile — Founder biographical note, technical advisory board, financial capacity statement, proposed equity structure and co-investor LOIs | **[READY — provided separately to MAUD on request]** |
+| **Annexure VIII** | Feedstock Characterisation Data — Lab analysis of Tirupati municipal organic waste (TS, VS, C:N ratio, calorific value, heavy metals) from TTMC samples | **[PENDING — lab analysis to be conducted within 30 days of DPR acceptance]** |
+| **Annexure IX** | Environmental Pre-Feasibility Report — Preliminary site environmental assessment, odour management plan, noise impact study, groundwater baseline | **[PENDING — to be prepared by ENVIS-empanelled consultant within 45 days of site allocation]** |
+| **Annexure X** | Financial Model — Full 20-year DCF model in Excel format with assumptions, sensitivity tables, DSCR by year, IRR calculation | **[READY — available on request to MAUD/IREDA]** |
+
+### Key Data Gaps to be Resolved Before Final DPR
+
+The following items are identified as outstanding data gaps that will change specific numbers once resolved:
+
+| Gap | Impact if Unresolved | Resolution Path |
+|---|---|---|
+| Actual site soil conditions (Annexure II) | Civil cost estimate may vary ±15–20%; foundation type may change | Soil test within 30 days of site allocation |
+| TTMC organic waste lab analysis (Annexure VIII) | Biogas yield and mass balance may vary ±10% | Lab analysis on TTMC waste samples; 30-day turnaround |
+| Final MNRE CFA scheme notification for FY 2026-27 | CFA quantum may change by Rs. 0.5–1 crore | Ministry notification expected Q1 FY 2026-27 |
+| TTD consent for BWG enrollment | Phase 1 Tier 1/2 feedstock may reduce to 11 TPD (from 15 TPD) | Direct approach to TTD Board; facilitated by MAUD |
+| APSPDCL power tariff for green energy | OPEX power cost may vary ±Rs. 5 lakh/year | Confirmed after APSPDCL connection order |
     `,
   },
 ];
